@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "o weka e ijo tan lawa. o open e ona kepeken pakala seli.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "lawa pali li pana sin e telo pimeja wan lon sewi ona. o awen e telo lon poki.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "o pana e wawa tawa ilo telo Create. ona li tawa e telo pimeja tawa poki suli en ilo ante.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "o kepeken poki pi telo pimeja lon lawa pali tawa anu e telo. anu ni li awen."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "o kepeken poki pi telo pimeja lon lawa pali tawa anu e telo. anu ni li awen.",
+  "fluid.create_water_vents.superheated_lava": "telo kiwen pi seli mute",
+  "block.create_water_vents.superheated_lava": "telo kiwen pi seli mute",
+  "item.create_water_vents.superheated_lava_bucket": "poki pi telo kiwen pi seli mute"
 }

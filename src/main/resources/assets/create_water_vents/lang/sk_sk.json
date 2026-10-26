@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Odhalte jadro a aktivujte ho výbuchom.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktívne jadro dopĺňa jeden zdroj oleja priamo nad ním. Obsahujte túto zásuvku.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Zapnite čerpadlo Create na vypustenie výstupu do nádrží a vašej rafinérie.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Na výber dodávateľa použite podporovanú nádobu na olej na aktívnom jadre. Voľba sa uloží."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Na výber dodávateľa použite podporovanú nádobu na olej na aktívnom jadre. Voľba sa uloží.",
+  "fluid.create_water_vents.superheated_lava": "Prehriata láva",
+  "block.create_water_vents.superheated_lava": "Prehriata láva",
+  "item.create_water_vents.superheated_lava_bucket": "Prehriate vedro na lávu"
 }

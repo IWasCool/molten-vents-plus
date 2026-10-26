@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Otkrijte jezgro i aktivirajte ga eksplozijom.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktivno jezgro puni jedan izvor ulja direktno iznad njega. Sadrži ovaj izlaz.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Napajajte Create pumpu da ispraznite izlaz u rezervoare i vašu rafineriju.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Koristite podržanu kantu za ulje na aktivnom jezgru da biste izabrali dobavljača. Izbor je sačuvan."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Koristite podržanu kantu za ulje na aktivnom jezgru da biste izabrali dobavljača. Izbor je sačuvan.",
+  "fluid.create_water_vents.superheated_lava": "Прегрејана лава",
+  "block.create_water_vents.superheated_lava": "Прегрејана лава",
+  "item.create_water_vents.superheated_lava_bucket": "Прегрејана Лава Буцкет"
 }

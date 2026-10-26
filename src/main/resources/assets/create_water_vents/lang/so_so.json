@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Soo bandhig xudunta oo ku dhaqaaji qarax.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Xuddunta firfircooni waxay si toos ah uga buuxinaysaa hal il oo saliid ah. Waxa ku jira meeshan",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Ku darso bamka Create si uu ugu daadi meesha laga soo galo haamaha iyo warshadaada sifaynta",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Isticmaal baaldi saliid ah oo la taageeray oo ku yaal xudunta firfircoon si aad u doorato bixiye. Doorashada waa la badbaadiyay."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Isticmaal baaldi saliid ah oo la taageeray oo ku yaal xudunta firfircoon si aad u doorato bixiye. Doorashada waa la badbaadiyay.",
+  "fluid.create_water_vents.superheated_lava": "Lava aad u kulul",
+  "block.create_water_vents.superheated_lava": "Lava aad u kulul",
+  "item.create_water_vents.superheated_lava_bucket": "Baaldi Lava ah oo kulul"
 }

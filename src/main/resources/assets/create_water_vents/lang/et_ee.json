@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Avage südamik ja aktiveerige see plahvatusega.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktiivne südamik täidab uuesti ühe õliallika otse selle kohal. Sisaldage seda väljalaskeava.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Lülitage sisse Create pump, et tühjendada väljalaskeava paakidesse ja rafineerimistehasesse.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Tarnija valimiseks kasutage aktiivse südamiku toetatud õliämbrit. Valik on salvestatud."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Tarnija valimiseks kasutage aktiivse südamiku toetatud õliämbrit. Valik on salvestatud.",
+  "fluid.create_water_vents.superheated_lava": "Ülekuumutatud lava",
+  "block.create_water_vents.superheated_lava": "Ülekuumutatud lava",
+  "item.create_water_vents.superheated_lava_bucket": "Ülekuumendatud laavaämber"
 }

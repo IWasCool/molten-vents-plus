@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Өзекті ашып, оны жарылыспен іске қосыңыз.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Белсенді өзек бір мұнай көзін тікелей оның үстінде толтырады. Осы розеткадан тұрады.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Розеткадан резервуарларға және мұнай өңдеу зауытыңызға ағызу үшін Create сорғыны қуаттандырыңыз.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Провайдерді таңдау үшін белсенді ядродағы қолдау көрсетілетін май шелегін пайдаланыңыз. Таңдау сақталады."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Провайдерді таңдау үшін белсенді ядродағы қолдау көрсетілетін май шелегін пайдаланыңыз. Таңдау сақталады.",
+  "fluid.create_water_vents.superheated_lava": "Өте қызған лава",
+  "block.create_water_vents.superheated_lava": "Өте қызған лава",
+  "item.create_water_vents.superheated_lava_bucket": "Қатты қыздырылған лава шелегі"
 }

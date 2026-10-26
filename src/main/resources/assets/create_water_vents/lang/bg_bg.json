@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Разкрийте ядрото и го активирайте с експлозия.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Активното ядро ​​презарежда един източник на масло директно над него. Съдържайте този изход.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Захранване на Create помпа за източване на изхода в резервоари и вашата рафинерия.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Използвайте поддържана маслена кофа на активното ядро, за да изберете доставчик. Изборът е запазен."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Използвайте поддържана маслена кофа на активното ядро, за да изберете доставчик. Изборът е запазен.",
+  "fluid.create_water_vents.superheated_lava": "Прегрята лава",
+  "block.create_water_vents.superheated_lava": "Прегрята лава",
+  "item.create_water_vents.superheated_lava_bucket": "Прегрята кофа с лава"
 }

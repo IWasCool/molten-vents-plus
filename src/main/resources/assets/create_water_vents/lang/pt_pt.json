@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Exponha o núcleo e ative-o com uma explosão.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "O núcleo ativo recarrega uma fonte de óleo diretamente acima dele. Contenha esta saída.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Ligue uma bomba Create para drenar a saída para os tanques e a sua refinaria.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Utilize um balde de óleo apoiado no núcleo ativo para escolher um fornecedor. A escolha é salva."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Utilize um balde de óleo apoiado no núcleo ativo para escolher um fornecedor. A escolha é salva.",
+  "fluid.create_water_vents.superheated_lava": "Lava superaquecida",
+  "block.create_water_vents.superheated_lava": "Lava superaquecida",
+  "item.create_water_vents.superheated_lava_bucket": "Balde de lava superaquecida"
 }

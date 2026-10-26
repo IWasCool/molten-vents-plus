@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Wepu isi ma jiri mgbawa rụọ ọrụ ya.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Isi na-arụ ọrụ na-ejupụta otu isi mmanụ kpọmkwem n'elu ya. Nwere ihe ntinye a.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Kwanye igwe mgbapụta Create iji wụpụ mpụta ahụ n'ime tankị na ụlọ nrụpụta gị.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Jiri bọket mmanụ akwadoro na isi nọ n'ọrụ ịhọrọ onye na-eweta ya. A na-echekwa nhọrọ ahụ."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Jiri bọket mmanụ akwadoro na isi nọ n'ọrụ ịhọrọ onye na-eweta ya. A na-echekwa nhọrọ ahụ.",
+  "fluid.create_water_vents.superheated_lava": "Lava dị ọkụ",
+  "block.create_water_vents.superheated_lava": "Lava dị ọkụ",
+  "item.create_water_vents.superheated_lava_bucket": "Ịwụ akwa akwa ekpo oke ọkụ"
 }

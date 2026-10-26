@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "เปิดแกนกลางและเปิดใช้งานด้วยการระเบิด",
   "create_water_vents.ponder.oil_vent_automation.text_3": "แกนกลางที่ทำงานอยู่จะเติมแหล่งน้ำมันหนึ่งแหล่งที่อยู่ด้านบนโดยตรง มีเต้าเสียบนี้",
   "create_water_vents.ponder.oil_vent_automation.text_4": "จ่ายไฟให้กับปั๊ม Create เพื่อระบายทางออกลงถังและโรงกลั่นของคุณ",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "ใช้ถังน้ำมันที่รองรับบนแกนที่ใช้งานอยู่เพื่อเลือกผู้ให้บริการ ตัวเลือกจะถูกบันทึกไว้"
+  "create_water_vents.ponder.oil_vent_automation.text_5": "ใช้ถังน้ำมันที่รองรับบนแกนที่ใช้งานอยู่เพื่อเลือกผู้ให้บริการ ตัวเลือกจะถูกบันทึกไว้",
+  "fluid.create_water_vents.superheated_lava": "ลาวาร้อนยวดยิ่ง",
+  "block.create_water_vents.superheated_lava": "ลาวาร้อนยวดยิ่ง",
+  "item.create_water_vents.superheated_lava_bucket": "ถังลาวาร้อนยวดยิ่ง"
 }

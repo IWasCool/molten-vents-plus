@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Expón o núcleo e actívao cunha explosión.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "O núcleo activo enche unha fonte de aceite directamente enriba dela. Contén esta saída.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Encienda unha bomba Create para drenar a saída aos tanques e á súa refinería.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Use un cubo de aceite compatible no núcleo activo para escoller un provedor. Gárdase a elección."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Use un cubo de aceite compatible no núcleo activo para escoller un provedor. Gárdase a elección.",
+  "fluid.create_water_vents.superheated_lava": "Lava superquentada",
+  "block.create_water_vents.superheated_lava": "Lava superquentada",
+  "item.create_water_vents.superheated_lava_bucket": "Cubo de lava superquecido"
 }

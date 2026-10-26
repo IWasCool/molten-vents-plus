@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Оголіть ядро ​​та активуйте його вибухом.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Активне ядро ​​заповнює одне джерело масла безпосередньо над ним. Містити цю розетку.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Увімкніть Create насос, щоб злити вихід у резервуари та ваш нафтопереробний завод.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Використовуйте підтримуване масляне відро на активному ядрі, щоб вибрати постачальника. Вибір збережено."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Використовуйте підтримуване масляне відро на активному ядрі, щоб вибрати постачальника. Вибір збережено.",
+  "fluid.create_water_vents.superheated_lava": "Перегріта лава",
+  "block.create_water_vents.superheated_lava": "Перегріта лава",
+  "item.create_water_vents.superheated_lava_bucket": "Відро з перегрітою лавою"
 }

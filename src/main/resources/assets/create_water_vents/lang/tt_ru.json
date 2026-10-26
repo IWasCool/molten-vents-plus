@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Ядрәне фаш итегез һәм аны шартлау белән активлаштырыгыз.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Актив үзәк аның өстендә бер нефть чыганагын тутыра. Бу розетка.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Розетканы танкларга һәм сезнең нефть эшкәртү заводына агызу өчен Create насосны эшләгез.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Провайдерны сайлау өчен актив үзәктә майлы чиләк кулланыгыз. Сайлау сакланган."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Провайдерны сайлау өчен актив үзәктә майлы чиләк кулланыгыз. Сайлау сакланган.",
+  "fluid.create_water_vents.superheated_lava": "Лава",
+  "block.create_water_vents.superheated_lava": "Лава",
+  "item.create_water_vents.superheated_lava_bucket": "Лава чиләге"
 }

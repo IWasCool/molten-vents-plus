@@ -15,7 +15,9 @@ Activate dormant cores with an explosion. Use the matching source fluid, then ha
 
 ## Optional integrations
 
-**Create Nuclear** adds uranium, thorium and lead vents. Oil providers include **Create Diesel Generators**, **The Factory Must Grow**, **Immersive Petroleum** and **Petrochem**. Other placeable oils can use the `create_water_vents:oil_outputs` fluid tag. Superheated lava comes from a compatible provider such as **Create Quality of Life**.
+**Create Nuclear** adds uranium, thorium and lead vents. Oil providers include **Create Diesel Generators**, **The Factory Must Grow**, **Immersive Petroleum** and **Petrochem**. Other placeable oils can use the `create_water_vents:oil_outputs` fluid tag.
+
+**Superheated lava** is built in when **Create Quality of Life** is absent; its native fluid takes priority when installed. The fallback uses the same animated blue textures and compacting recipe: **1,000 mB lava + 1 Blaze Cake + 1 obsidian dust (`c:dusts/obsidian`) → 500 mB superheated lava**. No heating is required. Superheated vent centers match the liquid's texture and tint, including dormant cores.
 
 Configuration: `create_water_vents-common.toml`. Operators can use `/enable movable_vents` and `/disable movable_vents`.
 
@@ -39,4 +41,4 @@ Language files are in [`src/main/resources/assets/create_water_vents/lang`](src/
 
 ## License
 
-[MIT](LICENSE). Derived vent designs retain the original [Molten Vents MIT license and attribution](LICENSES/Molten-Vents-MIT.txt). Minecraft/Create textures are referenced from their dependencies.
+[MIT](LICENSE). Derived vent designs retain the original [Molten Vents MIT license and attribution](LICENSES/Molten-Vents-MIT.txt). Superheated lava textures, recipe and fluid behavior derive from [Create Quality of Life](https://github.com/iglee42/CreateQualityOfLife) by iglée42 under its [MIT license](LICENSES/Create-Quality-of-Life-MIT.txt). Minecraft/Create textures are referenced from their dependencies.

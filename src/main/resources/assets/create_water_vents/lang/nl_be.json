@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Leg de kern bloot en activeer deze met een explosie.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "De actieve kern vult één oliebron direct daarboven bij. Bevat deze uitlaat.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Zet een Create pomp aan om de uitlaat naar tanks en uw raffinaderij af te voeren.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Gebruik een ondersteunde olie-emmer op de actieve kern om een ​​aanbieder te kiezen. De keuze wordt opgeslagen."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Gebruik een ondersteunde olie-emmer op de actieve kern om een ​​aanbieder te kiezen. De keuze wordt opgeslagen.",
+  "fluid.create_water_vents.superheated_lava": "Oververhitte lava",
+  "block.create_water_vents.superheated_lava": "Oververhitte lava",
+  "item.create_water_vents.superheated_lava_bucket": "Oververhitte lava-emmer"
 }

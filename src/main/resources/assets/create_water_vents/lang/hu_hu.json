@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Tegye szabaddá a magot, és aktiválja egy robbanással.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Az aktív mag közvetlenül felette tölt fel egy olajforrást. Tartalmazza ezt a kimenetet.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Működtessen egy Create szivattyút, hogy leeressze a kimenetet a tartályokba és a finomítóba.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Használjon támogatott olajvödröt az aktív magon a szolgáltató kiválasztásához. A választás mentve van."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Használjon támogatott olajvödröt az aktív magon a szolgáltató kiválasztásához. A választás mentve van.",
+  "fluid.create_water_vents.superheated_lava": "Túlhevített láva",
+  "block.create_water_vents.superheated_lava": "Túlhevített láva",
+  "item.create_water_vents.superheated_lava_bucket": "Túlmelegített láva vödör"
 }

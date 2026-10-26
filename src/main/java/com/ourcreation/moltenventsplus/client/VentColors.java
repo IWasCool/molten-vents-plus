@@ -24,7 +24,7 @@ public final class VentColors {
             case SUPERHEATED -> VentFluids.primary(tier)
                     .map(fluid -> IClientFluidTypeExtensions.of(fluid).getTintColor() & 0xFFFFFF).orElse(0x5191EF);
         };
-        return active ? color : (color >> 1) & 0x7F7F7F;
+        return active || tier == VentTier.SUPERHEATED ? color : (color >> 1) & 0x7F7F7F;
     }
 
     @SubscribeEvent

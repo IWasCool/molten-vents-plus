@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "منددهكن اينتي دان مڠاكتيۏكنڽ دڠن لتوڤن.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "اينتي اكتيف مڠيسي سمولا ساتو سومبر ميڽق تروس د اتسڽ. مڠاندوڠي ڬراي اين.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "كواس ڤم Create اونتوق مڠاليركن ڤينتو كلوار ك دالم تاڠكي دان كيلڠ ڤناڤيسن اندا.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "ڬوناكن بالون ميڽق يڠ دسوكوڠ ڤد اينتي اكتيف اونتوق مميليه ڤمبكل. ڤيليهن ايت دسيمڤن."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "ڬوناكن بالون ميڽق يڠ دسوكوڠ ڤد اينتي اكتيف اونتوق مميليه ڤمبكل. ڤيليهن ايت دسيمڤن.",
+  "fluid.create_water_vents.superheated_lava": "لاۏا يڠ ترلالو ڤانس",
+  "block.create_water_vents.superheated_lava": "لاۏا يڠ ترلالو ڤانس",
+  "item.create_water_vents.superheated_lava_bucket": "بالون لاۏا يڠ ترلالو ڤانس"
 }

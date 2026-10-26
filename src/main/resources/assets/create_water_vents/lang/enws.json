@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Expose the heart and Awaken it with an explosion.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "The active heart refills one oil source directly above it. Contain this outlet.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Power a Create pump to drain the outlet into tanks and thy refinery.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Employ a supported oil bucket on the active heart to choose a provider. The choice is saved."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Employ a supported oil bucket on the active heart to choose a provider. The choice is saved.",
+  "fluid.create_water_vents.superheated_lava": "Superheated Lava",
+  "block.create_water_vents.superheated_lava": "Superheated Lava",
+  "item.create_water_vents.superheated_lava_bucket": "Superheated Lava Bucket"
 }

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Utset kjernen og aktiver den med ein eksplosjon.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Den aktive kjernen fyller på éi oljekjelde rett over henne. Inneheld dette uttaket.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Slå på ei Create-pumpe for å tømma utløpet til tankar og raffineriet ditt.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Bruk ei støtta oljebøtte på den aktive kjernen for å velja ein leverandør. Valet er lagra."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Bruk ei støtta oljebøtte på den aktive kjernen for å velja ein leverandør. Valet er lagra.",
+  "fluid.create_water_vents.superheated_lava": "Overoppheita lava",
+  "block.create_water_vents.superheated_lava": "Overoppheita lava",
+  "item.create_water_vents.superheated_lava_bucket": "Bøtte med overoppheita lava"
 }

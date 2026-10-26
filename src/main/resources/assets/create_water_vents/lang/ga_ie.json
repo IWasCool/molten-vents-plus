@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Nocht an croí agus cuir i ngníomh é le pléascadh.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Athlíonann an croí gníomhach foinse ola amháin díreach os a chionn. Coimeád an t-asraon seo.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Cumhacht caidéal Create chun an t-asraon a dhraenáil isteach in umair agus i do scaglann.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Bain úsáid as buicéad ola tacaithe ar an gcroílár gníomhach chun soláthraí a roghnú. Tá an rogha a shábháil."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Bain úsáid as buicéad ola tacaithe ar an gcroílár gníomhach chun soláthraí a roghnú. Tá an rogha a shábháil.",
+  "fluid.create_water_vents.superheated_lava": "Lava sárthéite",
+  "block.create_water_vents.superheated_lava": "Lava sárthéite",
+  "item.create_water_vents.superheated_lava_bucket": "Buicéad Lava Sárthéite"
 }

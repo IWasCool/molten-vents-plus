@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "மையத்தை அம்பலப்படுத்தி அதை வெடிப்புடன் செயல்படுத்தவும்.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "செயலில் உள்ள மையமானது ஒரு எண்ணெய் மூலத்தை அதற்கு நேரடியாக மேலே நிரப்புகிறது. இந்த கடையை வைத்திருங்கள்.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "அவுட்லெட்டை டாங்கிகள் மற்றும் உங்கள் சுத்திகரிப்பு நிலையங்களில் வடிகட்ட ஒரு Create பம்பை இயக்கவும்.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "வழங்குநரைத் தேர்வுசெய்ய, செயலில் உள்ள மையத்தில் ஆதரிக்கப்படும் எண்ணெய் வாளியைப் பயன்படுத்தவும். தேர்வு சேமிக்கப்பட்டது."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "வழங்குநரைத் தேர்வுசெய்ய, செயலில் உள்ள மையத்தில் ஆதரிக்கப்படும் எண்ணெய் வாளியைப் பயன்படுத்தவும். தேர்வு சேமிக்கப்பட்டது.",
+  "fluid.create_water_vents.superheated_lava": "அதிக வெப்பமடைந்த எரிமலை",
+  "block.create_water_vents.superheated_lava": "அதிக வெப்பமடைந்த எரிமலை",
+  "item.create_water_vents.superheated_lava_bucket": "சூப்பர் ஹீட் எரிமலை வாளி"
 }

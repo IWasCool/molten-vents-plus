@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Ekspozoni bërthamën dhe aktivizoni atë me një shpërthim.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Bërthama aktive rimbush një burim vaji direkt mbi të. Mbajeni këtë prizë.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Fuqia një pompë Create për të kulluar prizën në rezervuarë dhe në rafinerinë tuaj.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Përdorni një kovë vaji të mbështetur në bërthamën aktive për të zgjedhur një ofrues. Zgjedhja është ruajtur."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Përdorni një kovë vaji të mbështetur në bërthamën aktive për të zgjedhur një ofrues. Zgjedhja është ruajtur.",
+  "fluid.create_water_vents.superheated_lava": "Lava e mbinxehur",
+  "block.create_water_vents.superheated_lava": "Lava e mbinxehur",
+  "item.create_water_vents.superheated_lava_bucket": "Kovë Lava e mbinxehur"
 }

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Expuneți miezul și activați-l cu o explozie.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Miezul activ umple o sursă de ulei direct deasupra acesteia. Conține această priză.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Porniți o pompă Create pentru a scurge orificiul de evacuare în rezervoare și în rafinăria dvs.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Utilizați o găleată de ulei suportată pe miezul activ pentru a alege un furnizor. Alegerea este salvată."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Utilizați o găleată de ulei suportată pe miezul activ pentru a alege un furnizor. Alegerea este salvată.",
+  "fluid.create_water_vents.superheated_lava": "Lavă supraîncălzită",
+  "block.create_water_vents.superheated_lava": "Lavă supraîncălzită",
+  "item.create_water_vents.superheated_lava_bucket": "Găleată pentru lavă supraîncălzită"
 }

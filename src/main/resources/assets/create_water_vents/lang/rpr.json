@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Обнажите ядро и активируйте его взрывомъ.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Активное ядро восстанавливаетъ одинъ источникъ нефти надъ собой. Оградите выходъ.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Подключите приводъ къ насосу Create для перекачки нефти въ резервуары и на переработку.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Используйте совместимое ведро нефти на активномъ ядре для выбора поставщика. Выборъ сохраняется."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Используйте совместимое ведро нефти на активномъ ядре для выбора поставщика. Выборъ сохраняется.",
+  "fluid.create_water_vents.superheated_lava": "Перегретая лава",
+  "block.create_water_vents.superheated_lava": "Перегретая лава",
+  "item.create_water_vents.superheated_lava_bucket": "Ведро перегретой лавы"
 }

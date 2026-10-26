@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "コアを露出させ、爆発で起動します。",
   "create_water_vents.ponder.oil_vent_automation.text_3": "稼働中のコアは真上の石油源を1つ補充します。出口を囲んでください。",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Createのポンプを動かし、石油をタンクと精製設備へ送ります。",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "対応する石油バケツを稼働中のコアに使用して提供元を選びます。選択は保存されます。"
+  "create_water_vents.ponder.oil_vent_automation.text_5": "対応する石油バケツを稼働中のコアに使用して提供元を選びます。選択は保存されます。",
+  "fluid.create_water_vents.superheated_lava": "超高温の溶岩",
+  "block.create_water_vents.superheated_lava": "超高温の溶岩",
+  "item.create_water_vents.superheated_lava_bucket": "超高温の溶岩入りバケツ"
 }

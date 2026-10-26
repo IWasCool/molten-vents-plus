@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Deskovrez la kerno e aktivigez ol per explozo.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "La aktiva kerno riplenigas un petroleo-bloko rekte super ol. Kontenez ca elireyo.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Povumizez Create-pompilo por transportar petroleo aden rezervuyi e vua rafinerio.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Uzez suportata petroleo-sitelo sur la aktiva kerno por selektar provizanto. La selekto konservesas."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Uzez suportata petroleo-sitelo sur la aktiva kerno por selektar provizanto. La selekto konservesas.",
+  "fluid.create_water_vents.superheated_lava": "Supervarma lafo",
+  "block.create_water_vents.superheated_lava": "Supervarma lafo",
+  "item.create_water_vents.superheated_lava_bucket": "Sitelo de supervarma lafo"
 }

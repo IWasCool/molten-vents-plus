@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "कोर को उजागर करें और इसे विस्फोट के साथ सक्रिय करें।",
   "create_water_vents.ponder.oil_vent_automation.text_3": "सक्रिय कोर सीधे इसके ऊपर एक तेल स्रोत को फिर से भरता है। इस आउटलेट को शामिल करें.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "टैंकों और अपनी रिफाइनरी में आउटलेट को खाली करने के लिए एक Create पंप को पावर दें।",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "प्रदाता चुनने के लिए सक्रिय कोर पर समर्थित तेल बाल्टी का उपयोग करें। विकल्प सहेजा गया है."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "प्रदाता चुनने के लिए सक्रिय कोर पर समर्थित तेल बाल्टी का उपयोग करें। विकल्प सहेजा गया है.",
+  "fluid.create_water_vents.superheated_lava": "अत्यधिक गरम लावा",
+  "block.create_water_vents.superheated_lava": "अत्यधिक गरम लावा",
+  "item.create_water_vents.superheated_lava_bucket": "अत्यधिक गर्म लावा बाल्टी"
 }

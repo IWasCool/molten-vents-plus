@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "ויסשטעלן די האַרץ און אַקטאַווייט עס מיט אַ יקספּלאָוזשאַן.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "די אַקטיוו האַרץ ריפילז איין ייל מקור גלייַך אויבן עס. אַנטהאַלטן דעם ווענטיל.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "מאַכט אַ Create פּאָמפּע צו פליסן די ווענטיל אין טאַנגקס און דיין ריפיינערי.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "ניצן אַ געשטיצט ייל עמער אויף די אַקטיוו האַרץ צו קלייַבן אַ שפּייַזער. די ברירה איז געראטעוועט."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "ניצן אַ געשטיצט ייל עמער אויף די אַקטיוו האַרץ צו קלייַבן אַ שפּייַזער. די ברירה איז געראטעוועט.",
+  "fluid.create_water_vents.superheated_lava": "סופּערכיטיד לאַוואַ",
+  "block.create_water_vents.superheated_lava": "סופּערכיטיד לאַוואַ",
+  "item.create_water_vents.superheated_lava_bucket": "סופּערהעאַטעד לאַוואַ עמער"
 }

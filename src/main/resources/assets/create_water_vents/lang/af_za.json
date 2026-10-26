@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Ontbloot die kern en aktiveer dit met 'n ontploffing.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Die aktiewe kern hervul een oliebron direk bo dit. Bevat hierdie uitlaat.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Draai 'n Create-pomp aan om die uitlaat na tenks en jou raffinadery te dreineer.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Gebruik 'n ondersteunde olie-emmer op die aktiewe kern om 'n verskaffer te kies. Die keuse is gestoor."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Gebruik 'n ondersteunde olie-emmer op die aktiewe kern om 'n verskaffer te kies. Die keuse is gestoor.",
+  "fluid.create_water_vents.superheated_lava": "Oorverhitte lava",
+  "block.create_water_vents.superheated_lava": "Oorverhitte lava",
+  "item.create_water_vents.superheated_lava_bucket": "Oorverhitte lava-emmer"
 }

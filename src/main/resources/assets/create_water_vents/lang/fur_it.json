@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Espon il nucli e ativâlu cuntune esplosion.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Il nucli atîf al torne a jemplâ une font di vueli diretementri parsore di lui. Contignî cheste sfuarce.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Alimentâ une pompe Create par drenâ la jesside intes cistiernis e inte sô rafinarie.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Utilizâ un sec di vueli supuartât sul nucli atîf par sielzi un furnidôr. La sielte e je salvade."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Utilizâ un sec di vueli supuartât sul nucli atîf par sielzi un furnidôr. La sielte e je salvade.",
+  "fluid.create_water_vents.superheated_lava": "Lave superriscjaldade",
+  "block.create_water_vents.superheated_lava": "Lave superriscjaldade",
+  "item.create_water_vents.superheated_lava_bucket": "Sec di lave superriscaldât"
 }

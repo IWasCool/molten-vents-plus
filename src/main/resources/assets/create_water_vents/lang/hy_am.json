@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Բացահայտեք միջուկը և ակտիվացրեք այն պայթյունով։",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Ակտիվ միջուկը լիցքավորում է նավթի մեկ աղբյուր անմիջապես դրա վերևում: Պարունակեք այս վարդակից:",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Միացրեք Create պոմպը՝ ելքը տանկերի և ձեր նավթավերամշակման գործարանի մեջ արտահոսելու համար:",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Օգտագործեք աջակցվող նավթի դույլ ակտիվ միջուկի վրա՝ մատակարար ընտրելու համար: Ընտրությունը պահպանված է:"
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Օգտագործեք աջակցվող նավթի դույլ ակտիվ միջուկի վրա՝ մատակարար ընտրելու համար: Ընտրությունը պահպանված է:",
+  "fluid.create_water_vents.superheated_lava": "Գերտաքացած լավա",
+  "block.create_water_vents.superheated_lava": "Գերտաքացած լավա",
+  "item.create_water_vents.superheated_lava_bucket": "Գերտաքացվող լավայի դույլ"
 }

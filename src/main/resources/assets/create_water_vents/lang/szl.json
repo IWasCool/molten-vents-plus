@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Ôdkryj jōndro i aktywuj je ze wybuchym.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktywne jōndro dopołnio jedno zdrzōdło ôleju dyrekt nad nim. Zawiyraj to gniazdo.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Zasilaj pōmpa Create, coby ôdpompować wylot do zbiornikōw i twojij rafineryje.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Użyj spiyranego łydka ôleju na aktywnym jōndre, coby ôbrać dostowcy. Ôbiōr je zachowany."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Użyj spiyranego łydka ôleju na aktywnym jōndre, coby ôbrać dostowcy. Ôbiōr je zachowany.",
+  "fluid.create_water_vents.superheated_lava": "Przegrzano lawa",
+  "block.create_water_vents.superheated_lava": "Przegrzano lawa",
+  "item.create_water_vents.superheated_lava_bucket": "Przegrzane łydo z lawōm"
 }

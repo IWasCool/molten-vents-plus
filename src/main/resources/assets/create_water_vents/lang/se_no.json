@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Čájet guovddáža ja aktivere dan buollima bokte.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktiiva guovddáš deavdá ovtta oljogáldu njuolga dan bajábealde. Sisdoallá dán vuovdinbáikki.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Čuovvu Create pumppa vai čáhcebohcci čáhcái táŋkkaide ja du raffineriijai.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Geavat doarjjaoljobohcci aktiiva guovddážis válljet fálaldaga. Válljen lea vurkejuvvon."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Geavat doarjjaoljobohcci aktiiva guovddážis válljet fálaldaga. Válljen lea vurkejuvvon.",
+  "fluid.create_water_vents.superheated_lava": "Badjelmeare liegga lávva",
+  "block.create_water_vents.superheated_lava": "Badjelmeare liegga lávva",
+  "item.create_water_vents.superheated_lava_bucket": "Badjelmeare liegga lávvabuvtta"
 }

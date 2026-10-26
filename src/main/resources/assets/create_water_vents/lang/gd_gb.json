@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Cuir a-mach an cridhe agus cuir an gnìomh e le spreadhadh.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Bidh an cridhe gnìomhach ag ath-lìonadh aon stòr ola dìreach os a chionn. Cùm an t-saighead seo.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Cuir cumhachd air pumpa Create gus an t-slighe a-mach a dhrèanadh a-steach do na tancaichean agus don fhùirneis agad.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Cleachd bucaid ola le taic air a’ chridhe gnìomhach gus solaraiche a thaghadh. Tha an roghainn air a shàbhaladh."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Cleachd bucaid ola le taic air a’ chridhe gnìomhach gus solaraiche a thaghadh. Tha an roghainn air a shàbhaladh.",
+  "fluid.create_water_vents.superheated_lava": "Labha air a theasachadh gu mòr",
+  "block.create_water_vents.superheated_lava": "Labha air a theasachadh gu mòr",
+  "item.create_water_vents.superheated_lava_bucket": "Bucaid làbha superheated"
 }

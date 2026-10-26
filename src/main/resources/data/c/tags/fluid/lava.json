@@ -1,0 +1,4 @@
+{
+  "replace": false,
+  "values": [ "create_water_vents:superheated_lava", "create_water_vents:flowing_superheated_lava" ]
+}

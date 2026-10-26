@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Nüvəni üzə çıxarın və partlayışla aktivləşdirin.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktiv nüvə birbaşa onun üstündəki bir neft mənbəyini doldurur. Bu çıxışı ehtiva edin.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Çıxışı çənlərə və neft emalı zavodunuza boşaltmaq üçün Create nasosu işə salın.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Təchizatçı seçmək üçün aktiv nüvədə dəstəklənən yağ qabından istifadə edin. Seçim saxlanılır."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Təchizatçı seçmək üçün aktiv nüvədə dəstəklənən yağ qabından istifadə edin. Seçim saxlanılır.",
+  "fluid.create_water_vents.superheated_lava": "Çox qızdırılmış lava",
+  "block.create_water_vents.superheated_lava": "Çox qızdırılmış lava",
+  "item.create_water_vents.superheated_lava_bucket": "Çox qızdırılmış lava qabı"
 }

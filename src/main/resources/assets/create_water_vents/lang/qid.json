@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Boeka inti dan aktifkan dengan ledakan.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Inti aktif mengisi oelang satoe soember minjak tepat di atasnja. Berisi ooetlet ini.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Njalakan pompa Create oentoek mengalirkan saloeran keloear ke tangki dan kilang Anda.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Goenakan ember oli jang didoekoeng pada inti aktif oentoek memilih penjedia. Pilihannja disimpan."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Goenakan ember oli jang didoekoeng pada inti aktif oentoek memilih penjedia. Pilihannja disimpan.",
+  "fluid.create_water_vents.superheated_lava": "Lava Super Panas",
+  "block.create_water_vents.superheated_lava": "Lava Super Panas",
+  "item.create_water_vents.superheated_lava_bucket": "Ember Lava Super Panas"
 }

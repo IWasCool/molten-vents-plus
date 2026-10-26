@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Diskouez ar c'hreiz ha lakaat anezhañ da vont en-dro gant ur splujadenn.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Ar c'hreiz oberiant a adlenn ur font eoul a-us dezhañ. Endalc'hit ar prenestr-mañ.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Lakaat ur pomp Create da vont en-dro evit skarzhañ an disoc'h e-barzh ar c'hefluskerioù hag en ho rafinerezh.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Implijit ur pod eoul skoret war ar greizenn oberiant evit dibab ur pourvezer. Enrollet eo an dibab."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Implijit ur pod eoul skoret war ar greizenn oberiant evit dibab ur pourvezer. Enrollet eo an dibab.",
+  "fluid.create_water_vents.superheated_lava": "Lava dreist-tomm",
+  "block.create_water_vents.superheated_lava": "Lava dreist-tomm",
+  "item.create_water_vents.superheated_lava_bucket": "Poellgor lava dreist-tomm"
 }

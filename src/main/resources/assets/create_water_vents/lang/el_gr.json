@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Εκθέστε τον πυρήνα και ενεργοποιήστε τον με μια έκρηξη.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Ο ενεργός πυρήνας ξαναγεμίζει μία πηγή λαδιού ακριβώς από πάνω του. Περιλάβετε αυτήν την πρίζα.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Τροφοδοτήστε μια αντλία Create για να αποστραγγίσετε την έξοδο στις δεξαμενές και στο διυλιστήριό σας.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Χρησιμοποιήστε έναν υποστηριζόμενο κάδο λαδιού στον ενεργό πυρήνα για να επιλέξετε έναν πάροχο. Η επιλογή αποθηκεύεται."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Χρησιμοποιήστε έναν υποστηριζόμενο κάδο λαδιού στον ενεργό πυρήνα για να επιλέξετε έναν πάροχο. Η επιλογή αποθηκεύεται.",
+  "fluid.create_water_vents.superheated_lava": "Υπερθερμασμένη λάβα",
+  "block.create_water_vents.superheated_lava": "Υπερθερμασμένη λάβα",
+  "item.create_water_vents.superheated_lava_bucket": "Υπερθερμασμένος κάδος λάβας"
 }

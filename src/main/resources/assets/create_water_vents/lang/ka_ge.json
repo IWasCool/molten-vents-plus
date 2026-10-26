@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "გამოაჩინეთ ბირთვი და გაააქტიურეთ იგი აფეთქებით.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "აქტიური ბირთვი ავსებს ზეთის ერთ წყაროს პირდაპირ მის ზემოთ. დაიცავით ეს გასასვლელი.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "ჩართეთ Create ტუმბო, რათა ჩაედინება გამოსასვლელი ავზებსა და თქვენს ქარხანაში.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "გამოიყენეთ მხარდაჭერილი ზეთის თაიგული აქტიურ ბირთვზე პროვაიდერის ასარჩევად. არჩევანი შენახულია."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "გამოიყენეთ მხარდაჭერილი ზეთის თაიგული აქტიურ ბირთვზე პროვაიდერის ასარჩევად. არჩევანი შენახულია.",
+  "fluid.create_water_vents.superheated_lava": "ზედმეტად გახურებული ლავა",
+  "block.create_water_vents.superheated_lava": "ზედმეტად გახურებული ლავა",
+  "item.create_water_vents.superheated_lava_bucket": "ზედმეტად გახურებული ლავას ბუკეტი"
 }

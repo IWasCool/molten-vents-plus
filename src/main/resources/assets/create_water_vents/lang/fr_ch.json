@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Exposez le cœur et activez-le par une explosion.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Le cœur actif renouvelle une source juste au-dessus. Contenez cette sortie.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Alimentez une pompe Create pour envoyer le pétrole aux réservoirs et à la raffinerie.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Utilisez un seau de pétrole compatible sur le cœur actif pour choisir le fournisseur. Le choix est sauvegardé."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Utilisez un seau de pétrole compatible sur le cœur actif pour choisir le fournisseur. Le choix est sauvegardé.",
+  "fluid.create_water_vents.superheated_lava": "Lave surchauffée",
+  "block.create_water_vents.superheated_lava": "Lave surchauffée",
+  "item.create_water_vents.superheated_lava_bucket": "Seau de lave surchauffée"
 }

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Изложете го јадрото и активирајте го со експлозија.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Активното јадро повторно полни еден извор на масло директно над него. Содржете го овој штекер.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Напојувајте ја пумпата Create за да го исцедите излезот во резервоарите и вашата рафинерија.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Користете поддржана корпа за масло на активното јадро за да изберете добавувач. Изборот е зачуван."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Користете поддржана корпа за масло на активното јадро за да изберете добавувач. Изборот е зачуван.",
+  "fluid.create_water_vents.superheated_lava": "Прегреана лава",
+  "block.create_water_vents.superheated_lava": "Прегреана лава",
+  "item.create_water_vents.superheated_lava_bucket": "Прегреана корпа од лава"
 }

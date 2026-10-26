@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "كشف النواة وتفعيلها بالانفجار.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "يقوم القلب النشط بإعادة ملء مصدر زيت واحد فوقه مباشرة. تحتوي على هذا المنفذ.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "قم بتشغيل مضخة Create لتصريف المخرج إلى الخزانات والمصفاة الخاصة بك.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "استخدم دلو الزيت المدعوم الموجود على القلب النشط لاختيار مزود الخدمة. يتم حفظ الاختيار."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "استخدم دلو الزيت المدعوم الموجود على القلب النشط لاختيار مزود الخدمة. يتم حفظ الاختيار.",
+  "fluid.create_water_vents.superheated_lava": "الحمم شديدة السخونة",
+  "block.create_water_vents.superheated_lava": "الحمم شديدة السخونة",
+  "item.create_water_vents.superheated_lava_bucket": "دلو الحمم شديدة السخونة"
 }

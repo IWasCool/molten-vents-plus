@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Odkryj jądro i aktivuj jego eksplozijejų.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktivno jądro obnovjaje jedin iztočnik nafty pravo nad sobojų. Ogradi tutoj izhod.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Daj energijų črpalkě Create dlja črpanja nafty v rezervuary i rafinerijų.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Koristaj podpirano vědro nafty na aktivnom jądrě dlja izbora davatelja. Izbor jest shranjeny."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Koristaj podpirano vědro nafty na aktivnom jądrě dlja izbora davatelja. Izbor jest shranjeny.",
+  "fluid.create_water_vents.superheated_lava": "Prěgrěta lava",
+  "block.create_water_vents.superheated_lava": "Prěgrěta lava",
+  "item.create_water_vents.superheated_lava_bucket": "Vědro prěgrětoj lavy"
 }

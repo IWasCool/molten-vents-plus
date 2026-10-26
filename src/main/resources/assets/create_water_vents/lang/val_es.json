@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Exposar el nucli i activar-lo amb una explosió.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "El nucli actiu omple una font d'oli directament a sobre. Conté aquesta sortida.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Enceneu una bomba Create per drenar la sortida als tancs i a la vostra refineria.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Utilitzeu una galleda d'oli compatible al nucli actiu per triar un proveïdor. L'elecció es guarda."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Utilitzeu una galleda d'oli compatible al nucli actiu per triar un proveïdor. L'elecció es guarda.",
+  "fluid.create_water_vents.superheated_lava": "Lava sobreescalfada",
+  "block.create_water_vents.superheated_lava": "Lava sobreescalfada",
+  "item.create_water_vents.superheated_lava_bucket": "Cub de lava sobreescalfat"
 }

@@ -8,7 +8,7 @@ version="${mod_version}"
 displayName="${mod_name}"
 displayURL="https://github.com/IWasCool/molten-vents-plus"
 authors="Our Creation"
-credits="Molten Vents by Apothicon02 (MIT); Create by the Create team"
+credits="Molten Vents by Apothicon02 (MIT); superheated lava assets and recipe by iglee42 / Create Quality of Life (MIT); Create by the Create team"
 description='''Molten Vents Plus expands Create with water, molten and superheated vent progression, optional mineral vents, biome-dependent oil vents, JEI and animated Ponder tutorials.'''
 [[mixins]]
 config="molten_vents_plus.mixins.json"

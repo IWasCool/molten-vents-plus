@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Nukleoa agerian utzi eta leherketa batekin aktibatu.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Nukleo aktiboak olio-iturri bat zuzenean haren gainean betetzen du. Saltoki hau eduki.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Elikatu Create ponpa irteera tankeetara eta zure findegietara husteko.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Erabili nukleo aktiboan onartzen den olio-ontzi bat hornitzaile bat aukeratzeko. Aukera gordetzen da."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Erabili nukleo aktiboan onartzen den olio-ontzi bat hornitzaile bat aukeratzeko. Aukera gordetzen da.",
+  "fluid.create_water_vents.superheated_lava": "Laba gainberotua",
+  "block.create_water_vents.superheated_lava": "Laba gainberotua",
+  "item.create_water_vents.superheated_lava_bucket": "Gainberotutako Laba-ontzia"
 }

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "露出核心并用爆炸激活它。",
   "create_water_vents.ponder.oil_vent_automation.text_3": "活跃核心会补充正上方的一格石油源。请围住出口。",
   "create_water_vents.ponder.oil_vent_automation.text_4": "为机械泵提供动力，将石油抽入储罐和炼油设施。",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "对活跃核心使用受支持的油桶来选择流体提供模组。选择会被保存。"
+  "create_water_vents.ponder.oil_vent_automation.text_5": "对活跃核心使用受支持的油桶来选择流体提供模组。选择会被保存。",
+  "fluid.create_water_vents.superheated_lava": "过热熔岩",
+  "block.create_water_vents.superheated_lava": "过热熔岩",
+  "item.create_water_vents.superheated_lava_bucket": "过热熔岩桶"
 }

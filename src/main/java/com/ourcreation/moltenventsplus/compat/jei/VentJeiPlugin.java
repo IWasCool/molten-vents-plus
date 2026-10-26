@@ -12,6 +12,13 @@ import static com.ourcreation.moltenventsplus.MoltenVentsPlus.MODID;
 public final class VentJeiPlugin implements IModPlugin {
     @Override public void onRuntimeAvailable(mezz.jei.api.runtime.IJeiRuntime runtime){
         var hidden=new java.util.ArrayList<net.minecraft.world.item.ItemStack>();
+        if(com.ourcreation.moltenventsplus.registry.SuperheatedFluidRegistry.hasProvider()) {
+            hidden.add(com.ourcreation.moltenventsplus.registry.SuperheatedFluidRegistry.BUCKET.get().getDefaultInstance());
+            var fluid=new net.neoforged.neoforge.fluids.FluidStack(
+                    com.ourcreation.moltenventsplus.registry.SuperheatedFluidRegistry.SOURCE.get(),1000);
+            runtime.getIngredientManager().getIngredientTypeChecked(fluid).ifPresent(type ->
+                    runtime.getIngredientManager().removeIngredientsAtRuntime(type,java.util.List.of(fluid)));
+        }
         com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.VENTS.values().forEach(entry->{
             if(!entry.get().resource.available())hidden.add(entry.get().asItem().getDefaultInstance());
         });

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Odsłoń rdzeń i aktywuj go eksplozją.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktywny rdzeń odnawia jedno źródło ropy tuż nad sobą. Obuduj wylot.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Zasil pompę Create, aby tłoczyć ropę do zbiorników i rafinerii.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Użyj wiadra zgodnej ropy na aktywnym rdzeniu, aby wybrać dostawcę. Wybór zostaje zapisany."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Użyj wiadra zgodnej ropy na aktywnym rdzeniu, aby wybrać dostawcę. Wybór zostaje zapisany.",
+  "fluid.create_water_vents.superheated_lava": "Przegrzana lawa",
+  "block.create_water_vents.superheated_lava": "Przegrzana lawa",
+  "item.create_water_vents.superheated_lava_bucket": "Przegrzane wiadro z lawą"
 }

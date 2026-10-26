@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Espon el nucleo e atival cunt un’esplosion.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "El nucleo atif riempia una funt d’oli diretament sora. Contegn chesta presa.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Alimentà una pompa Create per spurgà la uscita in di serbatoi e in de la raffineria.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Duperà un secch de oli suportà sül nucleo atif per sceglier un furnidur. La scelta l’è salvada."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Duperà un secch de oli suportà sül nucleo atif per sceglier un furnidur. La scelta l’è salvada.",
+  "fluid.create_water_vents.superheated_lava": "Lava surriscaldada",
+  "block.create_water_vents.superheated_lava": "Lava surriscaldada",
+  "item.create_water_vents.superheated_lava_bucket": "Secch de lava surriscaldà"
 }

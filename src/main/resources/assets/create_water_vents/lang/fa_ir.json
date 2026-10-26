@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "هسته را در معرض دید قرار دهید و آن را با یک انفجار فعال کنید.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "هسته فعال یک منبع روغن را مستقیماً بالای آن پر می کند. حاوی این خروجی باشد.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "یک پمپ Create را برای تخلیه خروجی به مخازن و پالایشگاه خود روشن کنید.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "از یک سطل روغن پشتیبانی شده در هسته فعال برای انتخاب ارائه دهنده استفاده کنید. انتخاب ذخیره شده است."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "از یک سطل روغن پشتیبانی شده در هسته فعال برای انتخاب ارائه دهنده استفاده کنید. انتخاب ذخیره شده است.",
+  "fluid.create_water_vents.superheated_lava": "گدازه فوق گرم",
+  "block.create_water_vents.superheated_lava": "گدازه فوق گرم",
+  "item.create_water_vents.superheated_lava_bucket": "سطل گدازه فوق گرم"
 }

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "露其核，以爆炸啟之。",
   "create_water_vents.ponder.oil_vent_automation.text_3": "作核於正上方復生一油源，須圍其出口。",
   "create_water_vents.ponder.oil_vent_automation.text_4": "轉Create之泵，送出口之油入罐與煉油之所。",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "持適用油桶擊作核以擇油源，其選可存。"
+  "create_water_vents.ponder.oil_vent_automation.text_5": "持適用油桶擊作核以擇油源，其選可存。",
+  "fluid.create_water_vents.superheated_lava": "熾熔岩",
+  "block.create_water_vents.superheated_lava": "熾熔岩",
+  "item.create_water_vents.superheated_lava_bucket": "熾熔岩桶"
 }

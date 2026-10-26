@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Yadroni oching va uni portlash bilan faollashtiring.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Faol yadro to'g'ridan-to'g'ri uning ustidagi bitta neft manbasini to'ldiradi. Ushbu rozetkani o'z ichiga oling.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Rozetkani rezervuarlarga va neftni qayta ishlash zavodingizga tushirish uchun Create nasosni quvvatlang.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Provayderni tanlash uchun faol yadrodagi qo'llab-quvvatlanadigan moy paqiridan foydalaning. Tanlov saqlanadi."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Provayderni tanlash uchun faol yadrodagi qo'llab-quvvatlanadigan moy paqiridan foydalaning. Tanlov saqlanadi.",
+  "fluid.create_water_vents.superheated_lava": "Qizigan lava",
+  "block.create_water_vents.superheated_lava": "Qizigan lava",
+  "item.create_water_vents.superheated_lava_bucket": "Qizigan lava paqir"
 }

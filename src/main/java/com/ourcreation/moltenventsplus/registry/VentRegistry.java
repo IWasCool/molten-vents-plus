@@ -69,6 +69,7 @@ public final class VentRegistry {
                             output.accept(BuiltInRegistries.ITEM.get(ventId(VentTier.MOLTEN, stone, true)));
                         }
                         ITEMS.getEntries().forEach(item -> output.accept(item.get()));
+                        if (!SuperheatedFluidRegistry.hasProvider()) output.accept(SuperheatedFluidRegistry.BUCKET.get());
                         ResourceVentRegistry.displayItems(output);
                     })
                     .build());

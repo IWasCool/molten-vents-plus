@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "חשפו את הליבה והפעילו אותה בפיצוץ.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "הליבה הפעילה ממלאת מקור שמן אחד ישירות מעליה. תכיל את השקע הזה.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "הפעל משאבה Create כדי לנקז את השקע למכלים ולבית הזיקוק שלך.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "השתמש בדלי שמן נתמך על הליבה הפעילה כדי לבחור ספק. הבחירה נשמרת."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "השתמש בדלי שמן נתמך על הליבה הפעילה כדי לבחור ספק. הבחירה נשמרת.",
+  "fluid.create_water_vents.superheated_lava": "לבה מחוממת במיוחד",
+  "block.create_water_vents.superheated_lava": "לבה מחוממת במיוחד",
+  "item.create_water_vents.superheated_lava_bucket": "דלי לבה מחומם במיוחד"
 }

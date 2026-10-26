@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Ядрона уҫса парӑр та ӑна взрывпа ӗҫлеттерӗр.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Активлӑ ядро ​​хӑй ҫийӗнчи пӗр ҫу ҫӑлкуҫне тултарать. Ҫак розеткӑна тытса тӑрӑр.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Create насусне ӗҫлеттерсе шыв юхӑмне цистернӑсене тата хӑвӑрӑн нефть тирпейлекен завода юхтарса кӑларӑр.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Провайдера суйласа илме активлӑ ядро ​​ҫинчи пулӑшакан ҫу витрипе усӑ курӑр. Суйласа илни упранать."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Провайдера суйласа илме активлӑ ядро ​​ҫинчи пулӑшакан ҫу витрипе усӑ курӑр. Суйласа илни упранать.",
+  "fluid.create_water_vents.superheated_lava": "Ытлашши хӗрсе кайнӑ лава",
+  "block.create_water_vents.superheated_lava": "Ытлашши хӗрсе кайнӑ лава",
+  "item.create_water_vents.superheated_lava_bucket": "Ытлашши хӗртнӗ лава витри"
 }

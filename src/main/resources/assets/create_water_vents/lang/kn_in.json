@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "ಕೋರ್ ಅನ್ನು ಬಹಿರಂಗಪಡಿಸಿ ಮತ್ತು ಅದನ್ನು ಸ್ಫೋಟದೊಂದಿಗೆ ಸಕ್ರಿಯಗೊಳಿಸಿ.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "ಸಕ್ರಿಯ ಕೋರ್ ಅದರ ಮೇಲೆ ನೇರವಾಗಿ ಒಂದು ತೈಲ ಮೂಲವನ್ನು ಪುನಃ ತುಂಬಿಸುತ್ತದೆ. ಈ ಔಟ್ಲೆಟ್ ಅನ್ನು ಹೊಂದಿರಿ.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "ಔಟ್‌ಲೆಟ್ ಅನ್ನು ಟ್ಯಾಂಕ್‌ಗಳು ಮತ್ತು ನಿಮ್ಮ ಸಂಸ್ಕರಣಾಗಾರಕ್ಕೆ ಹರಿಸಲು Create ಪಂಪ್ ಅನ್ನು ಪವರ್ ಮಾಡಿ.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "ಪೂರೈಕೆದಾರರನ್ನು ಆಯ್ಕೆ ಮಾಡಲು ಸಕ್ರಿಯ ಕೋರ್‌ನಲ್ಲಿ ಬೆಂಬಲಿತ ತೈಲ ಬಕೆಟ್ ಅನ್ನು ಬಳಸಿ. ಆಯ್ಕೆಯನ್ನು ಉಳಿಸಲಾಗಿದೆ."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "ಪೂರೈಕೆದಾರರನ್ನು ಆಯ್ಕೆ ಮಾಡಲು ಸಕ್ರಿಯ ಕೋರ್‌ನಲ್ಲಿ ಬೆಂಬಲಿತ ತೈಲ ಬಕೆಟ್ ಅನ್ನು ಬಳಸಿ. ಆಯ್ಕೆಯನ್ನು ಉಳಿಸಲಾಗಿದೆ.",
+  "fluid.create_water_vents.superheated_lava": "ಸೂಪರ್ಹೀಟೆಡ್ ಲಾವಾ",
+  "block.create_water_vents.superheated_lava": "ಸೂಪರ್ಹೀಟೆಡ್ ಲಾವಾ",
+  "item.create_water_vents.superheated_lava_bucket": "ಸೂಪರ್ಹೀಟೆಡ್ ಲಾವಾ ಬಕೆಟ್"
 }

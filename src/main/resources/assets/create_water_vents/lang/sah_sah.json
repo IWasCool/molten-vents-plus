@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Ядрону арыйан баран, дэлби тэбиитинэн үлэлэт.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Активнай ядро ​​бэйэтин үрдүгэр баар биир нефть источнигын толорор. Бу розетканы тутуҥ.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Create насос уотун ылан, ыстаансыйаҕа уонна ньиэп ыраастыыр ​​собуоккар уу таһаар.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Провайдеры таларгар активнай ядроҕа баар өйөнөр мас ведротун туһан. Талыы харыстанар."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Провайдеры таларгар активнай ядроҕа баар өйөнөр мас ведротун туһан. Талыы харыстанар.",
+  "fluid.create_water_vents.superheated_lava": "Аһара сылытыллыбыт лава",
+  "block.create_water_vents.superheated_lava": "Аһара сылытыллыбыт лава",
+  "item.create_water_vents.superheated_lava_bucket": "Аһара сылытыллыбыт лава биэдэрэ"
 }

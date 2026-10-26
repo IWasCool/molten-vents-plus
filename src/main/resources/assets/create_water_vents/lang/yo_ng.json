@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Fi mojuto ati muu ṣiṣẹ pẹlu bugbamu.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Kokoro ti nṣiṣe lọwọ ṣatunkun orisun epo kan taara loke rẹ. Ni yi iṣan ninu.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Fi agbara fifa Create kan lati fa iṣan jade sinu awọn tanki ati ile isọdọtun rẹ.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Lo garawa epo ti o ni atilẹyin lori mojuto ti nṣiṣe lọwọ lati yan olupese kan. Yiyan ti wa ni fipamọ."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Lo garawa epo ti o ni atilẹyin lori mojuto ti nṣiṣe lọwọ lati yan olupese kan. Yiyan ti wa ni fipamọ.",
+  "fluid.create_water_vents.superheated_lava": "Superheated Lava",
+  "block.create_water_vents.superheated_lava": "Superheated Lava",
+  "item.create_water_vents.superheated_lava_bucket": "Superheated Lava garawa"
 }

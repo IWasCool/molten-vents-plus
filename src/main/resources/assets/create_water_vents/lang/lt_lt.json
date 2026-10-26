@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Atidenkite šerdį ir suaktyvinkite ją sprogimu.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktyvioji šerdis papildo vieną alyvos šaltinį tiesiai virš jo. Turėkite šią išleidimo angą.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Įjunkite Create siurblį, kad išleistumėte išleidimo angą į bakus ir jūsų naftos perdirbimo gamyklą.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Norėdami pasirinkti tiekėją, naudokite palaikomą alyvos kibirą ant aktyvios šerdies. Pasirinkimas išsaugotas."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Norėdami pasirinkti tiekėją, naudokite palaikomą alyvos kibirą ant aktyvios šerdies. Pasirinkimas išsaugotas.",
+  "fluid.create_water_vents.superheated_lava": "Perkaitinta lava",
+  "block.create_water_vents.superheated_lava": "Perkaitinta lava",
+  "item.create_water_vents.superheated_lava_bucket": "Perkaitintas lavos kibiras"
 }

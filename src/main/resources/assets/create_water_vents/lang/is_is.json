@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Afhjúpaðu kjarnann og virkjaðu hann með sprengingu.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Virki kjarninn fyllir á eina olíugjafa beint fyrir ofan hann. Geymdu þessa útrás.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Kveiktu á Create dælu til að tæma úttakið í tanka og hreinsunarstöðina þína.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Notaðu studda olíufötu á virka kjarnanum til að velja þjónustuaðila. Valið er vistað."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Notaðu studda olíufötu á virka kjarnanum til að velja þjónustuaðila. Valið er vistað.",
+  "fluid.create_water_vents.superheated_lava": "Ofhitað hraun",
+  "block.create_water_vents.superheated_lava": "Ofhitað hraun",
+  "item.create_water_vents.superheated_lava_bucket": "Ofhituð hraunföta"
 }

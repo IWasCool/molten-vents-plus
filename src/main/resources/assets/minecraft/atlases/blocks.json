@@ -1,0 +1,6 @@
+{
+  "sources": [
+    { "type": "single", "resource": "create_water_vents:fluid/superheated_lava_still" },
+    { "type": "single", "resource": "create_water_vents:fluid/superheated_lava_flow" }
+  ]
+}

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Dedahkan teras dan aktifkannya dengan letupan.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Teras aktif mengisi semula satu sumber minyak tepat di atasnya. Mengandungi outlet ini.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Kuasakan pam Create untuk mengalirkan alur keluar ke dalam tangki dan kilang penapisan anda.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Gunakan baldi minyak yang disokong pada teras aktif untuk memilih pembekal. Pilihan disimpan."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Gunakan baldi minyak yang disokong pada teras aktif untuk memilih pembekal. Pilihan disimpan.",
+  "fluid.create_water_vents.superheated_lava": "Lava yang sangat panas",
+  "block.create_water_vents.superheated_lava": "Lava yang sangat panas",
+  "item.create_water_vents.superheated_lava_bucket": "Baldi Lava Terlalu Panas"
 }

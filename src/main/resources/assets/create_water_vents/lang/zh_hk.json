@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "暴露核心並透過爆炸來活化它。",
   "create_water_vents.ponder.oil_vent_automation.text_3": "活性核心在其正上方重新填充一個油源。包含此插座。",
   "create_water_vents.ponder.oil_vent_automation.text_4": "為 Create 幫浦供電，將出口排入儲槽和煉油廠。",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "使用活動核心上支援的油桶來選擇提供者。選擇已儲存。"
+  "create_water_vents.ponder.oil_vent_automation.text_5": "使用活動核心上支援的油桶來選擇提供者。選擇已儲存。",
+  "fluid.create_water_vents.superheated_lava": "過熱熔岩",
+  "block.create_water_vents.superheated_lava": "過熱熔岩",
+  "item.create_water_vents.superheated_lava_bucket": "過熱熔岩桶"
 }

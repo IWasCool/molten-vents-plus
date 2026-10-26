@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "코어를 드러내고 폭발로 활성화하세요.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "활성 코어는 바로 위의 석유 공급원 한 칸을 다시 채웁니다. 출구를 둘러싸세요.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Create 펌프에 동력을 공급하여 석유를 탱크와 정유 시설로 보내세요.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "활성 코어에 호환되는 기름 양동이를 사용해 공급 모드를 선택하세요. 선택은 저장됩니다."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "활성 코어에 호환되는 기름 양동이를 사용해 공급 모드를 선택하세요. 선택은 저장됩니다.",
+  "fluid.create_water_vents.superheated_lava": "초고열 용암",
+  "block.create_water_vents.superheated_lava": "초고열 용암",
+  "item.create_water_vents.superheated_lava_bucket": "초고열 용암 양동이"
 }

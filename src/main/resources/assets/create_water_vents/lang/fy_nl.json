@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Blêdzje de kearn en aktivearje it mei in eksploazje.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "De aktive kearn refills ien oalje boarne direkt boppe it. Befette dizze útgong.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Stjoer in Create-pomp oan om de útlaat te drainearjen yn tanks en jo raffinaderij.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Brûk in stipe oaljeemmer op 'e aktive kearn om in provider te kiezen. De kar wurdt bewarre."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Brûk in stipe oaljeemmer op 'e aktive kearn om in provider te kiezen. De kar wurdt bewarre.",
+  "fluid.create_water_vents.superheated_lava": "Superheated Lava",
+  "block.create_water_vents.superheated_lava": "Superheated Lava",
+  "item.create_water_vents.superheated_lava_bucket": "Superheated Lava Emmer"
 }

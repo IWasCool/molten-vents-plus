@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Buka inti dan aktifkan dengan ledakan.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Inti aktif mengisi ulang satu sumber minyak tepat di atasnya. Berisi outlet ini.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Nyalakan pompa Create untuk mengalirkan saluran keluar ke tangki dan kilang Anda.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Gunakan ember oli yang didukung pada inti aktif untuk memilih penyedia. Pilihannya disimpan."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Gunakan ember oli yang didukung pada inti aktif untuk memilih penyedia. Pilihannya disimpan.",
+  "fluid.create_water_vents.superheated_lava": "Lava Super Panas",
+  "block.create_water_vents.superheated_lava": "Lava Super Panas",
+  "item.create_water_vents.superheated_lava_bucket": "Ember Lava Super Panas"
 }

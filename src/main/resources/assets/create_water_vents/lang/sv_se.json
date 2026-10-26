@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Exponera kärnan och aktivera den med en explosion.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Den aktiva kärnan fyller på en oljekälla direkt ovanför den. Innehåll detta uttag.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Driv en Create-pump för att dränera utloppet till tankar och ditt raffinaderi.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Använd en stödd oljehink på den aktiva kärnan för att välja en leverantör. Valet sparas."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Använd en stödd oljehink på den aktiva kärnan för att välja en leverantör. Valet sparas.",
+  "fluid.create_water_vents.superheated_lava": "Överhettad lava",
+  "block.create_water_vents.superheated_lava": "Överhettad lava",
+  "item.create_water_vents.superheated_lava_bucket": "Överhettad lavahink"
 }

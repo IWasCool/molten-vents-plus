@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Frigør kernen og aktiver den med en eksplosion.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Den aktive kerne genopfylder en oliekilde lige over den. Indeholder denne stikkontakt.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Sæt strøm til en Create-pumpe for at dræne udløbet til tanke og dit raffinaderi.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Brug en understøttet oliespand på den aktive kerne til at vælge en leverandør. Valget er gemt."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Brug en understøttet oliespand på den aktive kerne til at vælge en leverandør. Valget er gemt.",
+  "fluid.create_water_vents.superheated_lava": "Overophedet lava",
+  "block.create_water_vents.superheated_lava": "Overophedet lava",
+  "item.create_water_vents.superheated_lava_bucket": "Overophedet lavaspand"
 }

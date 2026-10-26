@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Paljasta ydin ja aktivoi se räjähdyksellä.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktiivinen ydin täyttää yhden öljylähteen suoraan sen yläpuolella. Sisällytä tämä ulostulo.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Käytä Create-pumppua tyhjentämään ulostulo säiliöihin ja jalostamollesi.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Käytä tuettua öljysäiliötä aktiivisessa sydämessä valitaksesi toimittajan. Valinta on tallennettu."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Käytä tuettua öljysäiliötä aktiivisessa sydämessä valitaksesi toimittajan. Valinta on tallennettu.",
+  "fluid.create_water_vents.superheated_lava": "Tulistettu Lava",
+  "block.create_water_vents.superheated_lava": "Tulistettu Lava",
+  "item.create_water_vents.superheated_lava_bucket": "Tulistettu Lava-ämpäri"
 }

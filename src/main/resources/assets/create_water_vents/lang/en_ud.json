@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "˙uoᴉsoldxǝ uɐ ɥʇᴉʍ ʇᴉ ǝʇɐʌᴉʇɔɐ puɐ ǝɹoɔ ǝɥʇ ǝsodxƎ",
   "create_water_vents.ponder.oil_vent_automation.text_3": "˙ʇǝlʇno sᴉɥʇ uᴉɐʇuoƆ ˙ʇᴉ ǝʌoqɐ ʎlʇɔǝɹᴉp ǝɔɹnos lᴉo ǝuo sllᴉɟǝɹ ǝɹoɔ ǝʌᴉʇɔɐ ǝɥ⊥",
   "create_water_vents.ponder.oil_vent_automation.text_4": "˙ʎɹǝuᴉɟǝɹ ɹnoʎ puɐ sʞuɐʇ oʇuᴉ ʇǝlʇno ǝɥʇ uᴉɐɹp oʇ dɯnd ǝʇɐǝɹƆ ɐ ɹǝʍoԀ",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "˙pǝʌɐs sᴉ ǝɔᴉoɥɔ ǝɥ⊥ ˙ɹǝpᴉʌoɹd ɐ ǝsooɥɔ oʇ ǝɹoɔ ǝʌᴉʇɔɐ ǝɥʇ uo ʇǝʞɔnq lᴉo pǝʇɹoddns ɐ ǝs∩"
+  "create_water_vents.ponder.oil_vent_automation.text_5": "˙pǝʌɐs sᴉ ǝɔᴉoɥɔ ǝɥ⊥ ˙ɹǝpᴉʌoɹd ɐ ǝsooɥɔ oʇ ǝɹoɔ ǝʌᴉʇɔɐ ǝɥʇ uo ʇǝʞɔnq lᴉo pǝʇɹoddns ɐ ǝs∩",
+  "fluid.create_water_vents.superheated_lava": "Superheated Lava",
+  "block.create_water_vents.superheated_lava": "Superheated Lava",
+  "item.create_water_vents.superheated_lava_bucket": "Superheated Lava Bucket"
 }

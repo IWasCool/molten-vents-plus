@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Lộ lõi và kích hoạt nó bằng một vụ nổ.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Lõi hoạt động nạp lại một nguồn dầu ngay phía trên nó. Chứa ổ cắm này.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Cấp nguồn cho máy bơm Create để thoát nước ra khỏi bể chứa và nhà máy lọc dầu của bạn.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Sử dụng thùng dầu được hỗ trợ trên lõi hoạt động để chọn nhà cung cấp. Sự lựa chọn đã được lưu."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Sử dụng thùng dầu được hỗ trợ trên lõi hoạt động để chọn nhà cung cấp. Sự lựa chọn đã được lưu.",
+  "fluid.create_water_vents.superheated_lava": "Dung nham quá nóng",
+  "block.create_water_vents.superheated_lava": "Dung nham quá nóng",
+  "item.create_water_vents.superheated_lava_bucket": "Xô dung nham quá nhiệt"
 }

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Amlygwch y craidd a'i actifadu â ffrwydrad.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Mae'r craidd gweithredol yn ail-lenwi un ffynhonnell olew yn union uwch ei ben. Cynhwyswch yr allfa hon.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Pweru pwmp Create i ddraenio'r allfa i danciau a'ch purfa.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Defnyddiwch fwced olew â chymorth ar y craidd gweithredol i ddewis darparwr. Mae'r dewis yn cael ei arbed."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Defnyddiwch fwced olew â chymorth ar y craidd gweithredol i ddewis darparwr. Mae'r dewis yn cael ei arbed.",
+  "fluid.create_water_vents.superheated_lava": "Lafa wedi'i gynhesu'n ormodol",
+  "block.create_water_vents.superheated_lava": "Lafa wedi'i gynhesu'n ormodol",
+  "item.create_water_vents.superheated_lava_bucket": "Bwced lafa wedi'i chynhesu'n fawr"
 }

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Atklājiet serdi un aktivizējiet to ar sprādzienu.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktīvā kodols uzpilda vienu eļļas avotu tieši virs tā. Ietveriet šo izeju.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Iedarbiniet Create sūkni, lai iztukšotu izplūdes atveri tvertnēs un jūsu rafinēšanas rūpnīcā.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Lai izvēlētos piegādātāju, izmantojiet aktīvā serdeņa atbalstīto eļļas spaini. Izvēle ir saglabāta."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Lai izvēlētos piegādātāju, izmantojiet aktīvā serdeņa atbalstīto eļļas spaini. Izvēle ir saglabāta.",
+  "fluid.create_water_vents.superheated_lava": "Pārkarsēta lava",
+  "block.create_water_vents.superheated_lava": "Pārkarsēta lava",
+  "item.create_water_vents.superheated_lava_bucket": "Pārkarsēts lavas spainis"
 }

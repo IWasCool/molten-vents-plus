@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Çekirdeği açığa çıkarın ve onu bir patlamayla etkinleştirin.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktif çekirdek doğrudan üstündeki bir petrol kaynağını yeniden doldurur. Bu çıkışı kontrol altına alın.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Çıkışı tanklara ve rafinerinize boşaltmak için bir Create pompaya güç verin.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Bir sağlayıcı seçmek için aktif çekirdek üzerinde desteklenen bir yağ kovası kullanın. Seçim kaydedildi."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Bir sağlayıcı seçmek için aktif çekirdek üzerinde desteklenen bir yağ kovası kullanın. Seçim kaydedildi.",
+  "fluid.create_water_vents.superheated_lava": "Kızgın Lav",
+  "block.create_water_vents.superheated_lava": "Kızgın Lav",
+  "item.create_water_vents.superheated_lava_bucket": "Kızgın Lav Kovası"
 }

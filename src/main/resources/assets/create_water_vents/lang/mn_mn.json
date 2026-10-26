@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Цөмийг ил гаргаж, дэлбэрэлтээр идэвхжүүлнэ.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Идэвхтэй цөм нь газрын тосны нэг эх үүсвэрийг шууд дээрээс нь дүүргэдэг. Энэ гарцыг агуулна.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Create насосыг ажиллуулж, танк болон боловсруулах үйлдвэрийнхээ гаралтын хоолойг зайлуулна.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Үйлчилгээ үзүүлэгчийг сонгохын тулд идэвхтэй гол дээр дэмжигдсэн тосны хувин ашиглана уу. Сонголтыг хадгалсан."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Үйлчилгээ үзүүлэгчийг сонгохын тулд идэвхтэй гол дээр дэмжигдсэн тосны хувин ашиглана уу. Сонголтыг хадгалсан.",
+  "fluid.create_water_vents.superheated_lava": "Хэт халсан лаав",
+  "block.create_water_vents.superheated_lava": "Хэт халсан лаав",
+  "item.create_water_vents.superheated_lava_bucket": "Хэт халсан лаав хувин"
 }

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "E hōʻike i ke kumu a hoʻōla iā ia me kahi pahū.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Hoʻopiha hou ke kumu hana i hoʻokahi kumu aila ma luna pono. Loaʻa i kēia puka.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "E hoʻoikaika i ka ʻume Create e hoʻokahe i ka puka i loko o nā pahu a me kāu mea hoʻomaʻemaʻe.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "E hoʻohana i kahi bakeke ʻaila i kākoʻo ʻia ma ke kumu ikaika e koho i kahi mea hoʻolako. Mālama ʻia ka koho."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "E hoʻohana i kahi bakeke ʻaila i kākoʻo ʻia ma ke kumu ikaika e koho i kahi mea hoʻolako. Mālama ʻia ka koho.",
+  "fluid.create_water_vents.superheated_lava": "Lava wela loa",
+  "block.create_water_vents.superheated_lava": "Lava wela loa",
+  "item.create_water_vents.superheated_lava_bucket": "Bike Lava wela loa"
 }

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Выкрыйце ядро ​​і актывуйце яго выбухам.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Актыўны стрыжань папаўняе адну крыніцу алею непасрэдна над ім. Утрымлівайце гэтую разетку.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Уключыце Create помпа, каб асушыць выхад у рэзервуары і ваш нафтаперапрацоўчы завод.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Каб выбраць пастаўшчыка, выкарыстоўвайце падтрымоўванае алейнае вядро на актыўным ядры. Выбар захаваны."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Каб выбраць пастаўшчыка, выкарыстоўвайце падтрымоўванае алейнае вядро на актыўным ядры. Выбар захаваны.",
+  "fluid.create_water_vents.superheated_lava": "Перагрэтая лава",
+  "block.create_water_vents.superheated_lava": "Перагрэтая лава",
+  "item.create_water_vents.superheated_lava_bucket": "Перагрэтае вядро лавы"
 }

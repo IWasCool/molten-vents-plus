@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Espone el nucleo e ativalo co na esploxion.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "El nucleo ativo el riempie na fonte de ojo diretamente sora de lu. Contegni sta presa.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Alimenta na pompa Create per drenare la presa nei serbatoi e ne la vostra rafineria.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Dopara un secio de ojo sostegnùo sul nucleo ativo pa sièłiere un fornidore. Ła sielta ła xe salvà."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Dopara un secio de ojo sostegnùo sul nucleo ativo pa sièłiere un fornidore. Ła sielta ła xe salvà.",
+  "fluid.create_water_vents.superheated_lava": "Lava sorariscaldada",
+  "block.create_water_vents.superheated_lava": "Lava sorariscaldada",
+  "item.create_water_vents.superheated_lava_bucket": "Secio de lava sorariscaldà"
 }

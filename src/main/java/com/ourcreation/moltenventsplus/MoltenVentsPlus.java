@@ -11,6 +11,7 @@ public final class MoltenVentsPlus {
     public static final String MODID = "create_water_vents";
 
     public MoltenVentsPlus(IEventBus bus, ModContainer container) {
+        com.ourcreation.moltenventsplus.registry.SuperheatedFluidRegistry.register(bus);
         VentRegistry.register(bus);
         com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.register(bus);
         com.ourcreation.moltenventsplus.vent.VentSettings.register();

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Odhalte jádro a aktivujte jej výbuchem.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktivní jádro doplňuje jeden zdroj oleje přímo nad ním. Obsahujte tuto zásuvku.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Zapněte čerpadlo Create k vypuštění výstupu do nádrží a vaší rafinerie.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Pro výběr dodavatele použijte podporovanou nádobu na olej na aktivním jádru. Volba se uloží."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Pro výběr dodavatele použijte podporovanou nádobu na olej na aktivním jádru. Volba se uloží.",
+  "fluid.create_water_vents.superheated_lava": "Přehřátá láva",
+  "block.create_water_vents.superheated_lava": "Přehřátá láva",
+  "item.create_water_vents.superheated_lava_bucket": "Přehřátý lávový kbelík"
 }

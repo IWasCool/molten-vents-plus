@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "EXPOSE DA CORE AND WAKE UP IT WITH AN EXPLOSION.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "DA AWAKE CORE REFILLS ONE OIL SAUCE DIRECTLY ABOVE IT. CONTAIN THIS OUTLET.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "POWER A CREATE PUMP TO DRAIN DA OUTLET INTO TANKS AND UR REFINERY.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "USE A SUPPORTED OIL BUCKET ON DA AWAKE CORE TO CHOOSE A PROVIDER. DA CHOICE IZ SAVED."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "USE A SUPPORTED OIL BUCKET ON DA AWAKE CORE TO CHOOSE A PROVIDER. DA CHOICE IZ SAVED.",
+  "fluid.create_water_vents.superheated_lava": "SUPER HOT LAVA",
+  "block.create_water_vents.superheated_lava": "SUPER HOT LAVA",
+  "item.create_water_vents.superheated_lava_bucket": "BUKKIT OF SUPER HOT LAVA"
 }

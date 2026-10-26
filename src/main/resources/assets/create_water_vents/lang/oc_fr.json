@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Expausatz lo nuclèu e l'activatz amb una explosion.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Lo nuclèu actiu remplís una font d'òli dirèctament al dessús. Conténer aquesta sortida.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Alimentatz una pompa Create per drenar la sortida dins los tancs e vòstra rafinariá.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Utilizatz un seau d'òli suportat sul nuclèu actiu per causir un provesidor. La causida es enregistrada."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Utilizatz un seau d'òli suportat sul nuclèu actiu per causir un provesidor. La causida es enregistrada.",
+  "fluid.create_water_vents.superheated_lava": "Lava subrecalfada",
+  "block.create_water_vents.superheated_lava": "Lava subrecalfada",
+  "item.create_water_vents.superheated_lava_bucket": "Cubeta de lava subrecalfada"
 }

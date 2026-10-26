@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Nucleum aperi et explosione excita.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Nucleus agens unum fontem petrolei recta supra se replet. Hunc exitum contine.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Sentinam Create age ut petroleum ex exitu in cisternas et officinam purgatoriam ducas.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Situla petrolei idonea in nucleo agente utere ut originem eligas. Electio servatur."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Situla petrolei idonea in nucleo agente utere ut originem eligas. Electio servatur.",
+  "fluid.create_water_vents.superheated_lava": "Lava supercalida",
+  "block.create_water_vents.superheated_lava": "Lava supercalida",
+  "item.create_water_vents.superheated_lava_bucket": "Situla lavae supercalidae"
 }

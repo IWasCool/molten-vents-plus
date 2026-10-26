@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Vykryjcie jadro ​​i aktyvujcie jaho vybucham.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktyŭny stryžań papaŭniaje adnu krynicu ałieju niepasredna nad im. Utrymłivajcie hetuju razietku.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Ukłiučycie Create pompa, kab asušyć vychad u reziervuary i vaš naftapierapracoŭčy zavod.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Kab vybrać pastaŭščyka, vykarystoŭvajcie padtrymoŭvanaje ałiejnaje viadro na aktyŭnym jadry. Vybar zachavany."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Kab vybrać pastaŭščyka, vykarystoŭvajcie padtrymoŭvanaje ałiejnaje viadro na aktyŭnym jadry. Vybar zachavany.",
+  "fluid.create_water_vents.superheated_lava": "Перагрэтая лава",
+  "block.create_water_vents.superheated_lava": "Перагрэтая лава",
+  "item.create_water_vents.superheated_lava_bucket": "Перагрэтае вядро лавы"
 }

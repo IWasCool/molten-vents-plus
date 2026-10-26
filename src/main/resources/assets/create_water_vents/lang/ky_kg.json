@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Өзөктү ачып, аны жарылуу менен иштетиңиз.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Активдүү өзөк бир мунай булагын түздөн-түз анын үстүндө толтурат. Бул розетканы камтыңыз.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Create насосту резервуарларга жана мунай иштетүүчү заводуңузга агызыңыз.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Провайдерди тандоо үчүн активдүү өзөктө колдоого алынган май челек колдонуңуз. Тандоо сакталды."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Провайдерди тандоо үчүн активдүү өзөктө колдоого алынган май челек колдонуңуз. Тандоо сакталды.",
+  "fluid.create_water_vents.superheated_lava": "Ашыкча ысытылган лава",
+  "block.create_water_vents.superheated_lava": "Ашыкча ысытылган лава",
+  "item.create_water_vents.superheated_lava_bucket": "Ашыкча ысытылган лава чакасы"
 }

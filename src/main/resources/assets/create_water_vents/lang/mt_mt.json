@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Esponi l-qalba u attivaha bi splużjoni.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Il-qalba attiva timla sors wieħed taż-żejt direttament fuqha. Fih dan l-iżbokk.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Iħaddem pompa Create biex tixxotta l-iżbokk fit-tankijiet u fir-raffinerija tiegħek.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Uża barmil taż-żejt appoġġjat fuq il-qalba attiva biex tagħżel fornitur. L-għażla tiġi salvata."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Uża barmil taż-żejt appoġġjat fuq il-qalba attiva biex tagħżel fornitur. L-għażla tiġi salvata.",
+  "fluid.create_water_vents.superheated_lava": "Lava msaħħna żżejjed",
+  "block.create_water_vents.superheated_lava": "Lava msaħħna żżejjed",
+  "item.create_water_vents.superheated_lava_bucket": "Barmil Lava Superheated"
 }

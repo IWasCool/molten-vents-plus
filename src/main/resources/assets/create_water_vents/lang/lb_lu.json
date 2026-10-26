@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Beliicht de Kär an aktivéiert et mat enger Explosioun.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Den aktive Kär fëllt eng Uelegquell direkt driwwer. Enthält dësen Outlet.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Maacht eng Create Pompel fir den Outlet an Tanks an Är Raffinerie ze drainéieren.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Benotzt eng ënnerstëtzt Ueleg Eemer op der aktiv Kär engem Provider ze wielen. De Choix gëtt gespäichert."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Benotzt eng ënnerstëtzt Ueleg Eemer op der aktiv Kär engem Provider ze wielen. De Choix gëtt gespäichert.",
+  "fluid.create_water_vents.superheated_lava": "Iwwerhëtzt Lava",
+  "block.create_water_vents.superheated_lava": "Iwwerhëtzt Lava",
+  "item.create_water_vents.superheated_lava_bucket": "Superheated Lava Eemer"
 }

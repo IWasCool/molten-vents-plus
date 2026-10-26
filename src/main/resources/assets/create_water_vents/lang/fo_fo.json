@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Avdúka kjarnuna og virkja hann við spreinging.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Virkni kjarnin fyllir eina oljukeldu beint omanfyri hann. Innihalda hesa útsøluna.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Streym eina Create pumpu til at drena úttøkuna í tangar og títt reinsiverk.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Brúka eina stuðlaða oljuspann á virkna kjarnuni til at velja ein veitara. Valið er bjargað."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Brúka eina stuðlaða oljuspann á virkna kjarnuni til at velja ein veitara. Valið er bjargað.",
+  "fluid.create_water_vents.superheated_lava": "Ovurhitað Lava",
+  "block.create_water_vents.superheated_lava": "Ovurhitað Lava",
+  "item.create_water_vents.superheated_lava_bucket": "Ovurhitað lavaspann"
 }

@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "ເປີດ​ອອກ​ຫຼັກ​ແລະ​ກະ​ຕຸ້ນ​ມັນ​ດ້ວຍ​ການ​ລະ​ເບີດ​.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "ແກນທີ່ຫ້າວຫັນເຕີມນ້ຳມັນໜຶ່ງແຫຼ່ງໂດຍກົງຂ້າງເທິງມັນ. ບັນຈຸຊ່ອງສຽບນີ້.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "ພະລັງງານປໍ້າ Create ເພື່ອລະບາຍທໍ່ອອກໄປສູ່ຖັງ ແລະໂຮງງານກັ່ນນໍ້າມັນຂອງທ່ານ.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "ໃຊ້ຖັງນໍ້າມັນທີ່ຮອງຮັບໃນຫຼັກທີ່ໃຊ້ໄດ້ເພື່ອເລືອກຜູ້ໃຫ້ບໍລິການ. ທາງເລືອກໄດ້ຖືກບັນທຶກໄວ້."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "ໃຊ້ຖັງນໍ້າມັນທີ່ຮອງຮັບໃນຫຼັກທີ່ໃຊ້ໄດ້ເພື່ອເລືອກຜູ້ໃຫ້ບໍລິການ. ທາງເລືອກໄດ້ຖືກບັນທຶກໄວ້.",
+  "fluid.create_water_vents.superheated_lava": "Lava ຮ້ອນ",
+  "block.create_water_vents.superheated_lava": "Lava ຮ້ອນ",
+  "item.create_water_vents.superheated_lava_bucket": "Superheated Lava Bucket"
 }

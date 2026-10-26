@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Legen Sie den Kern frei und aktivieren Sie ihn mit einer Explosion.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Der aktive Kern füllt eine Ölquelle direkt darüber auf. Enthalten Sie diese Steckdose.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Betreiben Sie eine Create-Pumpe, um den Auslass in Tanks und Ihre Raffinerie zu entleeren.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Verwenden Sie einen unterstützten Öleimer auf dem aktiven Kern, um einen Anbieter auszuwählen. Die Auswahl wird gespeichert."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Verwenden Sie einen unterstützten Öleimer auf dem aktiven Kern, um einen Anbieter auszuwählen. Die Auswahl wird gespeichert.",
+  "fluid.create_water_vents.superheated_lava": "Überhitzte Lava",
+  "block.create_water_vents.superheated_lava": "Überhitzte Lava",
+  "item.create_water_vents.superheated_lava_bucket": "Eimer überhitzte Lava"
 }

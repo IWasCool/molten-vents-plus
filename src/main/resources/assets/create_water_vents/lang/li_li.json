@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Maak de kern bloot en activeer ‘m mit ‘n explosie.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "De actieve kern vult ein oliebron direk baove op. Bevat dit stopcontact.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Stuur ‘n Create pomp aan um de oetlaot in de tanks en eur raffinaderij te leide.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Gebruuk un ondersteunde oliebak op de actieve kern um un leverancier te keze. De keuze is opgeslage."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Gebruuk un ondersteunde oliebak op de actieve kern um un leverancier te keze. De keuze is opgeslage.",
+  "fluid.create_water_vents.superheated_lava": "Oververhitte lava",
+  "block.create_water_vents.superheated_lava": "Oververhitte lava",
+  "item.create_water_vents.superheated_lava_bucket": "Oververhitte lava-emmer"
 }

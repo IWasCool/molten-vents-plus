@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Eksponu la kernon kaj aktivigu ĝin per eksplodo.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "La aktiva kerno replenigas unu naftofonton rekte super ĝi. Enhavu ĉi tiun ellasejon.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Elektu Create pumpilon por dreni la ellasejon en tankojn kaj vian rafinejon.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Uzu subtenata oleositelo sur la aktiva kerno por elekti provizanton. La elekto estas konservita."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Uzu subtenata oleositelo sur la aktiva kerno por elekti provizanton. La elekto estas konservita.",
+  "fluid.create_water_vents.superheated_lava": "Supervarmigita Lafo",
+  "block.create_water_vents.superheated_lava": "Supervarmigita Lafo",
+  "item.create_water_vents.superheated_lava_bucket": "Supervarmigita Lava Sitelo"
 }

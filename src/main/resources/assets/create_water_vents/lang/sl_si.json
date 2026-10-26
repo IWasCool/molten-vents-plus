@@ -168,5 +168,8 @@
   "create_water_vents.ponder.oil_vent_automation.text_2": "Izpostavite jedro in ga aktivirajte z eksplozijo.",
   "create_water_vents.ponder.oil_vent_automation.text_3": "Aktivno jedro ponovno polni en vir olja neposredno nad njim. Zadrži to vtičnico.",
   "create_water_vents.ponder.oil_vent_automation.text_4": "Napajajte Create črpalko, da izpustite izhod v rezervoarje in vašo rafinerijo.",
-  "create_water_vents.ponder.oil_vent_automation.text_5": "Za izbiro ponudnika uporabite podprto vedro za olje na aktivnem jedru. Izbira je shranjena."
+  "create_water_vents.ponder.oil_vent_automation.text_5": "Za izbiro ponudnika uporabite podprto vedro za olje na aktivnem jedru. Izbira je shranjena.",
+  "fluid.create_water_vents.superheated_lava": "Pregreta lava",
+  "block.create_water_vents.superheated_lava": "Pregreta lava",
+  "item.create_water_vents.superheated_lava_bucket": "Pregreto vedro lave"
 }
