@@ -1,0 +1,8 @@
+{
+  "parent": "create_water_vents:block/active_water_asurine",
+  "textures": {
+    "all": "minecraft:block/stone",
+    "particle": "minecraft:block/stone",
+    "fluid": "minecraft:block/water_still"
+  }
+}

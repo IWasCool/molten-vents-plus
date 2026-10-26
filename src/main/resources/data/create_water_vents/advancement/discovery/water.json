@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "discover": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "create_water_vents:active_water_asurine"
+    },
+    "title": {
+      "translate": "create_water_vents.discovery.water"
+    },
+    "description": {
+      "translate": "create_water_vents.tooltip.water"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "create_water_vents:discovery/root"
+}

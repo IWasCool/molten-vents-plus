@@ -1,0 +1,29 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_water_vents:pure_ochrum"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "id": "create:crushed_raw_gold",
+      "count": 1
+    },
+    {
+      "id": "minecraft:gold_nugget",
+      "count": 1
+    },
+    {
+      "id": "create:crushed_raw_gold",
+      "count": 1,
+      "chance": 0.6
+    },
+    {
+      "id": "minecraft:gold_nugget",
+      "count": 1,
+      "chance": 0.6
+    }
+  ]
+}

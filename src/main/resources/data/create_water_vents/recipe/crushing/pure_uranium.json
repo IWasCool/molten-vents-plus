@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "createnuclear:uranium_ore"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_water_vents:pure_uranium"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "id": "create:crushed_raw_uranium",
+      "count": 8
+    },
+    {
+      "id": "create_water_vents:uranium_nugget",
+      "count": 8
+    }
+  ]
+}

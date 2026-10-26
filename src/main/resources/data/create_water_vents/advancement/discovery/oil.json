@@ -1,0 +1,23 @@
+{
+  "parent": "create_water_vents:discovery/root",
+  "criteria": {
+    "discover": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "create_water_vents:active_oil"
+    },
+    "title": {
+      "translate": "create_water_vents.discovery.oil"
+    },
+    "description": {
+      "translate": "create_water_vents.tooltip.oil"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  }
+}

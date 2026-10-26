@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "profile=natural": {
+      "model": "create_water_vents:block/pure_uranium"
+    },
+    "profile=cut": {
+      "model": "create_water_vents:block/pure_uranium"
+    },
+    "profile=slab": {
+      "model": "create_water_vents:block/weathered_slab"
+    },
+    "profile=post": {
+      "model": "create_water_vents:block/weathered_post"
+    }
+  }
+}

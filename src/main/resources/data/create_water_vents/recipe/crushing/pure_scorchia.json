@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_water_vents:pure_scorchia"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "id": "minecraft:coal",
+      "count": 6
+    },
+    {
+      "id": "create_water_vents:coal_nugget",
+      "count": 6
+    }
+  ]
+}

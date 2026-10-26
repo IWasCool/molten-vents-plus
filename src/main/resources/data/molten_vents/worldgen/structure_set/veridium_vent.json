@@ -1,0 +1,21 @@
+{
+  "structures": [
+    {
+      "structure": "molten_vents:veridium_vent",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1,
+    "separation": 0,
+    "salt": 464164673,
+    "frequency": 0.0026041666666666665,
+    "frequency_reduction_method": "default",
+    "locate_offset": [
+      8,
+      0,
+      8
+    ]
+  }
+}

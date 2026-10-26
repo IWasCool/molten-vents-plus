@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "item": "create_water_vents:coal_nugget"
+    }
+  },
+  "result": {
+    "id": "minecraft:coal",
+    "count": 1
+  }
+}

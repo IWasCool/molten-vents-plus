@@ -1,0 +1,29 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_water_vents:pure_veridium"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "id": "create:crushed_raw_copper",
+      "count": 6
+    },
+    {
+      "id": "create:copper_nugget",
+      "count": 6
+    },
+    {
+      "id": "create:crushed_raw_copper",
+      "count": 1,
+      "chance": 0.4
+    },
+    {
+      "id": "create:copper_nugget",
+      "count": 1,
+      "chance": 0.4
+    }
+  ]
+}

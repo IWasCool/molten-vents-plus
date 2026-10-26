@@ -1,0 +1,21 @@
+{
+  "structures": [
+    {
+      "structure": "create_water_vents:water_thorium_vent",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1,
+    "separation": 0,
+    "salt": 120041468,
+    "frequency": 0.005208333333333333,
+    "frequency_reduction_method": "default",
+    "locate_offset": [
+      8,
+      0,
+      8
+    ]
+  }
+}

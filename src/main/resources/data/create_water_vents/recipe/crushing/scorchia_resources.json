@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:scorchia"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "id": "minecraft:coal",
+      "chance": 0.5
+    },
+    {
+      "id": "minecraft:coal",
+      "chance": 0.25
+    }
+  ]
+}

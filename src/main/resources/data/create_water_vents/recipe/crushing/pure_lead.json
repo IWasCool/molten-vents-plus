@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "createnuclear:lead_ore"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_water_vents:pure_lead"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "id": "create:crushed_raw_lead",
+      "count": 8
+    },
+    {
+      "id": "createnuclear:lead_nugget",
+      "count": 8
+    }
+  ]
+}

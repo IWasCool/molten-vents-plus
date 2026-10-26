@@ -1,0 +1,10 @@
+{
+  "type": "create_water_vents:vent",
+  "biomes": "#minecraft:is_overworld",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none",
+  "tier": "molten",
+  "stone": "asurine",
+  "aquatic": true
+}

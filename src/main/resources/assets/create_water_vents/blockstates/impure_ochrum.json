@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "profile=natural": [
+      {
+        "model": "create:block/ochrum_natural_0"
+      },
+      {
+        "model": "create:block/ochrum_natural_1"
+      },
+      {
+        "model": "create:block/ochrum_natural_2"
+      },
+      {
+        "model": "create:block/ochrum_natural_3"
+      }
+    ],
+    "profile=cut": {
+      "model": "create:block/cut_ochrum"
+    },
+    "profile=slab": {
+      "model": "create:block/cut_ochrum_slab"
+    },
+    "profile=post": {
+      "model": "create:block/cut_ochrum_wall_post"
+    }
+  }
+}

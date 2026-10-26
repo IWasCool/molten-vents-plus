@@ -1,0 +1,9 @@
+{
+  "type": "create_water_vents:resource_vent",
+  "biomes": "#create_water_vents:has_structure/thorium_vents",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none",
+  "resource": "thorium",
+  "tier": "molten"
+}

@@ -1,0 +1,53 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.147'
+}
+
+group = mod_group_id
+version = mod_version
+base.archivesName = mod_archive_name
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+    withSourcesJar()
+}
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.blamejared.com' }
+    maven { url = 'https://maven.createmod.net' }
+    maven { url = 'https://cursemaven.com' }
+}
+dependencies {
+    compileOnly('curse.maven:create-328085:7963363') { transitive = false }
+    compileOnly('curse.maven:molten-vents-824654:6803367') { transitive = false }
+    compileOnly 'net.createmod.ponder:ponder-neoforge:1.0.82+mc1.21.1'
+    compileOnly 'mezz.jei:jei-1.21.1-common-api:19.27.0.340'
+}
+neoForge {
+    version = neo_version
+    parchment {
+        minecraftVersion = parchment_minecraft_version
+        mappingsVersion = parchment_mappings_version
+    }
+    runs {
+        client { client(); gameDirectory = file('run/client') }
+        server { server(); gameDirectory = file('run/server'); programArgument '--nogui' }
+    }
+    mods { "${mod_id}" { sourceSet sourceSets.main } }
+}
+def generateModMetadata = tasks.register('generateModMetadata', ProcessResources) {
+    inputs.properties([mod_id: mod_id, mod_name: mod_name, mod_version: mod_version])
+    expand([mod_id: mod_id, mod_name: mod_name, mod_version: mod_version])
+    from 'src/main/templates'
+    into layout.buildDirectory.dir('generated/sources/modMetadata')
+}
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.withType(AbstractArchiveTask).configureEach {
+    includeEmptyDirs = false
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}
+tasks.withType(Jar).configureEach {
+    from('LICENSE') { into 'META-INF'; rename { 'LICENSE-Molten-Vents-Plus.txt' } }
+}

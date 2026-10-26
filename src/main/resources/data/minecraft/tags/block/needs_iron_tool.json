@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "create_water_vents:pure_asurine",
+    "create_water_vents:pure_veridium",
+    "create_water_vents:pure_crimsite",
+    "create_water_vents:pure_ochrum",
+    "create_water_vents:pure_scorchia",
+    "create_water_vents:pure_scoria",
+    "create_water_vents:pure_uranium",
+    "create_water_vents:pure_thorium",
+    "create_water_vents:pure_lead"
+  ]
+}

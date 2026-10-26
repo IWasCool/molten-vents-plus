@@ -1,0 +1,29 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_water_vents:pure_asurine"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "id": "create:crushed_raw_zinc",
+      "count": 2
+    },
+    {
+      "id": "create:zinc_nugget",
+      "count": 2
+    },
+    {
+      "id": "create:crushed_raw_zinc",
+      "count": 1,
+      "chance": 0.4
+    },
+    {
+      "id": "create:zinc_nugget",
+      "count": 1,
+      "chance": 0.4
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "profile=natural": [
+      {
+        "model": "create:block/asurine_natural_0"
+      },
+      {
+        "model": "create:block/asurine_natural_1"
+      },
+      {
+        "model": "create:block/asurine_natural_2"
+      },
+      {
+        "model": "create:block/asurine_natural_3"
+      }
+    ],
+    "profile=cut": {
+      "model": "create:block/cut_asurine"
+    },
+    "profile=slab": {
+      "model": "create:block/cut_asurine_slab"
+    },
+    "profile=post": {
+      "model": "create:block/cut_asurine_wall_post"
+    }
+  }
+}

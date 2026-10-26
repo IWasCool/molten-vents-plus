@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "create_water_vents:block/dormant_water_lead"
+    }
+  }
+}

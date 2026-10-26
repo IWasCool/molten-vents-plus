@@ -1,0 +1,29 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_water_vents:pure_crimsite"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "id": "create:crushed_raw_iron",
+      "count": 3
+    },
+    {
+      "id": "minecraft:iron_nugget",
+      "count": 3
+    },
+    {
+      "id": "create:crushed_raw_iron",
+      "count": 1,
+      "chance": 0.2
+    },
+    {
+      "id": "minecraft:iron_nugget",
+      "count": 1,
+      "chance": 0.2
+    }
+  ]
+}

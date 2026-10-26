@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "discover": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "molten_vents:active_molten_asurine"
+    },
+    "title": {
+      "translate": "create_water_vents.discovery.molten"
+    },
+    "description": {
+      "translate": "create_water_vents.tooltip.molten"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "create_water_vents:discovery/root"
+}

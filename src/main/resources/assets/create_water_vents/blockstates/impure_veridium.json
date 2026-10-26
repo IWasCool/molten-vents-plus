@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "profile=natural": [
+      {
+        "model": "create:block/veridium_natural_0"
+      },
+      {
+        "model": "create:block/veridium_natural_1"
+      },
+      {
+        "model": "create:block/veridium_natural_2"
+      },
+      {
+        "model": "create:block/veridium_natural_3"
+      }
+    ],
+    "profile=cut": {
+      "model": "create:block/cut_veridium"
+    },
+    "profile=slab": {
+      "model": "create:block/cut_veridium_slab"
+    },
+    "profile=post": {
+      "model": "create:block/cut_veridium_wall_post"
+    }
+  }
+}

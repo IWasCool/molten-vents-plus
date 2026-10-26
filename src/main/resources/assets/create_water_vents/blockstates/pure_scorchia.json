@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "profile=natural": {
+      "model": "create:block/scorchia"
+    },
+    "profile=cut": {
+      "model": "create:block/cut_scorchia"
+    },
+    "profile=slab": {
+      "model": "create:block/cut_scorchia_slab"
+    },
+    "profile=post": {
+      "model": "create:block/cut_scorchia_wall_post"
+    }
+  }
+}

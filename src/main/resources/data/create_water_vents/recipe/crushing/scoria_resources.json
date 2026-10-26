@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:scoria"
+    }
+  ],
+  "processing_time": 500,
+  "results": [
+    {
+      "id": "minecraft:netherite_scrap",
+      "chance": 0.005
+    }
+  ]
+}

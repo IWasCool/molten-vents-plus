@@ -1,0 +1,21 @@
+{
+  "structures": [
+    {
+      "structure": "create_water_vents:oil_ocean_vent",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1,
+    "separation": 0,
+    "salt": 220124404,
+    "frequency": 0.00390625,
+    "frequency_reduction_method": "default",
+    "locate_offset": [
+      8,
+      0,
+      8
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "create_water_vents:vent",
+  "config": {
+    "tier": "superheated"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "structures": [
+    {
+      "structure": "create_water_vents:water_asurine_vent",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1,
+    "separation": 0,
+    "salt": 1045350712,
+    "frequency": 0.020833333333333332,
+    "frequency_reduction_method": "default",
+    "locate_offset": [
+      8,
+      0,
+      8
+    ]
+  }
+}

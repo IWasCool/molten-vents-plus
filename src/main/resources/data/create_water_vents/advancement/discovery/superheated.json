@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "discover": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "create_water_vents:active_superheated_asurine"
+    },
+    "title": {
+      "translate": "create_water_vents.discovery.superheated"
+    },
+    "description": {
+      "translate": "create_water_vents.tooltip.superheated"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "create_water_vents:discovery/root"
+}

@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "createdieselgenerators:crude_oil",
+      "required": false
+    },
+    {
+      "id": "tfmg:crude_oil",
+      "required": false
+    },
+    {
+      "id": "immersivepetroleum:crudeoil",
+      "required": false
+    },
+    {
+      "id": "petrochem:petroleum",
+      "required": false
+    },
+    {
+      "id": "#c:crude_oil",
+      "required": false
+    },
+    {
+      "id": "#c:oil",
+      "required": false
+    },
+    {
+      "id": "#neoforge:crude_oil",
+      "required": false
+    }
+  ]
+}

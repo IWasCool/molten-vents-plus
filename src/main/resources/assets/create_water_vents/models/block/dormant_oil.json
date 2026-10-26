@@ -1,0 +1,7 @@
+{
+  "parent": "create_water_vents:block/dormant_water_asurine",
+  "textures": {
+    "all": "minecraft:block/blackstone",
+    "particle": "minecraft:block/blackstone"
+  }
+}

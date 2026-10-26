@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "createqol:superheated_lava",
+      "required": false
+    },
+    {
+      "id": "#c:superheated_lava",
+      "required": false
+    }
+  ]
+}
