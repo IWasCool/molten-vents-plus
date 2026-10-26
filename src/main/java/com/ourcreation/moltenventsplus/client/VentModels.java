@@ -2,18 +2,13 @@ package com.ourcreation.moltenventsplus.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.ourcreation.moltenventsplus.MoltenVentsPlus;
-import com.ourcreation.moltenventsplus.compat.VentResource;
-import com.ourcreation.moltenventsplus.registry.ResourceVentRegistry;
 import com.ourcreation.moltenventsplus.vent.VentFluids;
 import com.ourcreation.moltenventsplus.vent.VentTier;
-import com.ourcreation.moltenventsplus.vent.WeatheredVentStoneBlock;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.block.BlockModelShaper;
 import net.minecraft.client.renderer.block.model.BakedQuad;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.resources.model.BakedModel;
-import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
@@ -34,7 +29,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/** Keep independent rock/core faces and resolve optional native resource and fluid sprites. */
+/** Keep independent rock/core faces and resolve the selected superheated fluid sprite. */
 @EventBusSubscriber(modid = MoltenVentsPlus.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public final class VentModels {
     private static final ResourceLocation SUPERHEATED = ResourceLocation.fromNamespaceAndPath(
@@ -43,58 +38,23 @@ public final class VentModels {
     @SubscribeEvent
     public static void models(ModelEvent.ModifyBakingResult event) {
         var models = event.getModels();
-        // Provider models are already baked. Retain vanilla fallback models if the provider is absent.
-        for (var resource : VentResource.values()) {
-            resource.nativeOre().ifPresent(ore -> {
-                var nativeBlock = models.get(BlockModelShaper.stateToModelLocation(ore.defaultBlockState()));
-                var nativeItem = models.get(new ModelResourceLocation(ore.builtInRegistryHolder().key().location(), "inventory"));
-                for (boolean impure : new boolean[]{true, false}) {
-                    var stone = ResourceVentRegistry.stone(resource, impure);
-                    if (nativeBlock != null) for (var state : stone.getStateDefinition().getPossibleStates()) {
-                        var key = BlockModelShaper.stateToModelLocation(state);
-                        if (state.hasProperty(WeatheredVentStoneBlock.PROFILE)
-                                && state.getValue(WeatheredVentStoneBlock.PROFILE).partial()) {
-                            var detail = models.get(key);
-                            if (detail != null) models.put(key, new Core(detail, nativeBlock.getParticleIcon(ModelData.EMPTY), false));
-                        } else models.put(key, nativeBlock);
-                    }
-                    if (nativeItem != null) models.put(new ModelResourceLocation(stone.builtInRegistryHolder().key().location(), "inventory"), nativeItem);
-                }
-                if (nativeBlock != null) {
-                    var rock = nativeBlock.getParticleIcon(ModelData.EMPTY);
-                    models.replaceAll((id, model) -> id.id().getNamespace().equals(MoltenVentsPlus.MODID)
-                            && (id.id().getPath().startsWith("active_") || id.id().getPath().startsWith("dormant_"))
-                            && id.id().getPath().endsWith("_" + resource.id) ? new Core(model, rock, false) : model);
-                }
-            });
-        }
         models.replaceAll((id, model) -> id.id().getNamespace().equals(MoltenVentsPlus.MODID)
                 && (id.id().getPath().startsWith("active_superheated_") || id.id().getPath().startsWith("dormant_superheated_"))
-                ? new Core(model, null, true) : model);
+                ? new Core(model) : model);
     }
 
     private static final class Core extends BakedModelWrapper<BakedModel> {
         private final Map<ResourceLocation, Map<BakedQuad, BakedQuad>> replacements = new ConcurrentHashMap<>();
-        private final TextureAtlasSprite rock;
-        private final boolean superheated;
-
-        private Core(BakedModel model, @Nullable TextureAtlasSprite rock, boolean superheated) {
+        private Core(BakedModel model) {
             super(model);
-            this.rock = rock;
-            this.superheated = superheated;
-        }
-
-        @Override
-        public TextureAtlasSprite getParticleIcon(ModelData data) {
-            return rock != null ? rock : originalModel.getParticleIcon(data);
         }
 
         private List<BakedQuad> core(List<BakedQuad> quads) {
-            var texture = superheated ? VentFluids.primary(VentTier.SUPERHEATED)
-                    .map(fluid -> IClientFluidTypeExtensions.of(fluid).getStillTexture()).orElse(SUPERHEATED) : rock.contents().name();
-            var sprite = superheated ? Minecraft.getInstance().getTextureAtlas(InventoryMenu.BLOCK_ATLAS).apply(texture) : rock;
+            var texture = VentFluids.primary(VentTier.SUPERHEATED)
+                    .map(fluid -> IClientFluidTypeExtensions.of(fluid).getStillTexture()).orElse(SUPERHEATED);
+            var sprite = Minecraft.getInstance().getTextureAtlas(InventoryMenu.BLOCK_ATLAS).apply(texture);
             var cache = replacements.computeIfAbsent(texture, key -> new ConcurrentHashMap<>());
-            return quads.stream().map(quad -> !(superheated ? quad.isTinted() : !quad.isTinted())
+            return quads.stream().map(quad -> !quad.isTinted()
                     ? quad : cache.computeIfAbsent(quad, key -> retexture(key, sprite))).toList();
         }
 

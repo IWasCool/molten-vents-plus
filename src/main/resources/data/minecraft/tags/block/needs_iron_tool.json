@@ -6,9 +6,6 @@
     "create_water_vents:pure_crimsite",
     "create_water_vents:pure_ochrum",
     "create_water_vents:pure_scorchia",
-    "create_water_vents:pure_scoria",
-    "create_water_vents:pure_uranium",
-    "create_water_vents:pure_thorium",
-    "create_water_vents:pure_lead"
+    "create_water_vents:pure_scoria"
   ]
 }

@@ -23,11 +23,6 @@ public final class VentJeiPlugin implements IModPlugin {
         com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.VENTS.values().forEach(entry->{
             if(!entry.get().resource.available())hidden.add(entry.get().asItem().getDefaultInstance());
         });
-        for(var resource:com.ourcreation.moltenventsplus.compat.VentResource.values()){
-            if(resource==com.ourcreation.moltenventsplus.compat.VentResource.OIL||resource.available())continue;
-            hidden.add(new net.minecraft.world.item.ItemStack(com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.stone(resource,true)));
-            hidden.add(new net.minecraft.world.item.ItemStack(com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.stone(resource,false)));
-        }
         if(!hidden.isEmpty())runtime.getIngredientManager().removeIngredientsAtRuntime(mezz.jei.api.constants.VanillaTypes.ITEM_STACK,hidden);
     }
     @Override public ResourceLocation getPluginUid(){return ResourceLocation.fromNamespaceAndPath(MODID,"vents");}

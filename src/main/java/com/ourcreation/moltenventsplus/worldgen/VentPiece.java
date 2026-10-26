@@ -41,7 +41,7 @@ public final class VentPiece extends StructurePiece {
         this.radius = radius;
         this.depth = depth;
         this.seed = seed;
-        this.shapeVersion = tier == VentTier.SUPERHEATED ? 2 : tier == VentTier.WATER ? 1 : 0;
+        this.shapeVersion = tier == VentTier.MOLTEN ? 0 : 3;
     }
 
     public VentPiece(CompoundTag tag) {

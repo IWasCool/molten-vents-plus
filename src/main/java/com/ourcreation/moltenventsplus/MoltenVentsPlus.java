@@ -14,7 +14,7 @@ public final class MoltenVentsPlus {
     public static final String MODID = "create_water_vents";
 
     public MoltenVentsPlus(IEventBus bus, ModContainer container) {
-        bus.addListener(MoltenVentsPlus::removedNuggets);
+        bus.addListener(MoltenVentsPlus::removedContent);
         com.ourcreation.moltenventsplus.registry.SuperheatedFluidRegistry.register(bus);
         VentRegistry.register(bus);
         com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.register(bus);
@@ -22,13 +22,29 @@ public final class MoltenVentsPlus {
         container.registerConfig(ModConfig.Type.COMMON, VentConfig.SPEC);
     }
 
-    /** Removed nugget stacks become empty without leaving unresolved saved registry entries. */
-    private static void removedNuggets(RegisterEvent event) {
+    /** Retired stacks become empty and retired mineral blocks become ordinary, inert stone. */
+    private static void removedContent(RegisterEvent event) {
         var items = event.getRegistry(Registries.ITEM);
-        if (items == null) return;
-        for (var name : new String[]{"coal_nugget", "netherite_nugget", "uranium_nugget"}) {
-            items.addAlias(ResourceLocation.fromNamespaceAndPath(MODID, name),
-                    ResourceLocation.withDefaultNamespace("air"));
+        var blocks = event.getRegistry(Registries.BLOCK);
+        if (items != null) {
+            for (var name : new String[]{"coal_nugget", "netherite_nugget", "uranium_nugget"})
+                items.addAlias(ResourceLocation.fromNamespaceAndPath(MODID, name),
+                        ResourceLocation.withDefaultNamespace("air"));
+        }
+        if (items == null && blocks == null) return;
+        var retired = new java.util.ArrayList<String>();
+        for (var mineral : new String[]{"uranium", "thorium", "lead"}) {
+            retired.add("impure_" + mineral);
+            retired.add("pure_" + mineral);
+            for (var tier : new String[]{"water", "molten", "superheated"}) {
+                retired.add("active_" + tier + "_" + mineral);
+                retired.add("dormant_" + tier + "_" + mineral);
+            }
+        }
+        for (var name : retired) {
+            var id = ResourceLocation.fromNamespaceAndPath(MODID, name);
+            if (items != null) items.addAlias(id, ResourceLocation.withDefaultNamespace("air"));
+            if (blocks != null) blocks.addAlias(id, ResourceLocation.withDefaultNamespace("stone"));
         }
     }
 }

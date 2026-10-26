@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "create_water_vents:water_uranium_vent",
+    "create_water_vents:molten_uranium_vent",
+    "create_water_vents:superheated_uranium_vent",
+    "create_water_vents:water_thorium_vent",
+    "create_water_vents:molten_thorium_vent",
+    "create_water_vents:superheated_thorium_vent",
+    "create_water_vents:water_lead_vent",
+    "create_water_vents:molten_lead_vent",
+    "create_water_vents:superheated_lead_vent"
+  ]
+}

@@ -25,14 +25,6 @@ public final class VentPonder implements PonderPlugin {
                         .addStoryBoard("vent/oil_automation",OilVentScene::build);
                 continue;
             }
-            if(!resource.available())continue;
-            for(var tier:VentTier.values()){
-                helper.forComponents(com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.id(resource,tier,false),
-                                com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.id(resource,tier,true),
-                                net.minecraft.core.registries.BuiltInRegistries.BLOCK.getKey(resource.output(tier).orElseThrow()))
-                        .addStoryBoard("vent/"+tier.id+"_activation",(scene,util)->VentScenes.activation(scene,util,tier,resource.id))
-                        .addStoryBoard("vent/"+tier.id+"_automation",(scene,util)->VentScenes.automation(scene,util,tier,resource.id));
-            }
         }
         for(var tier:VentTier.values())for(var stone:OreStone.values()){
             helper.forComponents(VentRegistry.ventId(tier,stone,false),VentRegistry.ventId(tier,stone,true),stone.outputId(tier))

@@ -8,6 +8,7 @@ import com.ourcreation.moltenventsplus.compat.VentResource;
 import com.ourcreation.moltenventsplus.registry.ResourceVentRegistry;
 import com.ourcreation.moltenventsplus.vent.VentTier;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.QuartPos;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.LegacyRandomSource;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.levelgen.WorldgenRandom;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.levelgen.structure.StructureType;
 
+import java.util.ArrayList;
 import java.util.Optional;
 
 public final class ResourceVentStructure extends Structure {
@@ -34,17 +36,8 @@ public final class ResourceVentStructure extends Structure {
     }
 
     @Override public Optional<GenerationStub> findGenerationPoint(GenerationContext context) {
-        if (!resource.available()) return Optional.empty();
-        if (resource == VentResource.OIL) {
-            if (!VentConfig.OIL_WORLDGEN.get()) return Optional.empty();
-        } else if (!VentConfig.INTEGRATION_WORLDGEN.get()
-                || tier == VentTier.WATER && !VentConfig.WATER_WORLDGEN.get()
-                || tier == VentTier.SUPERHEATED && !VentConfig.MEGA_WORLDGEN.get()
-                || tier == VentTier.MOLTEN && !com.Apothic0n.MoltenVents.config.CommonConfig.generateLandVents.get()) {
-            return Optional.empty();
-        }
-        if (resource != VentResource.OIL && !VentPlacement.selects(context, tier, resource.id))
-            return Optional.empty();
+        // Retired mineral structure IDs still decode old saves, but can never create new starts.
+        if (resource != VentResource.OIL || !resource.available() || !VentConfig.OIL_WORLDGEN.get()) return Optional.empty();
 
         var random = new WorldgenRandom(new LegacyRandomSource(0));
         random.setLargeFeatureWithSalt(context.seed(), context.chunkPos().x, context.chunkPos().z,
@@ -57,15 +50,26 @@ public final class ResourceVentStructure extends Structure {
         var column = context.chunkGenerator().getBaseColumn(x, z, context.heightAccessor(), context.randomState());
         if (!VentFeature.terrain(column.getBlock(y))) return Optional.empty();
         boolean submerged = !column.getBlock(y + 1).getFluidState().isEmpty();
-        if (resource != VentResource.OIL && tier != VentTier.WATER && submerged) return Optional.empty();
-        int radius = resource == VentResource.OIL ? 3 : tier == VentTier.WATER ? 2
-                : tier == VentTier.MOLTEN ? 5 : MoltenVentDeposit.SUPERHEATED_RADIUS;
-        int depth = resource == VentResource.OIL ? 6 : tier == VentTier.WATER ? 4 + random.nextInt(3)
-                : tier == VentTier.MOLTEN ? 10 + random.nextInt(5) : 12 + random.nextInt(5);
+        int radius = 3;
+        int depth = 6;
         var origin = new BlockPos(x, y, z);
-        var piece = new ResourceVentPiece(origin, resource, tier, submerged, radius, depth,
-                context.heightAccessor().getMinBuildHeight(), random.nextLong());
-        return Optional.of(new GenerationStub(origin, builder -> builder.addPiece(piece)));
+        var pieces = new ArrayList<ResourceVentPiece>();
+        for (var offset : VentPlacement.clusterOffsets(context.seed(), context.chunkPos(), "oil", radius)) {
+            int px = x + offset.getX(), pz = z + offset.getZ();
+            int py = context.chunkGenerator().getFirstFreeHeight(px, pz, Heightmap.Types.OCEAN_FLOOR_WG,
+                    context.heightAccessor(), context.randomState()) - 1;
+            if (Math.abs(py - y) > 2 || py < context.heightAccessor().getMinBuildHeight() + 8) continue;
+            var base = context.chunkGenerator().getBaseColumn(px, pz, context.heightAccessor(), context.randomState());
+            if (!VentFeature.terrain(base.getBlock(py))) continue;
+            var biome = context.biomeSource().getNoiseBiome(QuartPos.fromBlock(px), QuartPos.fromBlock(py),
+                    QuartPos.fromBlock(pz), context.randomState().sampler());
+            if (!context.validBiome().test(biome)) continue;
+            pieces.add(new ResourceVentPiece(new BlockPos(px, py, pz), resource, tier,
+                    !base.getBlock(py + 1).getFluidState().isEmpty(), radius, depth,
+                    context.heightAccessor().getMinBuildHeight(), random.nextLong()));
+        }
+        if (pieces.isEmpty()) return Optional.empty();
+        return Optional.of(new GenerationStub(origin, builder -> pieces.forEach(builder::addPiece)));
     }
 
     @Override public StructureType<?> type() { return ResourceVentRegistry.STRUCTURE.get(); }

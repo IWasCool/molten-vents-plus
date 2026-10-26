@@ -30,8 +30,6 @@ public final class VentParticles {
                 BuiltInRegistries.BLOCK.getOptional(VentRegistry.ventId(VentTier.MOLTEN, stone, active))
                         .ifPresent(cores::add);
         }
-        for (var resource : VentResource.values()) if (resource != VentResource.OIL && resource.available())
-            for (var tier : VentTier.values()) resource.output(tier).ifPresent(block -> stoneTypes.put(block, tier));
         stones = Map.copyOf(stoneTypes);
         moltenCores = Set.copyOf(cores);
     }

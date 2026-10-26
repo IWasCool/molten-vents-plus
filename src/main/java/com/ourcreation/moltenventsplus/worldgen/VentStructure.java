@@ -10,6 +10,7 @@ import com.ourcreation.moltenventsplus.registry.VentRegistry;
 import com.ourcreation.moltenventsplus.vent.OreStone;
 import com.ourcreation.moltenventsplus.vent.VentTier;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.QuartPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.StringRepresentable;
@@ -20,6 +21,7 @@ import net.minecraft.world.level.levelgen.WorldgenRandom;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.levelgen.structure.StructureType;
 
+import java.util.ArrayList;
 import java.util.Optional;
 
 public final class VentStructure extends Structure {
@@ -85,9 +87,26 @@ public final class VentStructure extends Structure {
         }
 
         var origin = new BlockPos(x, y, z);
-        var piece = new VentPiece(origin, tier, stone, aquatic, submerged, radius, depth,
-                context.heightAccessor().getMinBuildHeight(), random.nextLong());
-        return Optional.of(new GenerationStub(origin, builder -> builder.addPiece(piece)));
+        var pieces = new ArrayList<VentPiece>();
+        for (var offset : VentPlacement.clusterOffsets(context.seed(), context.chunkPos(), tier.id, radius)) {
+            int px = x + offset.getX(), pz = z + offset.getZ();
+            int py = context.chunkGenerator().getFirstFreeHeight(px, pz, heightmap,
+                    context.heightAccessor(), context.randomState()) - 1;
+            if (Math.abs(py - y) > 2 || py < context.heightAccessor().getMinBuildHeight() + 8) continue;
+            var base = context.chunkGenerator().getBaseColumn(px, pz, context.heightAccessor(), context.randomState());
+            boolean wet = !base.getBlock(py + 1).getFluidState().isEmpty();
+            if (tier == VentTier.MOLTEN) {
+                if (!base.getBlock(py).isSolid() || aquatic && !base.getBlock(py + 3).is(Blocks.WATER)
+                        || !aquatic && wet) continue;
+            } else if (!VentFeature.terrain(base.getBlock(py)) || tier == VentTier.SUPERHEATED && wet) continue;
+            var biome = context.biomeSource().getNoiseBiome(QuartPos.fromBlock(px), QuartPos.fromBlock(py),
+                    QuartPos.fromBlock(pz), context.randomState().sampler());
+            if (!context.validBiome().test(biome)) continue;
+            pieces.add(new VentPiece(new BlockPos(px, py, pz), tier, stone, aquatic, wet, radius, depth,
+                    context.heightAccessor().getMinBuildHeight(), random.nextLong()));
+        }
+        if (pieces.isEmpty()) return Optional.empty();
+        return Optional.of(new GenerationStub(origin, builder -> pieces.forEach(builder::addPiece)));
     }
 
     static ResourceLocation moltenFeature(OreStone stone, boolean aquatic) {

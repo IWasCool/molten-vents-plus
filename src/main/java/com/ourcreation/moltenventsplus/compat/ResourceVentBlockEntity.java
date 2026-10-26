@@ -28,12 +28,9 @@ public final class ResourceVentBlockEntity extends BlockEntity {
     public void serverTick() {
         if (!(level instanceof ServerLevel server) || !(getBlockState().getBlock() instanceof ResourceVentBlock vent)
                 || !vent.active) return;
-        int interval = vent.resource == VentResource.OIL ? VentConfig.OIL_INTERVAL.get()
-                : vent.tier == VentTier.WATER ? VentConfig.WATER_INTERVAL.get()
-                : vent.tier == VentTier.SUPERHEATED ? VentConfig.MEGA_INTERVAL.get() : VentConfig.MINERAL_MOLTEN_INTERVAL.get();
-        if (Math.floorMod(server.getGameTime() + worldPosition.asLong(), interval) != 0) return;
-        if (vent.resource == VentResource.OIL) refillOil(server);
-        else vent.resource.output(vent.tier).ifPresent(output -> VentBlockEntity.convert(server, worldPosition, vent.tier, output));
+        if (vent.resource != VentResource.OIL) return;
+        if (Math.floorMod(server.getGameTime() + worldPosition.asLong(), VentConfig.OIL_INTERVAL.get()) == 0)
+            refillOil(server);
     }
 
     /** Saves a provider identity; removing that provider pauses this vent rather than changing its product. */

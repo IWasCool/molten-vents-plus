@@ -29,17 +29,6 @@ public record VentGeneration(ResourceLocation id, List<Row> rows) {
             }
             if (!rows.isEmpty()) pages.add(page(stone.id, rows));
         }
-        for (var resource : VentResource.values()) {
-            if (resource == VentResource.OIL || !resource.available()) continue;
-            var rows = new ArrayList<Row>();
-            for (var tier : VentTier.values()) {
-                var fluids = VentFluids.inputs(tier);
-                if (fluids.isEmpty()) continue;
-                resource.output(tier).ifPresent(output -> rows.add(new Row(tier, fluids,
-                        new ItemStack(ResourceVentRegistry.block(resource, tier, true)), new ItemStack(output))));
-            }
-            if (!rows.isEmpty()) pages.add(page(resource.id, rows));
-        }
         return List.copyOf(pages);
     }
 

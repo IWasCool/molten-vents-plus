@@ -4,7 +4,6 @@ import com.ourcreation.moltenventsplus.compat.ResourceVentBlock;
 import com.ourcreation.moltenventsplus.compat.ResourceVentBlockEntity;
 import com.ourcreation.moltenventsplus.compat.VentResource;
 import com.ourcreation.moltenventsplus.vent.VentTier;
-import com.ourcreation.moltenventsplus.vent.WeatheredVentStoneBlock;
 import com.ourcreation.moltenventsplus.worldgen.ResourceVentPiece;
 import com.ourcreation.moltenventsplus.worldgen.ResourceVentStructure;
 import net.minecraft.core.registries.Registries;
@@ -31,25 +30,11 @@ public final class ResourceVentRegistry {
     private static final DeferredRegister<BlockEntityType<?>> ENTITIES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, MODID);
     private static final DeferredRegister<StructureType<?>> STRUCTURES = DeferredRegister.create(Registries.STRUCTURE_TYPE, MODID);
     private static final DeferredRegister<StructurePieceType> PIECES = DeferredRegister.create(Registries.STRUCTURE_PIECE, MODID);
-    public static final Map<String, DeferredBlock<Block>> STONES = new LinkedHashMap<>();
     public static final Map<String, DeferredBlock<ResourceVentBlock>> VENTS = new LinkedHashMap<>();
 
     static {
-        for (var resource : VentResource.values()) {
-            if (resource == VentResource.OIL) {
-                registerVent(resource, VentTier.WATER, false);
-                registerVent(resource, VentTier.WATER, true);
-                continue;
-            }
-            for (String prefix : new String[] {"impure_", "pure_"}) {
-                String name = prefix + resource.id;
-                var block = BLOCKS.<Block>register(name, () -> new WeatheredVentStoneBlock(properties()));
-                STONES.put(name, block);
-                ITEMS.registerSimpleBlockItem(name, block);
-            }
-            for (var tier : VentTier.values()) for (boolean active : new boolean[] {false, true})
-                registerVent(resource, tier, active);
-        }
+        registerVent(VentResource.OIL, VentTier.WATER, false);
+        registerVent(VentResource.OIL, VentTier.WATER, true);
     }
 
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ResourceVentBlockEntity>> ENTITY =
@@ -89,23 +74,10 @@ public final class ResourceVentRegistry {
         return VENTS.get(name(resource, tier, active)).get();
     }
 
-    public static Block stone(VentResource resource, boolean impure) {
-        return STONES.get((impure ? "impure_" : "pure_") + resource.id).get();
-    }
-
     public static void displayItems(net.minecraft.world.item.CreativeModeTab.Output output) {
-        for (var resource : VentResource.values()) {
-            if (!resource.available()) continue;
-            if (resource == VentResource.OIL) {
-                output.accept(block(resource, VentTier.WATER, false));
-                output.accept(block(resource, VentTier.WATER, true));
-                continue;
-            }
-            output.accept(stone(resource, true));
-            output.accept(stone(resource, false));
-            for (var tier : VentTier.values()) for (boolean active : new boolean[] {false, true})
-                output.accept(block(resource, tier, active));
-        }
+        if (!VentResource.OIL.available()) return;
+        output.accept(block(VentResource.OIL, VentTier.WATER, false));
+        output.accept(block(VentResource.OIL, VentTier.WATER, true));
     }
 
     public static void register(IEventBus bus) {

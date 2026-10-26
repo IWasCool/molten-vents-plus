@@ -58,9 +58,6 @@ public final class VentEmiPlugin implements EmiPlugin {
             if (SuperheatedFluidRegistry.hasProvider() && item.is(SuperheatedFluidRegistry.BUCKET.get())) return true;
             for (var entry : ResourceVentRegistry.VENTS.values())
                 if (item.is(entry.get().asItem())) return !entry.get().resource.available();
-            for (var resource : VentResource.values()) if (resource != VentResource.OIL && !resource.available()) {
-                if (item.is(ResourceVentRegistry.stone(resource, true).asItem()) || item.is(ResourceVentRegistry.stone(resource, false).asItem())) return true;
-            }
             return false;
         });
         // With JEI installed Create already supplies its real processing recipes through JEMI.
