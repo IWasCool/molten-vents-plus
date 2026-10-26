@@ -22,7 +22,7 @@ public final class VentConfig {
                 .defineInRange("megaInterval", 10, 1, 1200);
         WATER_WORLDGEN = builder.define("generateWaterVents", true);
         MEGA_WORLDGEN = builder.define("generateMegaVents", true);
-        INTEGRATION_WORLDGEN = builder.comment("Generate optional mineral vents only when their native ore and nugget exist.")
+        INTEGRATION_WORLDGEN = builder.comment("Generate optional mineral vents only when their native ore and processing output exist.")
                 .define("generateIntegrationVents", true);
         OIL_WORLDGEN = builder.comment("Generate oil vents in the oil biome tags, only when a placeable tagged oil source exists.")
                 .define("generateOilVents", true);

@@ -27,8 +27,6 @@ public final class VentJeiPlugin implements IModPlugin {
             if(resource==com.ourcreation.moltenventsplus.compat.VentResource.OIL||resource.available())continue;
             hidden.add(new net.minecraft.world.item.ItemStack(com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.stone(resource,true)));
             hidden.add(new net.minecraft.world.item.ItemStack(com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.stone(resource,false)));
-            if(resource==com.ourcreation.moltenventsplus.compat.VentResource.URANIUM)
-                hidden.add(com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.URANIUM_NUGGET.get().getDefaultInstance());
         }
         if(!hidden.isEmpty())runtime.getIngredientManager().removeIngredientsAtRuntime(mezz.jei.api.constants.VanillaTypes.ITEM_STACK,hidden);
     }

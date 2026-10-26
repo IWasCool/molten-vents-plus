@@ -9,7 +9,6 @@ import com.ourcreation.moltenventsplus.worldgen.ResourceVentPiece;
 import com.ourcreation.moltenventsplus.worldgen.ResourceVentStructure;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -34,7 +33,6 @@ public final class ResourceVentRegistry {
     private static final DeferredRegister<StructurePieceType> PIECES = DeferredRegister.create(Registries.STRUCTURE_PIECE, MODID);
     public static final Map<String, DeferredBlock<Block>> STONES = new LinkedHashMap<>();
     public static final Map<String, DeferredBlock<ResourceVentBlock>> VENTS = new LinkedHashMap<>();
-    public static final DeferredItem<Item> URANIUM_NUGGET = ITEMS.registerSimpleItem("uranium_nugget");
 
     static {
         for (var resource : VentResource.values()) {
@@ -107,7 +105,6 @@ public final class ResourceVentRegistry {
             output.accept(stone(resource, false));
             for (var tier : VentTier.values()) for (boolean active : new boolean[] {false, true})
                 output.accept(block(resource, tier, active));
-            if (resource == VentResource.URANIUM) output.accept(URANIUM_NUGGET.get());
         }
     }
 

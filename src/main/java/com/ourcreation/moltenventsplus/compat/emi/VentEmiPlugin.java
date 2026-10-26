@@ -60,7 +60,6 @@ public final class VentEmiPlugin implements EmiPlugin {
                 if (item.is(entry.get().asItem())) return !entry.get().resource.available();
             for (var resource : VentResource.values()) if (resource != VentResource.OIL && !resource.available()) {
                 if (item.is(ResourceVentRegistry.stone(resource, true).asItem()) || item.is(ResourceVentRegistry.stone(resource, false).asItem())) return true;
-                if (resource == VentResource.URANIUM && item.is(ResourceVentRegistry.URANIUM_NUGGET.get())) return true;
             }
             return false;
         });

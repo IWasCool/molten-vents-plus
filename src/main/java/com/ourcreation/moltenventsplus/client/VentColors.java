@@ -46,14 +46,11 @@ public final class VentColors {
     public static void items(RegisterColorHandlersEvent.Item event) {
         ResourceVentRegistry.VENTS.values().forEach(block -> event.register((stack,index) ->
                 event.getBlockColors().getColor(((BlockItem)stack.getItem()).getBlock().defaultBlockState(),null,null,index), block.get()));
-        event.register((stack,index) -> VentResource.URANIUM.color, ResourceVentRegistry.URANIUM_NUGGET.get());
         VentRegistry.ENTRIES.forEach((name, block) -> {
             if (block.get() instanceof VentBlock)
                 event.register((stack,index) -> event.getBlockColors().getColor(
                         ((BlockItem)stack.getItem()).getBlock().defaultBlockState(),null,null,index), block.get());
         });
-        event.register((stack,index) -> 0x333333, VentRegistry.COAL_NUGGET.get());
-        event.register((stack,index) -> 0x554343, VentRegistry.NETHERITE_NUGGET.get());
     }
 
     private VentColors() {}

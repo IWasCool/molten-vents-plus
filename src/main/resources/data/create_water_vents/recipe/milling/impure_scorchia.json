@@ -8,9 +8,9 @@
   "processing_time": 250,
   "results": [
     {
-      "id": "create_water_vents:coal_nugget",
+      "id": "minecraft:coal",
       "count": 1,
-      "chance": 0.12
+      "chance": 0.013333333333333332
     }
   ]
 }

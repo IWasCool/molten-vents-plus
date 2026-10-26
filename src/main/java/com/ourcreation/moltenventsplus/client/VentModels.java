@@ -34,10 +34,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/** Keep native rock sprites; only the original lava pixels use the selected fluid. */
+/** Keep independent rock/core faces and resolve optional native resource and fluid sprites. */
 @EventBusSubscriber(modid = MoltenVentsPlus.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public final class VentModels {
-    private static final ResourceLocation WATER = ResourceLocation.withDefaultNamespace("block/water_still");
+    private static final ResourceLocation SUPERHEATED = ResourceLocation.fromNamespaceAndPath(
+            MoltenVentsPlus.MODID, "block/superheated_lava_still");
 
     @SubscribeEvent
     public static void models(ModelEvent.ModifyBakingResult event) {
@@ -90,10 +91,10 @@ public final class VentModels {
 
         private List<BakedQuad> core(List<BakedQuad> quads) {
             var texture = superheated ? VentFluids.primary(VentTier.SUPERHEATED)
-                    .map(fluid -> IClientFluidTypeExtensions.of(fluid).getStillTexture()).orElse(WATER) : rock.contents().name();
+                    .map(fluid -> IClientFluidTypeExtensions.of(fluid).getStillTexture()).orElse(SUPERHEATED) : rock.contents().name();
             var sprite = superheated ? Minecraft.getInstance().getTextureAtlas(InventoryMenu.BLOCK_ATLAS).apply(texture) : rock;
             var cache = replacements.computeIfAbsent(texture, key -> new ConcurrentHashMap<>());
-            return quads.stream().map(quad -> !(superheated ? quad.isTinted() && quad.getSprite().contents().name().equals(WATER) : !quad.isTinted())
+            return quads.stream().map(quad -> !(superheated ? quad.isTinted() : !quad.isTinted())
                     ? quad : cache.computeIfAbsent(quad, key -> retexture(key, sprite))).toList();
         }
 

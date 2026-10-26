@@ -18,8 +18,9 @@
       "count": 8
     },
     {
-      "id": "create_water_vents:uranium_nugget",
-      "count": 8
+      "id": "createnuclear:raw_uranium",
+      "count": 1,
+      "chance": 0.8888888888888888
     }
   ]
 }

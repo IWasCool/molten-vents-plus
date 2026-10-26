@@ -34,8 +34,6 @@ public final class VentRegistry {
     private static final DeferredRegister<StructurePieceType> PIECES = DeferredRegister.create(Registries.STRUCTURE_PIECE, MODID);
     private static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
     public static final Map<String, DeferredBlock<? extends Block>> ENTRIES = new LinkedHashMap<>();
-    public static final DeferredItem<Item> COAL_NUGGET = ITEMS.registerSimpleItem("coal_nugget");
-    public static final DeferredItem<Item> NETHERITE_NUGGET = ITEMS.registerSimpleItem("netherite_nugget", new Item.Properties().fireResistant());
 
     static {
         for (var stone : OreStone.values()) {

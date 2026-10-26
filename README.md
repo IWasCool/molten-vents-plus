@@ -6,12 +6,14 @@ Requires **NeoForge 21.1.251+**, **Create 6.0.10+** and [Create: Molten Vents 2.
 
 ## Vents
 
-- **Water:** common miniature formations. Water sources produce impure stone; milling gives a **12% chance of one nugget**.
+- **Water:** miniature formations. Water sources produce impure stone; milling has a small chance of a native resource.
 - **Molten:** the original molten formations use lava to produce regular ore stones.
 - **Superheated:** rare formations with the molten shape and a rim just one block wider. Superheated lava produces pure stone; crushing yields extra ores, nuggets and resources directly.
 - **Oil:** renewable native oil in deserts/badlands, swamps and oceans. Activate the core and pump its outlet into tanks or a refinery.
 
 Activate dormant cores with an explosion. Use the matching source fluid, then harvest and process the generated stone. **Ponder** explains setup and automation; **JEI or EMI (including Reliable EMI)** shows recipes and yields. Looking up any ore-stone variant opens one material page with its water, molten and superheated fluid/vent/output rows. Individual impure stones release water particles, regular molten-tier stones release flames, and pure stones release blue soul flames from their exposed surfaces. Vent cores have no ambient particle effect.
+
+No custom nugget items are added. Impure stones mill for a **12% chance of an existing nugget**, or a **1 in 75 chance** of coal, netherite scrap or raw uranium where no native nugget is available. Pure stones crush directly into existing resources. Water and superheated cores have separate rock/fluid faces with no molten texture underneath.
 
 New formations are spread across placement regions: **256 × 256 blocks for water**, **512 × 512 for molten and biome-dependent oil**, and **1,024 × 1,024 for superheated**. Each region selects at most one mineral of its tier, including optional materials; terrain and biome restrictions can leave it empty. Density changes apply to new chunks; existing formations remain intact.
 
@@ -33,7 +35,7 @@ Use **JDK 21**:
 
 On Windows, use `gradlew.bat build`. The runtime JAR is produced in `build/libs/`.
 
-The saved mod ID remains `create_water_vents` for world compatibility. Replace an older Water Vents JAR when upgrading; keep one copy of this mod.
+The saved mod ID remains `create_water_vents` for world compatibility. Replace an older Water Vents JAR when upgrading; keep one copy of this mod. Previously added coal, netherite and uranium nuggets have been removed; old stacks resolve to empty when loading saved data.
 
 ## Translations
 

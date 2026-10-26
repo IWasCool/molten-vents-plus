@@ -10,12 +10,7 @@
     {
       "id": "minecraft:netherite_scrap",
       "count": 1,
-      "chance": 0.04
-    },
-    {
-      "id": "create_water_vents:netherite_nugget",
-      "count": 1,
-      "chance": 0.36
+      "chance": 0.08
     }
   ]
 }

@@ -11,15 +11,21 @@ public enum OreStone implements StringRepresentable {
     VERIDIUM("veridium", "create:copper_nugget"),
     CRIMSITE("crimsite", "minecraft:iron_nugget"),
     OCHRUM("ochrum", "minecraft:gold_nugget"),
-    SCORCHIA("scorchia", "create_water_vents:coal_nugget"),
-    SCORIA("scoria", "create_water_vents:netherite_nugget");
+    SCORCHIA("scorchia", "minecraft:coal", 0.12F / 9),
+    SCORIA("scoria", "minecraft:netherite_scrap", 0.12F / 9);
 
     public final String id;
-    public final ResourceLocation nugget;
+    public final ResourceLocation millingOutput;
+    public final float millingChance;
 
-    OreStone(String id, String nugget) {
+    OreStone(String id, String output) {
+        this(id, output, 0.12F);
+    }
+
+    OreStone(String id, String output, float chance) {
         this.id = id;
-        this.nugget = ResourceLocation.parse(nugget);
+        this.millingOutput = ResourceLocation.parse(output);
+        this.millingChance = chance;
     }
 
     public ResourceLocation outputId(VentTier tier) {
