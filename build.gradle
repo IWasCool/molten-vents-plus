@@ -15,12 +15,14 @@ repositories {
     maven { url = 'https://maven.blamejared.com' }
     maven { url = 'https://maven.createmod.net' }
     maven { url = 'https://cursemaven.com' }
+    maven { url = 'https://repo.sleeping.town/' }
 }
 dependencies {
     compileOnly('curse.maven:create-328085:7963363') { transitive = false }
     compileOnly('curse.maven:molten-vents-824654:6803367') { transitive = false }
     compileOnly 'net.createmod.ponder:ponder-neoforge:1.0.82+mc1.21.1'
     compileOnly 'mezz.jei:jei-1.21.1-common-api:19.27.0.340'
+    compileOnly 'dev.emi:emi-neoforge:1.1.24+1.21.1:api'
 }
 neoForge {
     version = neo_version

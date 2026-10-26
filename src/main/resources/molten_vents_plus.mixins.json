@@ -4,5 +4,6 @@
   "package": "com.ourcreation.moltenventsplus.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": ["SimulatedVentMovementMixin"],
+  "client": ["VentParticleMixin", "VentDiscoveryMixin"],
   "injectors": {"defaultRequire": 1}
 }

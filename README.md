@@ -11,7 +11,7 @@ Requires **NeoForge 21.1.251+**, **Create 6.0.10+** and [Create: Molten Vents 2.
 - **Superheated:** rare formations with the molten shape and a rim just one block wider. Superheated lava produces pure stone; crushing yields extra ores, nuggets and resources directly.
 - **Oil:** renewable native oil in deserts/badlands, swamps and oceans. Activate the core and pump its outlet into tanks or a refinery.
 
-Activate dormant cores with an explosion. Use the matching source fluid, then harvest and process the generated stone. **Ponder** explains setup and automation; **JEI** shows recipes and yields. New formations generate in new chunks.
+Activate dormant cores with an explosion. Use the matching source fluid, then harvest and process the generated stone. **Ponder** explains setup and automation; **JEI or EMI (including Reliable EMI)** shows recipes and yields. Looking up any ore-stone variant opens one material page with its water, molten and superheated fluid/vent/output rows. Impure stones release water particles, regular molten-tier stones release flames, and pure stones release blue soul flames. New formations generate in new chunks.
 
 ## Optional integrations
 

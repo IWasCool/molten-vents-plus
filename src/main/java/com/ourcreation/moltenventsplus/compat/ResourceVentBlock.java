@@ -54,7 +54,8 @@ public class ResourceVentBlock extends Block {
     @Override public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {
         if (!active || random.nextInt(3) != 0) return;
         level.addParticle(resource == VentResource.OIL ? ParticleTypes.SMOKE
-                        : tier == VentTier.WATER ? ParticleTypes.DRIPPING_WATER : ParticleTypes.SMALL_FLAME,
+                        : tier == VentTier.WATER ? ParticleTypes.DRIPPING_WATER
+                        : tier == VentTier.SUPERHEATED ? ParticleTypes.SOUL_FIRE_FLAME : ParticleTypes.FLAME,
                 pos.getX() + random.nextDouble(), pos.getY() + 1.02, pos.getZ() + random.nextDouble(), 0, 0.02, 0);
     }
 }

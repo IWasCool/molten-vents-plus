@@ -1,6 +1,7 @@
 package com.ourcreation.moltenventsplus.compat.jei;
 
 import com.ourcreation.moltenventsplus.vent.*;
+import com.ourcreation.moltenventsplus.compat.VentGeneration;
 import com.ourcreation.moltenventsplus.registry.VentRegistry;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
@@ -15,15 +16,12 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.material.Fluid;
-import java.util.ArrayList;
 import java.util.List;
 import static com.ourcreation.moltenventsplus.MoltenVentsPlus.MODID;
 
 /** Fluid contacts are JEI views of block behavior, never server crafting recipes. */
-public final class VentJeiCategory implements IRecipeCategory<VentJeiCategory.Generation> {
-    public static final RecipeType<Generation> TYPE=RecipeType.create(MODID,"vent_generation",Generation.class);
-    public record Generation(VentTier tier,OreStone stone,Fluid fluid,ItemStack vent,ItemStack output) {}
+public final class VentJeiCategory implements IRecipeCategory<VentGeneration> {
+    public static final RecipeType<VentGeneration> TYPE=RecipeType.create(MODID,"vent_generation",VentGeneration.class);
     private final IDrawable icon,arrow;
 
     public VentJeiCategory(IGuiHelper gui) {
@@ -35,36 +33,32 @@ public final class VentJeiCategory implements IRecipeCategory<VentJeiCategory.Ge
         return VentRegistry.ventId(tier,stone,active);
     }
 
-    public static List<Generation> recipes() {
-        List<Generation> recipes=new ArrayList<>();
-        for(var tier:VentTier.values())for(var stone:OreStone.values())for(var fluid:VentFluids.inputs(tier)) {
-            var item=BuiltInRegistries.ITEM.getOptional(ventId(tier,stone,true));
-            if(item.isPresent())recipes.add(new Generation(tier,stone,fluid,item.get().getDefaultInstance(),new ItemStack(stone.output(tier))));
-        }
-        return List.copyOf(recipes);
-    }
+    public static List<VentGeneration> recipes() { return VentGeneration.recipes(); }
 
-    @Override public RecipeType<Generation> getRecipeType(){return TYPE;}
+    @Override public RecipeType<VentGeneration> getRecipeType(){return TYPE;}
     @Override public Component getTitle(){return text("title");}
     @Override public int getWidth(){return 178;}
-    @Override public int getHeight(){return 54;}
+    @Override public int getHeight(){return 96;}
     @Override public IDrawable getIcon(){return icon;}
-    @Override public ResourceLocation getRegistryName(Generation recipe){return ResourceLocation.fromNamespaceAndPath(MODID,"generation/"+recipe.tier.id+"/"+recipe.stone.id+"/"+BuiltInRegistries.FLUID.getKey(recipe.fluid).toString().replace(':','/'));}
+    @Override public ResourceLocation getRegistryName(VentGeneration recipe){return recipe.id();}
 
-    @Override public void setRecipe(IRecipeLayoutBuilder builder,Generation recipe,IFocusGroup focuses) {
-        builder.addInputSlot(20,8).setStandardSlotBackground().addFluidStack(recipe.fluid,1000);
-        builder.addSlot(RecipeIngredientRole.CATALYST,78,8).setStandardSlotBackground().addItemStack(recipe.vent)
-                .addRichTooltipCallback((slot,tooltip)->{tooltip.add(text("reusable"));tooltip.add(text("activation"));});
-        builder.addOutputSlot(148,8).setOutputSlotBackground().addItemStack(recipe.output);
+    @Override public void setRecipe(IRecipeLayoutBuilder builder,VentGeneration recipe,IFocusGroup focuses) {
+        for(int i=0;i<recipe.rows().size();i++) {
+            var row=recipe.rows().get(i);int y=8+i*30;
+            var input=builder.addInputSlot(20,y).setStandardSlotBackground();
+            row.fluids().forEach(fluid -> input.addFluidStack(fluid,1000));
+            builder.addSlot(RecipeIngredientRole.CATALYST,78,y).setStandardSlotBackground().addItemStack(row.vent());
+            builder.addOutputSlot(148,y).setOutputSlotBackground().addItemStack(row.output());
+        }
     }
 
-    @Override public void draw(Generation recipe,IRecipeSlotsView slots,GuiGraphics graphics,double mouseX,double mouseY) {
+    @Override public void draw(VentGeneration recipe,IRecipeSlotsView slots,GuiGraphics graphics,double mouseX,double mouseY) {
         var font=Minecraft.getInstance().font;
-        graphics.drawString(font,"+",54,12,0xFFFFFFFF,false);
-        String amount="1000 mB";
-        graphics.drawString(font,amount,28-font.width(amount)/2,28,0xFFFFFFFF,false);
-        arrow.draw(graphics,108,16-arrow.getHeight()/2);
-        graphics.drawString(font,text(recipe.tier.id),2,42,0xFFFFFFFF,false);
+        for(int i=0;i<recipe.rows().size();i++) {
+            int y=8+i*30;
+            graphics.drawString(font,"+",54,y+4,0xFFFFFFFF,false);
+            arrow.draw(graphics,108,y+8-arrow.getHeight()/2);
+        }
     }
 
     private static Component text(String key){return Component.translatable(MODID+".jei."+key).withStyle(ChatFormatting.WHITE);}

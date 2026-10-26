@@ -4,7 +4,6 @@ import com.ourcreation.moltenventsplus.VentConfig;
 import com.ourcreation.moltenventsplus.compat.OilFluids;
 import com.ourcreation.moltenventsplus.compat.VentResource;
 import com.ourcreation.moltenventsplus.registry.ResourceVentRegistry;
-import com.ourcreation.moltenventsplus.vent.VentFluids;
 import com.ourcreation.moltenventsplus.vent.VentTier;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
@@ -41,8 +40,7 @@ public final class ResourceVentJeiCategory implements IRecipeCategory<ResourceVe
             if (!resource.available()) continue;
             if (resource == VentResource.OIL) {
                 for (var fluid : OilFluids.outputs()) recipes.add(new Generation(resource, VentTier.WATER, fluid, ItemStack.EMPTY));
-            } else for (var tier : VentTier.values()) for (var fluid : VentFluids.inputs(tier))
-                resource.output(tier).ifPresent(output -> recipes.add(new Generation(resource, tier, fluid, new ItemStack(output))));
+            }
         }
         return List.copyOf(recipes);
     }
@@ -61,8 +59,7 @@ public final class ResourceVentJeiCategory implements IRecipeCategory<ResourceVe
         boolean oil = recipe.resource == VentResource.OIL;
         if (!oil) builder.addInputSlot(20, 8).setStandardSlotBackground().addFluidStack(recipe.fluid, 1000);
         builder.addSlot(RecipeIngredientRole.CATALYST, oil ? 45 : 78, 8).setStandardSlotBackground()
-                .addItemStack(new ItemStack(ResourceVentRegistry.block(recipe.resource, recipe.tier, true)))
-                .addRichTooltipCallback((slot, tooltip) -> { tooltip.add(text("reusable")); tooltip.add(text("activation")); });
+                .addItemStack(new ItemStack(ResourceVentRegistry.block(recipe.resource, recipe.tier, true)));
         if (oil) builder.addOutputSlot(135, 8).setOutputSlotBackground().addFluidStack(recipe.fluid, 1000);
         else builder.addOutputSlot(148, 8).setOutputSlotBackground().addItemStack(recipe.output);
     }
@@ -78,7 +75,6 @@ public final class ResourceVentJeiCategory implements IRecipeCategory<ResourceVe
             graphics.drawString(font, "+", 54, 12, 0xFFFFFFFF, false);
             graphics.drawString(font, "1000 mB", 7, 30, 0xFFFFFFFF, false);
             arrow.draw(graphics, 108, 16 - arrow.getHeight() / 2);
-            graphics.drawString(font, text(recipe.tier.id), 2, 49, 0xFFFFFFFF, false);
         }
     }
 

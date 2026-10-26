@@ -37,7 +37,8 @@ public class VentBlock extends Block {
     public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {
         if (!active || random.nextInt(3) != 0) return;
         double x = pos.getX() + random.nextDouble(), z = pos.getZ() + random.nextDouble();
-        level.addParticle(tier == VentTier.WATER ? ParticleTypes.DRIPPING_WATER : ParticleTypes.SMALL_FLAME,
+        level.addParticle(tier == VentTier.WATER ? ParticleTypes.DRIPPING_WATER
+                        : tier == VentTier.SUPERHEATED ? ParticleTypes.SOUL_FIRE_FLAME : ParticleTypes.FLAME,
                 x, pos.getY() + 1.02, z, 0, 0.03, 0);
         if (tier == VentTier.WATER) {
             level.addParticle(ParticleTypes.SPLASH, x, pos.getY() + 1.01, z, 0, 0.08, 0);

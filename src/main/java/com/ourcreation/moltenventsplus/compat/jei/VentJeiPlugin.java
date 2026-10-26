@@ -10,6 +10,7 @@ import static com.ourcreation.moltenventsplus.MoltenVentsPlus.MODID;
 
 @JeiPlugin
 public final class VentJeiPlugin implements IModPlugin {
+    private static boolean enabled() { return !net.neoforged.fml.ModList.get().isLoaded("emi"); }
     @Override public void onRuntimeAvailable(mezz.jei.api.runtime.IJeiRuntime runtime){
         var hidden=new java.util.ArrayList<net.minecraft.world.item.ItemStack>();
         if(com.ourcreation.moltenventsplus.registry.SuperheatedFluidRegistry.hasProvider()) {
@@ -33,18 +34,22 @@ public final class VentJeiPlugin implements IModPlugin {
     }
     @Override public ResourceLocation getPluginUid(){return ResourceLocation.fromNamespaceAndPath(MODID,"vents");}
     @Override public void registerCategories(IRecipeCategoryRegistration registration){
+        if(!enabled())return;
         var gui=registration.getJeiHelpers().getGuiHelper();
         registration.addRecipeCategories(new VentJeiCategory(gui),new ResourceVentJeiCategory(gui));
     }
     @Override public void registerRecipes(IRecipeRegistration registration){
+        if(!enabled())return;
         registration.addRecipes(VentJeiCategory.TYPE,VentJeiCategory.recipes());
         registration.addRecipes(ResourceVentJeiCategory.TYPE,ResourceVentJeiCategory.recipes());
     }
     @Override public void registerRecipeCatalysts(IRecipeCatalystRegistration registration){
+        if(!enabled())return;
         com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.VENTS.values().forEach(entry->{
             var vent=entry.get();
             if(vent.resource.available()&&(vent.resource==com.ourcreation.moltenventsplus.compat.VentResource.OIL||!VentFluids.inputs(vent.tier).isEmpty()))
-                registration.addRecipeCatalyst(vent.asItem().getDefaultInstance(),ResourceVentJeiCategory.TYPE);
+                registration.addRecipeCatalyst(vent.asItem().getDefaultInstance(),
+                        vent.resource==com.ourcreation.moltenventsplus.compat.VentResource.OIL?ResourceVentJeiCategory.TYPE:VentJeiCategory.TYPE);
         });
         for(var tier:VentTier.values()) {
             if(VentFluids.inputs(tier).isEmpty())continue;
