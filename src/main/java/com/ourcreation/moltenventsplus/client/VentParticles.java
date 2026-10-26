@@ -13,43 +13,62 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
 /** Ambient effects on exposed stones, including native Create/Molten Vents blocks. */
 public final class VentParticles {
     private static Map<Block, VentTier> stones;
-    private static Map<Block, Boolean> moltenCores;
+    private static Set<Block> moltenCores;
 
     private static void initialize() {
         var stoneTypes = new HashMap<Block, VentTier>();
-        var cores = new HashMap<Block, Boolean>();
+        var cores = new HashSet<Block>();
         for (var stone : OreStone.values()) {
             for (var tier : VentTier.values()) stoneTypes.put(stone.output(tier), tier);
             for (boolean active : new boolean[]{false, true})
                 BuiltInRegistries.BLOCK.getOptional(VentRegistry.ventId(VentTier.MOLTEN, stone, active))
-                        .ifPresent(block -> cores.put(block, active));
+                        .ifPresent(cores::add);
         }
         for (var resource : VentResource.values()) if (resource != VentResource.OIL && resource.available())
             for (var tier : VentTier.values()) resource.output(tier).ifPresent(block -> stoneTypes.put(block, tier));
         stones = Map.copyOf(stoneTypes);
-        moltenCores = Map.copyOf(cores);
+        moltenCores = Set.copyOf(cores);
     }
 
     /** Returns true only when replacing the selected native block's ambient tick. */
     public static boolean animate(Block block, BlockState state, Level level, BlockPos pos, RandomSource random) {
         if (stones == null) initialize();
-        var active = moltenCores.get(block);
-        var tier = active != null ? VentTier.MOLTEN : stones.get(block);
+        if (moltenCores.contains(block)) return true;
+        var tier = stones.get(block);
         if (tier == null) return false;
-        if (Boolean.FALSE.equals(active) || random.nextInt(active != null ? 3 : 6) != 0) return true;
-        if (level.getBlockState(pos.above()).isSolidRender(level, pos.above())) return true;
+        if (random.nextInt(6) != 0) return true;
         var shape = state.getShape(level, pos);
-        double height = shape.isEmpty() ? 1 : shape.max(Direction.Axis.Y);
-        level.addParticle(switch (tier) {
-            case WATER -> ParticleTypes.DRIPPING_WATER;
-            case MOLTEN -> ParticleTypes.FLAME;
-            case SUPERHEATED -> ParticleTypes.SOUL_FIRE_FLAME;
-        }, pos.getX() + 0.2 + random.nextDouble() * 0.6, pos.getY() + height + 0.02,
-                pos.getZ() + 0.2 + random.nextDouble() * 0.6, 0, tier == VentTier.WATER ? 0 : 0.02, 0);
+        if (shape.isEmpty()) return true;
+        var bounds = shape.bounds();
+        var faces = Direction.values();
+        int first = random.nextInt(faces.length);
+        for (int i = 0; i < faces.length; i++) {
+            var face = faces[(first + i) % faces.length];
+            boolean positive = face.getAxisDirection() == Direction.AxisDirection.POSITIVE;
+            double plane = positive ? bounds.max(face.getAxis()) : bounds.min(face.getAxis());
+            boolean boundary = positive ? plane >= 1 : plane <= 0;
+            if (boundary && !Block.shouldRenderFace(state, level, pos, face, pos.relative(face))) continue;
+            double x = bounds.minX + random.nextDouble() * bounds.getXsize();
+            double y = bounds.minY + random.nextDouble() * bounds.getYsize();
+            double z = bounds.minZ + random.nextDouble() * bounds.getZsize();
+            switch (face.getAxis()) {
+                case X -> x = plane + face.getStepX() * 0.02;
+                case Y -> y = plane + face.getStepY() * 0.02;
+                case Z -> z = plane + face.getStepZ() * 0.02;
+            }
+            level.addParticle(switch (tier) {
+                case WATER -> ParticleTypes.DRIPPING_WATER;
+                case MOLTEN -> ParticleTypes.FLAME;
+                case SUPERHEATED -> ParticleTypes.SOUL_FIRE_FLAME;
+            }, pos.getX() + x, pos.getY() + y, pos.getZ() + z, 0, 0, 0);
+            break;
+        }
         return true;
     }
 

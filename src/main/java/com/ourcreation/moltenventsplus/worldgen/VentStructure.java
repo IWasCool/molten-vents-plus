@@ -52,10 +52,12 @@ public final class VentStructure extends Structure {
             return Optional.empty();
         }
 
-        // Every material has an independent location as well as an independent structure set.
+        if (!VentPlacement.selects(context, tier, stone.id)) return Optional.empty();
+
+        // Land and aquatic variants share an origin, so a shoreline cannot generate both.
         var random = new WorldgenRandom(new LegacyRandomSource(0));
         random.setLargeFeatureWithSalt(context.seed(), context.chunkPos().x, context.chunkPos().z,
-                (tier.id + ":" + stone.id + ":" + aquatic).hashCode() & Integer.MAX_VALUE);
+                (tier.id + ":" + stone.id).hashCode() & Integer.MAX_VALUE);
         int x = context.chunkPos().getMinBlockX() + random.nextInt(16);
         int z = context.chunkPos().getMinBlockZ() + random.nextInt(16);
         var heightmap = tier == VentTier.MOLTEN && !aquatic

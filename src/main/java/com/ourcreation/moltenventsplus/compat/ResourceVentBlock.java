@@ -3,8 +3,6 @@ package com.ourcreation.moltenventsplus.compat;
 import com.ourcreation.moltenventsplus.registry.ResourceVentRegistry;
 import com.ourcreation.moltenventsplus.vent.VentTier;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -51,11 +49,4 @@ public class ResourceVentBlock extends Block {
         return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }
 
-    @Override public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {
-        if (!active || random.nextInt(3) != 0) return;
-        level.addParticle(resource == VentResource.OIL ? ParticleTypes.SMOKE
-                        : tier == VentTier.WATER ? ParticleTypes.DRIPPING_WATER
-                        : tier == VentTier.SUPERHEATED ? ParticleTypes.SOUL_FIRE_FLAME : ParticleTypes.FLAME,
-                pos.getX() + random.nextDouble(), pos.getY() + 1.02, pos.getZ() + random.nextDouble(), 0, 0.02, 0);
-    }
 }

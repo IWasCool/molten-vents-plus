@@ -43,6 +43,8 @@ public final class ResourceVentStructure extends Structure {
                 || tier == VentTier.MOLTEN && !com.Apothic0n.MoltenVents.config.CommonConfig.generateLandVents.get()) {
             return Optional.empty();
         }
+        if (resource != VentResource.OIL && !VentPlacement.selects(context, tier, resource.id))
+            return Optional.empty();
 
         var random = new WorldgenRandom(new LegacyRandomSource(0));
         random.setLargeFeatureWithSalt(context.seed(), context.chunkPos().x, context.chunkPos().z,
