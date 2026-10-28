@@ -1,14 +1,14 @@
 {
-  "block.molten_vents.active_molten_asurine": "Asurine Gesmelte Vent",
-  "block.molten_vents.dormant_molten_asurine": "Asurine Gesmelte Vent",
-  "block.molten_vents.active_molten_veridium": "Veridium Gesmelte Vent",
-  "block.molten_vents.dormant_molten_veridium": "Veridium Gesmelte Vent",
-  "block.molten_vents.active_molten_crimsite": "Crimsite Gesmelte Vent",
-  "block.molten_vents.dormant_molten_crimsite": "Crimsite Gesmelte Vent",
-  "block.molten_vents.active_molten_ochrum": "Ochrum Gesmelte Vent",
-  "block.molten_vents.dormant_molten_ochrum": "Ochrum Gesmelte Vent",
-  "block.molten_vents.active_molten_scorchia": "Scorchia Gesmelte Vent",
-  "block.molten_vents.dormant_molten_scorchia": "Scorchia Gesmelte Vent",
-  "block.molten_vents.active_molten_scoria": "Scoria Gesmelte Vent",
-  "block.molten_vents.dormant_molten_scoria": "Scoria Gesmelte Vent"
+  "block.molten_vents.active_molten_asurine": "Asurine Lawabron",
+  "block.molten_vents.dormant_molten_asurine": "Asurine Lawabron",
+  "block.molten_vents.active_molten_veridium": "Veridium Lawabron",
+  "block.molten_vents.dormant_molten_veridium": "Veridium Lawabron",
+  "block.molten_vents.active_molten_crimsite": "Crimsite Lawabron",
+  "block.molten_vents.dormant_molten_crimsite": "Crimsite Lawabron",
+  "block.molten_vents.active_molten_ochrum": "Ochrum Lawabron",
+  "block.molten_vents.dormant_molten_ochrum": "Ochrum Lawabron",
+  "block.molten_vents.active_molten_scorchia": "Scorchia Lawabron",
+  "block.molten_vents.dormant_molten_scorchia": "Scorchia Lawabron",
+  "block.molten_vents.active_molten_scoria": "Scoria Lawabron",
+  "block.molten_vents.dormant_molten_scoria": "Scoria Lawabron"
 }

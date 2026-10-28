@@ -36,7 +36,7 @@
   "block.create_water_vents.active_water_scoria": "Scoria Veeventilatsioon",
   "block.create_water_vents.dormant_superheated_scoria": "Scoria Ülekuumendatud tuulutusava",
   "block.create_water_vents.active_superheated_scoria": "Scoria Ülekuumendatud tuulutusava",
-  "create_water_vents.jei.title": "Vent Generation",
+  "create_water_vents.jei.title": "Ventilatsioonitorude genereerimine",
   "command.create_water_vents.movement.enabled": "Kõiki tuulutusavasid saab nüüd liigutada.",
   "command.create_water_vents.movement.disabled": "Kõik tuulutusavad on nüüd liikumatud.",
   "create_water_vents.ponder.molten_vent_activation.header": "Kasutades sulaventiili",

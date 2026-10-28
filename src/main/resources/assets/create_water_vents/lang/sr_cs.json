@@ -110,7 +110,7 @@
   "structure.create_water_vents.oil_desert_vent": "Oil Vent Pustinja / Badlands",
   "structure.create_water_vents.oil_swamp_vent": "Otvor za ulje Močvara",
   "structure.create_water_vents.oil_ocean_vent": "Otvor za ulje Okean",
-  "create_water_vents.jei.resources": "Resource Vents",
+  "create_water_vents.jei.resources": "Ресоурце Вентс",
   "create_water_vents.jei.oil_rate": "1000 mB / %s krpelja",
   "create_water_vents.jei.oil_habitats": "Pustinja · Močvara · Okean",
   "create_water_vents.jei.oil_selection": "Kanta za ulje bira dobavljača",

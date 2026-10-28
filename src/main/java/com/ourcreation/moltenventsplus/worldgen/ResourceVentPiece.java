@@ -38,7 +38,7 @@ public final class ResourceVentPiece extends StructurePiece {
         this.radius = radius;
         this.depth = depth;
         this.seed = seed;
-        this.shapeVersion = 3;
+        this.shapeVersion = resource == VentResource.OIL || tier == VentTier.WATER ? 1 : 3;
     }
 
     public ResourceVentPiece(CompoundTag tag) {

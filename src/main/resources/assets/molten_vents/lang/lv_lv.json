@@ -1,14 +1,14 @@
 {
-  "block.molten_vents.active_molten_asurine": "Asurine Molten Vent",
-  "block.molten_vents.dormant_molten_asurine": "Asurine Molten Vent",
-  "block.molten_vents.active_molten_veridium": "Veridium Molten Vent",
-  "block.molten_vents.dormant_molten_veridium": "Veridium Molten Vent",
-  "block.molten_vents.active_molten_crimsite": "Crimsite Molten Vent",
-  "block.molten_vents.dormant_molten_crimsite": "Crimsite Molten Vent",
-  "block.molten_vents.active_molten_ochrum": "Ochrum Molten Vent",
-  "block.molten_vents.dormant_molten_ochrum": "Ochrum Molten Vent",
-  "block.molten_vents.active_molten_scorchia": "Scorchia Molten Vent",
-  "block.molten_vents.dormant_molten_scorchia": "Scorchia Molten Vent",
-  "block.molten_vents.active_molten_scoria": "Scoria Molten Vent",
-  "block.molten_vents.dormant_molten_scoria": "Scoria Molten Vent"
+  "block.molten_vents.active_molten_asurine": "Asurine Lavas avots",
+  "block.molten_vents.dormant_molten_asurine": "Asurine Lavas avots",
+  "block.molten_vents.active_molten_veridium": "Veridium Lavas avots",
+  "block.molten_vents.dormant_molten_veridium": "Veridium Lavas avots",
+  "block.molten_vents.active_molten_crimsite": "Crimsite Lavas avots",
+  "block.molten_vents.dormant_molten_crimsite": "Crimsite Lavas avots",
+  "block.molten_vents.active_molten_ochrum": "Ochrum Lavas avots",
+  "block.molten_vents.dormant_molten_ochrum": "Ochrum Lavas avots",
+  "block.molten_vents.active_molten_scorchia": "Scorchia Lavas avots",
+  "block.molten_vents.dormant_molten_scorchia": "Scorchia Lavas avots",
+  "block.molten_vents.active_molten_scoria": "Scoria Lavas avots",
+  "block.molten_vents.dormant_molten_scoria": "Scoria Lavas avots"
 }

@@ -1,14 +1,14 @@
 {
-  "block.molten_vents.active_molten_asurine": "Asurin Molten Vent",
-  "block.molten_vents.dormant_molten_asurine": "Asurin Molten Vent",
-  "block.molten_vents.active_molten_veridium": "Veridium Molten Vent",
-  "block.molten_vents.dormant_molten_veridium": "Veridium Molten Vent",
-  "block.molten_vents.active_molten_crimsite": "Karmositt Molten Vent",
-  "block.molten_vents.dormant_molten_crimsite": "Karmositt Molten Vent",
-  "block.molten_vents.active_molten_ochrum": "Okrum Molten Vent",
-  "block.molten_vents.dormant_molten_ochrum": "Okrum Molten Vent",
-  "block.molten_vents.active_molten_scorchia": "Scorchia Molten Vent",
-  "block.molten_vents.dormant_molten_scorchia": "Scorchia Molten Vent",
-  "block.molten_vents.active_molten_scoria": "Scoria Molten Vent",
-  "block.molten_vents.dormant_molten_scoria": "Scoria Molten Vent"
+  "block.molten_vents.active_molten_asurine": "Asurin Lavakilde",
+  "block.molten_vents.dormant_molten_asurine": "Asurin Lavakilde",
+  "block.molten_vents.active_molten_veridium": "Veridium Lavakilde",
+  "block.molten_vents.dormant_molten_veridium": "Veridium Lavakilde",
+  "block.molten_vents.active_molten_crimsite": "Karmositt Lavakilde",
+  "block.molten_vents.dormant_molten_crimsite": "Karmositt Lavakilde",
+  "block.molten_vents.active_molten_ochrum": "Okrum Lavakilde",
+  "block.molten_vents.dormant_molten_ochrum": "Okrum Lavakilde",
+  "block.molten_vents.active_molten_scorchia": "Scorchia Lavakilde",
+  "block.molten_vents.dormant_molten_scorchia": "Scorchia Lavakilde",
+  "block.molten_vents.active_molten_scoria": "Scoria Lavakilde",
+  "block.molten_vents.dormant_molten_scoria": "Scoria Lavakilde"
 }

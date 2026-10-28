@@ -1,14 +1,14 @@
 {
-  "block.molten_vents.active_molten_asurine": "Asurine Roztavený ventil",
-  "block.molten_vents.dormant_molten_asurine": "Asurine Roztavený ventil",
-  "block.molten_vents.active_molten_veridium": "Veridium Roztavený ventil",
-  "block.molten_vents.dormant_molten_veridium": "Veridium Roztavený ventil",
-  "block.molten_vents.active_molten_crimsite": "Crimsite Roztavený ventil",
-  "block.molten_vents.dormant_molten_crimsite": "Crimsite Roztavený ventil",
-  "block.molten_vents.active_molten_ochrum": "Ochrum Roztavený ventil",
-  "block.molten_vents.dormant_molten_ochrum": "Ochrum Roztavený ventil",
-  "block.molten_vents.active_molten_scorchia": "Scorchia Roztavený ventil",
-  "block.molten_vents.dormant_molten_scorchia": "Scorchia Roztavený ventil",
-  "block.molten_vents.active_molten_scoria": "Scoria Roztavený ventil",
-  "block.molten_vents.dormant_molten_scoria": "Scoria Roztavený ventil"
+  "block.molten_vents.active_molten_asurine": "Asurine Lávový prieduch",
+  "block.molten_vents.dormant_molten_asurine": "Asurine Lávový prieduch",
+  "block.molten_vents.active_molten_veridium": "Veridium Lávový prieduch",
+  "block.molten_vents.dormant_molten_veridium": "Veridium Lávový prieduch",
+  "block.molten_vents.active_molten_crimsite": "Crimsite Lávový prieduch",
+  "block.molten_vents.dormant_molten_crimsite": "Crimsite Lávový prieduch",
+  "block.molten_vents.active_molten_ochrum": "Ochrum Lávový prieduch",
+  "block.molten_vents.dormant_molten_ochrum": "Ochrum Lávový prieduch",
+  "block.molten_vents.active_molten_scorchia": "Scorchia Lávový prieduch",
+  "block.molten_vents.dormant_molten_scorchia": "Scorchia Lávový prieduch",
+  "block.molten_vents.active_molten_scoria": "Scoria Lávový prieduch",
+  "block.molten_vents.dormant_molten_scoria": "Scoria Lávový prieduch"
 }

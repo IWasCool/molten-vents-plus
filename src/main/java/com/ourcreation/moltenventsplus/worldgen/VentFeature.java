@@ -44,7 +44,7 @@ public final class VentFeature extends Feature<VentConfiguration> {
     static void placeDeposit(WorldGenLevel level, RandomSource random, BlockPos origin, VentTier tier,
                              BlockState ore, BlockState core, int radius, int depth, boolean underwater, BoundingBox bounds) {
         placeDeposit(level, random, origin, tier, ore, core, radius, depth, underwater, bounds,
-                3);
+                tier == VentTier.WATER ? 1 : 3);
     }
 
     static void placeDeposit(WorldGenLevel level, RandomSource random, BlockPos origin, VentTier tier,
