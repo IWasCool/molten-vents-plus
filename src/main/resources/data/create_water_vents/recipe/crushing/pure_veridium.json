@@ -9,21 +9,11 @@
   "results": [
     {
       "id": "create:crushed_raw_copper",
-      "count": 6
+      "count": 16
     },
     {
       "id": "create:copper_nugget",
-      "count": 6
-    },
-    {
-      "id": "create:crushed_raw_copper",
-      "count": 1,
-      "chance": 0.4
-    },
-    {
-      "id": "create:copper_nugget",
-      "count": 1,
-      "chance": 0.4
+      "count": 16
     }
   ]
 }

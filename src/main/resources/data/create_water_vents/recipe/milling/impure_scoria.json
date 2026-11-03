@@ -8,9 +8,9 @@
   "processing_time": 250,
   "results": [
     {
-      "id": "minecraft:netherite_scrap",
+      "id": "minecraft:quartz",
       "count": 1,
-      "chance": 0.013333333333333332
+      "chance": 0.12
     }
   ]
 }

@@ -12,14 +12,14 @@ public enum OreStone implements StringRepresentable {
     CRIMSITE("crimsite", "minecraft:iron_nugget"),
     OCHRUM("ochrum", "minecraft:gold_nugget"),
     SCORCHIA("scorchia", "minecraft:coal", 0.12F / 9),
-    SCORIA("scoria", "minecraft:netherite_scrap", 0.12F / 9);
+    SCORIA("scoria", "minecraft:quartz", 0.12F);
 
     public final String id;
     public final ResourceLocation millingOutput;
     public final float millingChance;
 
     OreStone(String id, String output) {
-        this(id, output, 0.12F);
+        this(id, output, 0.08F);
     }
 
     OreStone(String id, String output, float chance) {

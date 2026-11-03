@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "top": "create_water_vents:block/pure_asurine",
+    "bottom": "create_water_vents:block/pure_asurine",
+    "side": "create_water_vents:block/pure_asurine"
+  }
+}

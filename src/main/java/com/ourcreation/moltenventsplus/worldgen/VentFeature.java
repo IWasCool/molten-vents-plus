@@ -4,10 +4,13 @@ import com.ourcreation.moltenventsplus.VentConfig;
 import com.ourcreation.moltenventsplus.registry.VentRegistry;
 import com.ourcreation.moltenventsplus.vent.*;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.levelgen.structure.BoundingBox;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -44,12 +47,23 @@ public final class VentFeature extends Feature<VentConfiguration> {
     static void placeDeposit(WorldGenLevel level, RandomSource random, BlockPos origin, VentTier tier,
                              BlockState ore, BlockState core, int radius, int depth, boolean underwater, BoundingBox bounds) {
         placeDeposit(level, random, origin, tier, ore, core, radius, depth, underwater, bounds,
-                tier == VentTier.WATER ? 1 : 3);
+                GroundedVentDeposit.SHAPE_VERSION);
     }
 
     static void placeDeposit(WorldGenLevel level, RandomSource random, BlockPos origin, VentTier tier,
                              BlockState ore, BlockState core, int radius, int depth, boolean underwater,
                              BoundingBox bounds, int shapeVersion) {
+        // Formation rock is ordinary Create stone; purity belongs to the vent's output.
+        if (core.getBlock() instanceof VentBlock vent)
+            ore = vent.stone.output(VentTier.MOLTEN).defaultBlockState();
+        if (tier == VentTier.WATER && shapeVersion >= GroundedVentDeposit.SHAPE_VERSION) {
+            GroundedVentDeposit.place(level, random, origin, ore, core, radius, depth, underwater, bounds);
+            return;
+        }
+        if (tier == VentTier.SUPERHEATED && shapeVersion >= GroundedVentDeposit.SHAPE_VERSION) {
+            CompactVentDeposit.place(level, random, origin, ore, core, radius, depth, underwater, bounds, true);
+            return;
+        }
         if (shapeVersion >= 3) {
             CompactVentDeposit.place(level, random, origin, ore, core, radius, depth, underwater, bounds);
             return;
@@ -84,6 +98,28 @@ public final class VentFeature extends Feature<VentConfiguration> {
         }
         if (bounds.isInside(origin) && level.getBlockEntity(origin) == null)
             level.setBlock(origin, core, 2);
+    }
+
+    static BlockState profile(BlockState ore, WeatheredVentStoneBlock.Profile profile, boolean wet) {
+        String material = BuiltInRegistries.BLOCK.getKey(ore.getBlock()).getPath();
+        String name = switch (profile) {
+            case NATURAL -> material;
+            case CUT -> "cut_" + material;
+            case SLAB -> "cut_" + material + "_slab";
+            case POST -> "cut_" + material + "_wall";
+        };
+        var state = BuiltInRegistries.BLOCK.getOptional(ResourceLocation.fromNamespaceAndPath("create", name))
+                .orElse(ore.getBlock()).defaultBlockState();
+        return state.hasProperty(BlockStateProperties.WATERLOGGED)
+                ? state.setValue(BlockStateProperties.WATERLOGGED, wet) : state;
+    }
+
+    static boolean sameStone(BlockState state, BlockState ore) {
+        var id = BuiltInRegistries.BLOCK.getKey(state.getBlock());
+        String material = BuiltInRegistries.BLOCK.getKey(ore.getBlock()).getPath();
+        return state.is(ore.getBlock()) || id.getNamespace().equals("create")
+                && (id.getPath().equals("cut_" + material) || id.getPath().equals("cut_" + material + "_slab")
+                    || id.getPath().equals("cut_" + material + "_wall"));
     }
 
     private static boolean terrain(WorldGenLevel level, BlockPos pos) {

@@ -9,12 +9,7 @@
   "results": [
     {
       "id": "minecraft:coal",
-      "count": 6
-    },
-    {
-      "id": "minecraft:coal",
-      "count": 1,
-      "chance": 0.6666666666666666
+      "count": 32
     }
   ]
 }

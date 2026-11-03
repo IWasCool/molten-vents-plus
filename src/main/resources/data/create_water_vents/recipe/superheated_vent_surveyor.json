@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {"item": "minecraft:compass"},
+    {"item": "create:precision_mechanism"},
+    {"item": "create:railway_casing"},
+    {"item": "minecraft:netherite_ingot"}
+  ],
+  "result": {"id": "create_water_vents:superheated_vent_surveyor", "count": 1}
+}

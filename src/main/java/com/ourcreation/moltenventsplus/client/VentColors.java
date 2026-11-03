@@ -2,9 +2,6 @@ package com.ourcreation.moltenventsplus.client;
 
 import com.ourcreation.moltenventsplus.MoltenVentsPlus;
 import com.ourcreation.moltenventsplus.registry.VentRegistry;
-import com.ourcreation.moltenventsplus.registry.ResourceVentRegistry;
-import com.ourcreation.moltenventsplus.compat.VentResource;
-import com.ourcreation.moltenventsplus.compat.ResourceVentBlock;
 import com.ourcreation.moltenventsplus.vent.VentBlock;
 import com.ourcreation.moltenventsplus.vent.VentTier;
 import com.ourcreation.moltenventsplus.vent.VentFluids;
@@ -29,10 +26,6 @@ public final class VentColors {
 
     @SubscribeEvent
     public static void blocks(RegisterColorHandlersEvent.Block event) {
-        ResourceVentRegistry.VENTS.values().forEach(block -> event.register((state, level, pos, index) -> {
-            var vent = (ResourceVentBlock) state.getBlock();
-            return vent.resource == VentResource.OIL ? vent.resource.color : core(vent.tier, vent.active);
-        }, block.get()));
         VentRegistry.ENTRIES.forEach((name, block) -> {
             if (block.get() instanceof VentBlock)
                 event.register((state, level, pos, index) -> {
@@ -44,8 +37,6 @@ public final class VentColors {
 
     @SubscribeEvent
     public static void items(RegisterColorHandlersEvent.Item event) {
-        ResourceVentRegistry.VENTS.values().forEach(block -> event.register((stack,index) ->
-                event.getBlockColors().getColor(((BlockItem)stack.getItem()).getBlock().defaultBlockState(),null,null,index), block.get()));
         VentRegistry.ENTRIES.forEach((name, block) -> {
             if (block.get() instanceof VentBlock)
                 event.register((stack,index) -> event.getBlockColors().getColor(

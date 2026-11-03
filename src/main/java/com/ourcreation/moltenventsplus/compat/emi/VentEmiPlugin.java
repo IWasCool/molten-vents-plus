@@ -1,6 +1,5 @@
 package com.ourcreation.moltenventsplus.compat.emi;
 
-import com.ourcreation.moltenventsplus.VentConfig;
 import com.ourcreation.moltenventsplus.compat.*;
 import com.ourcreation.moltenventsplus.registry.*;
 import com.ourcreation.moltenventsplus.vent.*;
@@ -26,8 +25,7 @@ import static com.ourcreation.moltenventsplus.MoltenVentsPlus.MODID;
 public final class VentEmiPlugin implements EmiPlugin {
     public static final EmiRecipeCategory VENTS = category("vent_generation", ".jei.title",
             EmiStack.of(VentRegistry.block(VentTier.WATER, OreStone.ASURINE, true)));
-    public static final EmiRecipeCategory OIL = category("resource_vent_generation", ".jei.resources",
-            EmiStack.of(ResourceVentRegistry.block(VentResource.OIL, VentTier.WATER, true)));
+
 
     static EmiRecipeCategory category(String id, String translation, EmiStack icon) {
         return new EmiRecipeCategory(ResourceLocation.fromNamespaceAndPath(MODID, id), icon) {
@@ -40,24 +38,15 @@ public final class VentEmiPlugin implements EmiPlugin {
     @Override
     public void register(EmiRegistry registry) {
         registry.addCategory(VENTS);
-        var oils = OilFluids.outputs();
-        if (!oils.isEmpty()) registry.addCategory(OIL);
         VentGeneration.recipes().forEach(page -> registry.addRecipe(new MaterialRecipe(page)));
         for (var stone : OreStone.values()) for (var tier : VentTier.values()) for (boolean active : new boolean[]{false, true})
             registry.addWorkstation(VENTS, EmiStack.of(BuiltInRegistries.ITEM.get(VentRegistry.ventId(tier, stone, active))));
-        ResourceVentRegistry.VENTS.values().forEach(entry -> {
-            var vent = entry.get();
-            if (vent.resource.available()) registry.addWorkstation(vent.resource == VentResource.OIL ? OIL : VENTS, EmiStack.of(vent));
-        });
-        oils.forEach(fluid -> registry.addRecipe(new OilRecipe(fluid)));
         registry.removeEmiStacks(stack -> {
             if (stack.getKey() instanceof Fluid fluid)
                 return SuperheatedFluidRegistry.hasProvider() && SuperheatedFluidRegistry.isFallback(fluid);
             var item = stack.getItemStack();
             if (item.isEmpty()) return false;
             if (SuperheatedFluidRegistry.hasProvider() && item.is(SuperheatedFluidRegistry.BUCKET.get())) return true;
-            for (var entry : ResourceVentRegistry.VENTS.values())
-                if (item.is(entry.get().asItem())) return !entry.get().resource.available();
             return false;
         });
         // With JEI installed Create already supplies its real processing recipes through JEMI.
@@ -113,21 +102,4 @@ public final class VentEmiPlugin implements EmiPlugin {
         }
     }
 
-    private static final class OilRecipe extends BasicEmiRecipe {
-        private OilRecipe(Fluid fluid) {
-            super(OIL, ResourceLocation.fromNamespaceAndPath(MODID, "/oil/" + BuiltInRegistries.FLUID.getKey(fluid).toString().replace(':', '/')), 178, 74);
-            catalysts.add(EmiStack.of(ResourceVentRegistry.block(VentResource.OIL, VentTier.WATER, true)));
-            outputs.add(EmiStack.of(fluid, 1000));
-        }
-
-        @Override public boolean supportsRecipeTree() { return false; }
-        @Override public void addWidgets(WidgetHolder widgets) {
-            widgets.addSlot(catalysts.getFirst(), 44, 7).catalyst(true);
-            widgets.addTexture(EmiTexture.EMPTY_ARROW, 85, 8);
-            widgets.addSlot(outputs.getFirst(), 134, 7).recipeContext(this);
-            widgets.addText(Component.translatable(MODID + ".jei.oil_rate", VentConfig.OIL_INTERVAL.get()), 2, 33, 0xFFFFFF, false);
-            widgets.addText(Component.translatable(MODID + ".jei.oil_habitats"), 2, 47, 0xFFFFFF, false);
-            widgets.addText(Component.translatable(MODID + ".jei.oil_selection"), 2, 61, 0xFFFFFF, false);
-        }
-    }
 }

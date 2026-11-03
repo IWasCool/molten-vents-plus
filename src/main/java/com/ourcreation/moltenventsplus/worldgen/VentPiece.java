@@ -31,7 +31,7 @@ public final class VentPiece extends StructurePiece {
     public VentPiece(BlockPos origin, VentTier tier, OreStone stone, boolean aquatic, boolean submerged,
                      int radius, int depth, int minY, long seed) {
         super(VentRegistry.VENT_PIECE.get(), 0, new BoundingBox(origin.getX() - radius,
-                Math.max(minY, origin.getY() - depth - 2), origin.getZ() - radius,
+                Math.max(minY, origin.getY() - (tier == VentTier.WATER ? Math.max(depth + 2, GroundedVentDeposit.SUPPORT_DEPTH + 1) : depth + 2)), origin.getZ() - radius,
                 origin.getX() + radius, origin.getY() + 4, origin.getZ() + radius));
         this.origin = origin.immutable();
         this.tier = tier;
@@ -41,7 +41,7 @@ public final class VentPiece extends StructurePiece {
         this.radius = radius;
         this.depth = depth;
         this.seed = seed;
-        this.shapeVersion = tier == VentTier.WATER ? 1 : tier == VentTier.MOLTEN ? 0 : 3;
+        this.shapeVersion = tier == VentTier.MOLTEN ? 0 : GroundedVentDeposit.SHAPE_VERSION;
     }
 
     public VentPiece(CompoundTag tag) {

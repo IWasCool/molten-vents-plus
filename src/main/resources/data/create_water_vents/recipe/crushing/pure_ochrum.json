@@ -9,21 +9,11 @@
   "results": [
     {
       "id": "create:crushed_raw_gold",
-      "count": 1
+      "count": 16
     },
     {
       "id": "minecraft:gold_nugget",
-      "count": 1
-    },
-    {
-      "id": "create:crushed_raw_gold",
-      "count": 1,
-      "chance": 0.6
-    },
-    {
-      "id": "minecraft:gold_nugget",
-      "count": 1,
-      "chance": 0.6
+      "count": 16
     }
   ]
 }

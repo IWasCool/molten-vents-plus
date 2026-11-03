@@ -44,6 +44,98 @@ def generateModMetadata = tasks.register('generateModMetadata', ProcessResources
 }
 sourceSets.main.resources.srcDir generateModMetadata
 neoForge.ideSyncTask generateModMetadata
+
+// Minecraft 1.21.1 language catalogue, including regional and fictional options.
+def minecraftLanguages = '''
+af_za ar_sa ast_es az_az ba_ru bar be_by be_latn bg_bg br_fr brb bs_ba
+ca_es cs_cz cv_cu cy_gb da_dk de_at de_ch de_de el_gr
+en_au en_ca en_gb en_nz en_pt en_ud en_us enp enws eo_uy
+es_ar es_cl es_ec es_es es_mx es_uy es_ve esan et_ee eu_es
+fa_ir fi_fi fil_ph fo_fo fr_ca fr_ch fr_fr fra_de fur_it fy_nl
+ga_ie gd_gb gl_es go_fr got_de hal_ua haw_us he_il hi_in hn_no hr_hr hu_hu hy_am
+id_id ig_ng io_en is_is isv it_it ja_jp jbo_en ka_ge kk_kz kn_in ko_kr ksh kw_gb ky_kg
+la_la lb_lu li_li lmo lo_la lol_us lt_lt lv_lv lzh mk_mk mn_mn ms_my mt_mt
+nah nds_de nl_be nl_nl nn_no no_no oc_fr ovd pl_pl pls pt_br pt_pt
+qcb_es qid qya_aa ro_ro rpr ru_ru ry_ua sah_sah se_no sk_sk sl_si so_so sq_al
+sr_cs sr_sp sv_se sxu szl ta_in th_th tl_ph tlh_aa tok tr_tr tt_ru tzo_mx
+uk_ua uz_uz val_es vec_it vi_vn vp_vl vro yi_de yo_ng zh_cn zh_hk zh_tw zlm_arab
+'''.trim().split(/\s+/).toList()
+
+def validateTranslations = tasks.register('validateTranslations') {
+    group = 'verification'
+    description = 'Check every Minecraft language for complete keys and matching formatting arguments.'
+    inputs.property('minecraftLanguages', minecraftLanguages)
+    inputs.files(fileTree('src/main/resources/assets') {
+        include 'create_water_vents/lang/*.json', 'molten_vents/lang/*.json'
+    }).withPathSensitivity(PathSensitivity.RELATIVE)
+
+    doLast {
+        def expectedLocales = inputs.properties.minecraftLanguages as Set
+        def byNamespace = inputs.files.files.groupBy { it.parentFile.parentFile.name }
+        def problems = []
+        def formatArguments = { String value ->
+            int nextArgument = 0
+            def arguments = []
+            // Ignore escaped percent signs; explicit argument indices may reorder translations.
+            def matcher = value.replace('%%', '') =~ /%(?:(\d+)\$)?([sd])/
+            matcher.each { match ->
+                def index = match[1] ? match[1].toInteger() : ++nextArgument
+                arguments.add("${index}:${match[2]}".toString())
+            }
+            arguments.sort()
+        }
+
+        ['create_water_vents', 'molten_vents'].each { namespace ->
+            def files = byNamespace[namespace] ?: []
+            def locales = files.collect { it.name - '.json' } as Set
+            def missingLocales = expectedLocales - locales
+            def unexpectedLocales = locales - expectedLocales
+            if (missingLocales) problems.add("${namespace}: missing languages ${missingLocales.sort()}")
+            if (unexpectedLocales) problems.add("${namespace}: unlisted languages ${unexpectedLocales.sort()}")
+
+            def translations = [:]
+            files.each { file ->
+                try {
+                    def data = new groovy.json.JsonSlurper().parseText(file.getText('UTF-8'))
+                    if (!(data instanceof Map)) {
+                        problems.add("${namespace}/${file.name}: expected a JSON object")
+                    } else {
+                        translations[file.name - '.json'] = data
+                    }
+                } catch (Exception exception) {
+                    problems.add("${namespace}/${file.name}: invalid JSON (${exception.message})")
+                }
+            }
+            def english = translations.en_us
+            if (english == null || english.isEmpty()) {
+                problems.add("${namespace}: missing or empty English reference")
+            } else {
+                translations.each { locale, data ->
+                    def missingKeys = english.keySet() - data.keySet()
+                    def extraKeys = data.keySet() - english.keySet()
+                    if (missingKeys) problems.add("${namespace}/${locale}: missing keys ${missingKeys.sort()}")
+                    if (extraKeys) problems.add("${namespace}/${locale}: unknown keys ${extraKeys.sort()}")
+                    data.each { key, value ->
+                        if (!(value instanceof String) || value.isBlank() || value.contains('\uFFFD')) {
+                            problems.add("${namespace}/${locale}: invalid or empty value for ${key}")
+                        } else if (english[key] instanceof String
+                                && formatArguments(value) != formatArguments(english[key])) {
+                            problems.add("${namespace}/${locale}: formatting arguments differ for ${key}")
+                        }
+                    }
+                }
+            }
+        }
+        if (problems) {
+            throw new GradleException('Translation validation failed:\n' + problems.sort().join('\n'))
+        }
+        logger.lifecycle("Validated ${expectedLocales.size()} languages in both translation namespaces.")
+    }
+}
+
+tasks.named('check') { dependsOn validateTranslations }
+tasks.named('processResources') { dependsOn validateTranslations }
+
 tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
 tasks.withType(AbstractArchiveTask).configureEach {
     includeEmptyDirs = false

@@ -1,16 +1,16 @@
 {
   "variants": {
     "profile=natural": {
-      "model": "create:block/scorchia"
+      "model": "create_water_vents:block/pure_scorchia"
     },
     "profile=cut": {
-      "model": "create:block/cut_scorchia"
+      "model": "create_water_vents:block/pure_scorchia"
     },
     "profile=slab": {
-      "model": "create:block/cut_scorchia_slab"
+      "model": "create_water_vents:block/pure_scorchia_slab"
     },
     "profile=post": {
-      "model": "create:block/cut_scorchia_wall_post"
+      "model": "create_water_vents:block/pure_scorchia_post"
     }
   }
 }

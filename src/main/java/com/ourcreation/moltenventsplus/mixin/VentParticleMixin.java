@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 abstract class VentParticleMixin {
     @Redirect(method = "doAnimateTick", at = @At(value = "INVOKE",
             target = "Lnet/minecraft/world/level/block/Block;animateTick(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)V"))
-    private void moltenVentsPlus$stoneParticles(Block block, BlockState state, Level level, BlockPos pos, RandomSource random) {
+    private void moltenVentsPlus$coreParticles(Block block, BlockState state, Level level, BlockPos pos, RandomSource random) {
         if (!VentParticles.animate(block, state, level, pos, random)) block.animateTick(state, level, pos, random);
     }
 }

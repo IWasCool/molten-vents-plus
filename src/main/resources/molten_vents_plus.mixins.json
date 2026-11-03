@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "com.ourcreation.moltenventsplus.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": ["SimulatedVentMovementMixin"],
+  "mixins": ["SimulatedVentMovementMixin", "PureCrushingCapacityMixin", "ImpureScoriaCrushingMixin"],
   "client": ["VentParticleMixin", "VentDiscoveryMixin"],
   "injectors": {"defaultRequire": 1}
 }

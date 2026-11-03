@@ -3,20 +3,13 @@ package com.ourcreation.moltenventsplus.worldgen;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.ourcreation.moltenventsplus.VentConfig;
 import com.ourcreation.moltenventsplus.compat.VentResource;
 import com.ourcreation.moltenventsplus.registry.ResourceVentRegistry;
 import com.ourcreation.moltenventsplus.vent.VentTier;
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.QuartPos;
 import net.minecraft.util.StringRepresentable;
-import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.levelgen.LegacyRandomSource;
-import net.minecraft.world.level.levelgen.WorldgenRandom;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.levelgen.structure.StructureType;
 
-import java.util.ArrayList;
 import java.util.Optional;
 
 public final class ResourceVentStructure extends Structure {
@@ -36,40 +29,8 @@ public final class ResourceVentStructure extends Structure {
     }
 
     @Override public Optional<GenerationStub> findGenerationPoint(GenerationContext context) {
-        // Retired mineral structure IDs still decode old saves, but can never create new starts.
-        if (resource != VentResource.OIL || !resource.available() || !VentConfig.OIL_WORLDGEN.get()) return Optional.empty();
-
-        var random = new WorldgenRandom(new LegacyRandomSource(0));
-        random.setLargeFeatureWithSalt(context.seed(), context.chunkPos().x, context.chunkPos().z,
-                (resource.id + ":" + tier.id).hashCode() & Integer.MAX_VALUE);
-        int x = context.chunkPos().getMinBlockX() + random.nextInt(16);
-        int z = context.chunkPos().getMinBlockZ() + random.nextInt(16);
-        int y = context.chunkGenerator().getFirstFreeHeight(x, z, Heightmap.Types.OCEAN_FLOOR_WG,
-                context.heightAccessor(), context.randomState()) - 1;
-        if (y < context.heightAccessor().getMinBuildHeight() + 8) return Optional.empty();
-        var column = context.chunkGenerator().getBaseColumn(x, z, context.heightAccessor(), context.randomState());
-        if (!VentFeature.terrain(column.getBlock(y))) return Optional.empty();
-        boolean submerged = !column.getBlock(y + 1).getFluidState().isEmpty();
-        int radius = 3;
-        int depth = 6;
-        var origin = new BlockPos(x, y, z);
-        var pieces = new ArrayList<ResourceVentPiece>();
-        for (var offset : VentPlacement.clusterOffsets(context.seed(), context.chunkPos(), "oil", radius)) {
-            int px = x + offset.getX(), pz = z + offset.getZ();
-            int py = context.chunkGenerator().getFirstFreeHeight(px, pz, Heightmap.Types.OCEAN_FLOOR_WG,
-                    context.heightAccessor(), context.randomState()) - 1;
-            if (Math.abs(py - y) > 2 || py < context.heightAccessor().getMinBuildHeight() + 8) continue;
-            var base = context.chunkGenerator().getBaseColumn(px, pz, context.heightAccessor(), context.randomState());
-            if (!VentFeature.terrain(base.getBlock(py))) continue;
-            var biome = context.biomeSource().getNoiseBiome(QuartPos.fromBlock(px), QuartPos.fromBlock(py),
-                    QuartPos.fromBlock(pz), context.randomState().sampler());
-            if (!context.validBiome().test(biome)) continue;
-            pieces.add(new ResourceVentPiece(new BlockPos(px, py, pz), resource, tier,
-                    !base.getBlock(py + 1).getFluidState().isEmpty(), radius, depth,
-                    context.heightAccessor().getMinBuildHeight(), random.nextLong()));
-        }
-        if (pieces.isEmpty()) return Optional.empty();
-        return Optional.of(new GenerationStub(origin, builder -> pieces.forEach(builder::addPiece)));
+        // Keep saved registry/codec identity without generating any new resource starts.
+        return Optional.empty();
     }
 
     @Override public StructureType<?> type() { return ResourceVentRegistry.STRUCTURE.get(); }

@@ -1,0 +1,836 @@
+{
+  "credit": "Graphite electronics palette: near-black case, black rubber, cool gunmetal and restrained teal controls; existing native geometry and pixel density",
+  "parent": "minecraft:block/block",
+  "ambientocclusion": false,
+  "gui_light": "front",
+  "textures": {
+    "particle": "create_water_vents:item/vent_surveyor",
+    "surveyor": "create_water_vents:item/vent_surveyor",
+    "case_plain": "minecraft:block/white_concrete",
+    "control_metal": "minecraft:block/white_concrete",
+    "control_trim": "minecraft:block/white_concrete",
+    "control_accent": "minecraft:block/white_concrete",
+    "control_rubber": "minecraft:block/black_concrete"
+  },
+  "elements": [
+    {
+      "name": "Slim charcoal radio body",
+      "from": [
+        5.25,
+        2.5,
+        7.125
+      ],
+      "to": [
+        10.75,
+        11.5,
+        8.875
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            6.5,
+            10.0
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            2.75,
+            10.0
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            6.5,
+            10.0
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            2.75,
+            10.0
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            6.5,
+            2.75
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            6.5,
+            2.75
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        }
+      }
+    },
+    {
+      "name": "Soft bottom and top shoulders",
+      "from": [
+        5.673077,
+        2,
+        7.132
+      ],
+      "to": [
+        10.326923,
+        12,
+        8.868
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            5.653846,
+            11.0
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            2.736,
+            11.0
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            5.653846,
+            11.0
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            2.736,
+            11.0
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            5.653846,
+            2.736
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            5.653846,
+            2.736
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        }
+      }
+    },
+    {
+      "name": "Left small corner bevel",
+      "from": [
+        5.373916,
+        11.146446609406727,
+        7.136667
+      ],
+      "to": [
+        5.972237,
+        11.853553390593273,
+        8.863333
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            1.598321,
+            1.7071068
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            2.726666,
+            1.7071068
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            1.598321,
+            1.7071068
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            2.726666,
+            1.7071068
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            1.598321,
+            2.726666
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            1.598321,
+            2.726666
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        }
+      },
+      "rotation": {
+        "origin": [
+          5.673077,
+          11.5,
+          8
+        ],
+        "axis": "z",
+        "angle": 45,
+        "rescale": false
+      }
+    },
+    {
+      "name": "Right small corner bevel",
+      "from": [
+        10.027763,
+        11.146446609406727,
+        7.136667
+      ],
+      "to": [
+        10.626084,
+        11.853553390593273,
+        8.863333
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            1.598321,
+            1.7071068
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            2.726666,
+            1.7071068
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            1.598321,
+            1.7071068
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            2.726666,
+            1.7071068
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            1.598321,
+            2.726666
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            1.598321,
+            2.726666
+          ],
+          "texture": "#case_plain",
+          "neoforge_data": {
+            "color": "ff2e333b"
+          }
+        }
+      },
+      "rotation": {
+        "origin": [
+          10.326923,
+          11.5,
+          8
+        ],
+        "axis": "z",
+        "angle": 45,
+        "rescale": false
+      }
+    },
+    {
+      "name": "Inset teal scanner display",
+      "from": [
+        5.990385,
+        8,
+        7.08
+      ],
+      "to": [
+        10.009615,
+        10.6,
+        7.16
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "texture": "#surveyor"
+        },
+        "east": {
+          "uv": [
+            4,
+            10,
+            5,
+            11
+          ],
+          "texture": "#surveyor"
+        },
+        "south": {
+          "uv": [
+            4,
+            10,
+            5,
+            11
+          ],
+          "texture": "#surveyor"
+        },
+        "west": {
+          "uv": [
+            4,
+            10,
+            5,
+            11
+          ],
+          "texture": "#surveyor"
+        },
+        "up": {
+          "uv": [
+            4,
+            10,
+            5,
+            11
+          ],
+          "texture": "#surveyor"
+        },
+        "down": {
+          "uv": [
+            4,
+            10,
+            5,
+            11
+          ],
+          "texture": "#surveyor"
+        }
+      },
+      "shade": false
+    },
+    {
+      "name": "Flush speaker grille",
+      "from": [
+        5.778846,
+        3.0,
+        7.08
+      ],
+      "to": [
+        10.221154,
+        6.75,
+        7.16
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            0,
+            16,
+            6
+          ],
+          "texture": "#surveyor",
+          "neoforge_data": {
+            "color": "ff97a0cc"
+          }
+        },
+        "east": {
+          "uv": [
+            4,
+            10,
+            5,
+            11
+          ],
+          "texture": "#surveyor",
+          "neoforge_data": {
+            "color": "ff97a0cc"
+          }
+        },
+        "south": {
+          "uv": [
+            4,
+            10,
+            5,
+            11
+          ],
+          "texture": "#surveyor",
+          "neoforge_data": {
+            "color": "ff97a0cc"
+          }
+        },
+        "west": {
+          "uv": [
+            4,
+            10,
+            5,
+            11
+          ],
+          "texture": "#surveyor",
+          "neoforge_data": {
+            "color": "ff97a0cc"
+          }
+        },
+        "up": {
+          "uv": [
+            4,
+            10,
+            5,
+            11
+          ],
+          "texture": "#surveyor",
+          "neoforge_data": {
+            "color": "ff97a0cc"
+          }
+        },
+        "down": {
+          "uv": [
+            4,
+            10,
+            5,
+            11
+          ],
+          "texture": "#surveyor",
+          "neoforge_data": {
+            "color": "ff97a0cc"
+          }
+        }
+      }
+    },
+    {
+      "name": "Black antenna",
+      "from": [
+        5.673077,
+        11.75,
+        7.766667
+      ],
+      "to": [
+        6.519231,
+        14.75,
+        8.233333
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            1.846154,
+            4.0
+          ],
+          "texture": "#control_rubber"
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            1.466666,
+            4.0
+          ],
+          "texture": "#control_rubber"
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            1.846154,
+            4.0
+          ],
+          "texture": "#control_rubber"
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            1.466666,
+            4.0
+          ],
+          "texture": "#control_rubber"
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            1.846154,
+            1.466666
+          ],
+          "texture": "#control_rubber"
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            1.846154,
+            1.466666
+          ],
+          "texture": "#control_rubber"
+        }
+      }
+    },
+    {
+      "name": "Gunmetal tuning selector",
+      "from": [
+        9.269231,
+        12,
+        7.766667
+      ],
+      "to": [
+        10.115385,
+        13,
+        8.233333
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            1.846154,
+            2
+          ],
+          "texture": "#control_metal",
+          "neoforge_data": {
+            "color": "ff7e7e7e"
+          }
+        },
+        "east": {
+          "uv": [
+            1,
+            1,
+            1.466666,
+            2
+          ],
+          "texture": "#control_metal",
+          "neoforge_data": {
+            "color": "ff7e7e7e"
+          }
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            1.846154,
+            2
+          ],
+          "texture": "#control_metal",
+          "neoforge_data": {
+            "color": "ff7e7e7e"
+          }
+        },
+        "west": {
+          "uv": [
+            1,
+            1,
+            1.466666,
+            2
+          ],
+          "texture": "#control_metal",
+          "neoforge_data": {
+            "color": "ff7e7e7e"
+          }
+        },
+        "up": {
+          "uv": [
+            1,
+            1,
+            1.846154,
+            1.466666
+          ],
+          "texture": "#control_metal",
+          "neoforge_data": {
+            "color": "ff7e7e7e"
+          }
+        },
+        "down": {
+          "uv": [
+            1,
+            1,
+            1.846154,
+            1.466666
+          ],
+          "texture": "#control_metal",
+          "neoforge_data": {
+            "color": "ff7e7e7e"
+          }
+        }
+      }
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [
+        15,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        90
+      ],
+      "translation": [
+        0,
+        2.25,
+        0
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        -0.5,
+        -0.75
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        10,
+        5
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        4,
+        170,
+        -7
+      ],
+      "translation": [
+        1.25,
+        4,
+        -1
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        4,
+        -170,
+        7
+      ],
+      "translation": [
+        1.25,
+        4,
+        -1
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        1
+      ],
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        1
+      ],
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ]
+    }
+  }
+}

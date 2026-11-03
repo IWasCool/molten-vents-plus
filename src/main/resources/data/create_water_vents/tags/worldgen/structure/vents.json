@@ -24,9 +24,6 @@
     "molten_vents:aquatic_crimsite_vent",
     "molten_vents:aquatic_ochrum_vent",
     "molten_vents:aquatic_scorchia_vent",
-    "molten_vents:aquatic_scoria_vent",
-    "create_water_vents:oil_desert_vent",
-    "create_water_vents:oil_swamp_vent",
-    "create_water_vents:oil_ocean_vent"
+    "molten_vents:aquatic_scoria_vent"
   ]
 }

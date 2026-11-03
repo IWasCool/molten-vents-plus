@@ -1,8 +1,6 @@
 package com.ourcreation.moltenventsplus.worldgen;
 
-import com.ourcreation.moltenventsplus.compat.ResourceVentBlock;
 import com.ourcreation.moltenventsplus.vent.VentBlock;
-import com.ourcreation.moltenventsplus.vent.WeatheredVentStoneBlock;
 import com.ourcreation.moltenventsplus.vent.WeatheredVentStoneBlock.Profile;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.FluidTags;
@@ -11,7 +9,6 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.levelgen.structure.BoundingBox;
 
 /** Miniature broken-rim chimneys inspired by Apothicon02's Molten Vents (MIT). */
@@ -81,17 +78,7 @@ final class SmallVentDeposit {
     }
 
     private static BlockState profile(BlockState ore, Profile profile, boolean waterlogged) {
-        if (ore.getBlock() instanceof WeatheredVentStoneBlock)
-            return ore.setValue(WeatheredVentStoneBlock.PROFILE, profile)
-                    .setValue(WeatheredVentStoneBlock.WATERLOGGED, profile.partial() && waterlogged);
-        // Oil has a barren deepslate chimney rather than an ore-bearing deposit.
-        return switch (profile) {
-            case SLAB -> Blocks.COBBLED_DEEPSLATE_SLAB.defaultBlockState()
-                    .setValue(BlockStateProperties.WATERLOGGED, waterlogged);
-            case POST -> Blocks.COBBLED_DEEPSLATE_WALL.defaultBlockState()
-                    .setValue(BlockStateProperties.UP, true).setValue(BlockStateProperties.WATERLOGGED, waterlogged);
-            default -> ore;
-        };
+        return VentFeature.profile(ore, profile, waterlogged);
     }
 
     private static void set(WorldGenLevel level, BoundingBox bounds, BlockPos pos, BlockState state,
@@ -99,8 +86,8 @@ final class SmallVentDeposit {
         if (!bounds.isInside(pos) || level.isOutsideBuildHeight(pos) || !level.hasChunkAt(pos)
                 || level.getBlockEntity(pos) != null) return;
         var previous = level.getBlockState(pos);
-        if (previous.getBlock() instanceof VentBlock || previous.getBlock() instanceof ResourceVentBlock) return;
-        boolean ownRock = previous.is(ore.getBlock()) || previous.is(Blocks.COBBLED_DEEPSLATE_SLAB)
+        if (previous.getBlock() instanceof VentBlock) return;
+        boolean ownRock = VentFeature.sameStone(previous, ore) || previous.is(Blocks.COBBLED_DEEPSLATE_SLAB)
                 || previous.is(Blocks.COBBLED_DEEPSLATE_WALL);
         // The height column is sampled before biome surfacing; badlands replace that stone with terracotta.
         boolean terrain = VentFeature.terrain(previous) || previous.is(BlockTags.TERRACOTTA)

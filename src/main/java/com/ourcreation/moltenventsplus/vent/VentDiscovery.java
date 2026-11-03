@@ -19,8 +19,6 @@ public final class VentDiscovery {
         var block=player.level().getBlockState(hit.getBlockPos()).getBlock();
         String tier=null;
         if(block instanceof VentBlock vent)tier=vent.tier.id;
-        else if(block instanceof com.ourcreation.moltenventsplus.compat.ResourceVentBlock vent)
-            tier=vent.resource==com.ourcreation.moltenventsplus.compat.VentResource.OIL ? "oil" : vent.tier.id;
         else if(BuiltInRegistries.BLOCK.getKey(block).getNamespace().equals("molten_vents"))tier="molten";
         if(tier==null)return;
         for(String path:new String[]{"root",tier}) {

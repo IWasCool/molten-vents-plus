@@ -1,9 +1,7 @@
 package com.ourcreation.moltenventsplus.worldgen;
 
 import com.Apothic0n.MoltenVents.api.biome.features.configurations.MoltenVentConfiguration;
-import com.ourcreation.moltenventsplus.compat.ResourceVentBlock;
 import com.ourcreation.moltenventsplus.vent.VentBlock;
-import com.ourcreation.moltenventsplus.vent.WeatheredVentStoneBlock;
 import com.ourcreation.moltenventsplus.vent.WeatheredVentStoneBlock.Profile;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
@@ -45,11 +43,11 @@ final class MoltenVentDeposit {
     static void placeSuperheated(WorldGenLevel level, BoundingBox bounds, RandomSource random, BlockPos corePos,
                                  BlockState ore, BlockState core, int depth) {
         var outer = new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
-                .add(ore, 8).add(ore.setValue(WeatheredVentStoneBlock.PROFILE, Profile.CUT), 2));
+                .add(ore, 8).add(VentFeature.profile(ore, Profile.CUT, false), 2));
         var decoration = new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
-                .add(ore.setValue(WeatheredVentStoneBlock.PROFILE, Profile.POST), 3)
-                .add(ore.setValue(WeatheredVentStoneBlock.PROFILE, Profile.SLAB), 7));
-        // Keep the original silhouette and recessed core. The compact root contains pure stone,
+                .add(VentFeature.profile(ore, Profile.POST, false), 3)
+                .add(VentFeature.profile(ore, Profile.SLAB, false), 7));
+        // Keep the original silhouette and recessed core. The compact root contains ordinary Create stone,
         // rather than supplying free superheated source fluid below a dormant vent.
         var config = new MoltenVentConfiguration(decoration, outer, BlockStateProvider.simple(core),
                 BlockStateProvider.simple(ore), ConstantInt.of(depth), false);
@@ -150,9 +148,9 @@ final class MoltenVentDeposit {
                 && level.getBlockEntity(pos) == null) {
             if (protectedRock != null) {
                 var previous = level.getBlockState(pos);
-                if (previous.getBlock() instanceof VentBlock || previous.getBlock() instanceof ResourceVentBlock) return;
+                if (previous.getBlock() instanceof VentBlock) return;
                 // Height columns precede biome surfacing, which can replace stone with snow or ice.
-                if (!previous.is(protectedRock.getBlock()) && !VentFeature.terrain(previous)
+                if (!VentFeature.sameStone(previous, protectedRock) && !VentFeature.terrain(previous)
                         && !previous.is(BlockTags.TERRACOTTA) && !previous.is(Blocks.SANDSTONE)
                         && !previous.is(Blocks.RED_SANDSTONE) && !previous.is(Blocks.SNOW_BLOCK)
                         && !previous.is(Blocks.ICE) && !previous.is(Blocks.PACKED_ICE) && !previous.is(Blocks.BLUE_ICE)

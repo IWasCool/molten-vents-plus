@@ -9,7 +9,7 @@ displayName="${mod_name}"
 displayURL="https://github.com/IWasCool/molten-vents-plus"
 authors="Our Creation"
 credits="Molten Vents by Apothicon02 (MIT); superheated lava assets and recipe by iglee42 / Create Quality of Life (MIT); Create by the Create team"
-description='''Renewable water, molten, superheated and oil vents for Create, with JEI/EMI support and Ponder tutorials.'''
+description='''Renewable water, molten and superheated vents for Create, with JEI/EMI support and Ponder tutorials.'''
 [[mixins]]
 config="molten_vents_plus.mixins.json"
 [[dependencies.${mod_id}]]

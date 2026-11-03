@@ -1,8 +1,6 @@
 package com.ourcreation.moltenventsplus.worldgen;
 
-import com.ourcreation.moltenventsplus.compat.ResourceVentBlock;
 import com.ourcreation.moltenventsplus.vent.VentBlock;
-import com.ourcreation.moltenventsplus.vent.WeatheredVentStoneBlock;
 import com.ourcreation.moltenventsplus.vent.WeatheredVentStoneBlock.Profile;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
@@ -11,7 +9,6 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.levelgen.structure.BoundingBox;
 
 /** Solid, stepped rock columns with a single recessed outlet; derived vent design under MIT. */
@@ -23,6 +20,13 @@ final class CompactVentDeposit {
 
     static void place(WorldGenLevel level, RandomSource random, BlockPos origin, BlockState ore,
                       BlockState core, int radius, int depth, boolean underwater, BoundingBox bounds) {
+        place(level, random, origin, ore, core, radius, depth, underwater, bounds, false);
+    }
+
+    static void place(WorldGenLevel level, RandomSource random, BlockPos origin, BlockState ore,
+                      BlockState core, int radius, int depth, boolean underwater, BoundingBox bounds, boolean grounded) {
+        if (grounded && (GroundedVentDeposit.anchor(level, origin, ore, core, true) == null
+                || !GroundedVentDeposit.clearance(level, origin, 4, ore, core, true))) return;
         int turn = random.nextInt(4);
         boolean mirror = random.nextBoolean();
         boolean large = radius >= MoltenVentDeposit.SUPERHEATED_RADIUS;
@@ -49,24 +53,31 @@ final class CompactVentDeposit {
                     cap = z < 1 || random.nextBoolean();
                 }
                 int bottom = -Math.max(1, depth * (radius + 1 - Math.min(radius, distance)) / (radius + 1));
+                if (grounded) bottom = Math.min(bottom, -GroundedVentDeposit.SUPPORT_DEPTH);
+                var base = origin.offset(offset.getX(), 0, offset.getZ());
+                boolean supported = !grounded || GroundedVentDeposit.anchor(level, base, ore, core, base.equals(origin)) != null
+                        && GroundedVentDeposit.clearance(level, base, height + 1, ore, core, base.equals(origin));
                 for (int y = bottom; y <= height; y++) {
                     var pos = origin.offset(offset.getX(), y, offset.getZ());
                     var state = random.nextInt(5) == 0 ? profile(ore, Profile.CUT, false) : ore;
                     if (x == 0 && z == 0 && y >= 0) continue;
-                    set(level, bounds, pos, state, ore);
+                    if (supported) set(level, bounds, pos, state, ore, grounded);
                 }
-                if (cap && (x != 0 || z != 0)) {
+                if (supported && cap && (x != 0 || z != 0)) {
                     var pos = origin.offset(offset.getX(), height + 1, offset.getZ());
-                    set(level, bounds, pos, profile(ore, Profile.SLAB, wet(level, pos, underwater)), ore);
+                    var existing = grounded ? level.getBlockState(pos) : ore;
+                    boolean buried = grounded && (VentSite.ground(existing) || VentFeature.sameStone(existing, ore))
+                            && existing.isFaceSturdy(level, pos, net.minecraft.core.Direction.UP);
+                    set(level, bounds, pos, buried ? ore : profile(ore, Profile.SLAB, wet(level, pos, underwater)), ore, grounded);
                 }
             }
         }
         // This opening is intentional: matching source fluid must reach the protected core.
         for (int y = 1; y <= 4; y++) {
             var pos = origin.above(y);
-            set(level, bounds, pos, (wet(level, pos, underwater) ? Blocks.WATER : Blocks.AIR).defaultBlockState(), ore);
+            set(level, bounds, pos, (wet(level, pos, underwater) ? Blocks.WATER : Blocks.AIR).defaultBlockState(), ore, grounded);
         }
-        set(level, bounds, origin, core, ore);
+        set(level, bounds, origin, core, ore, grounded);
     }
 
     private static BlockPos rotate(int x, int z, int turn) {
@@ -79,28 +90,25 @@ final class CompactVentDeposit {
     }
 
     private static BlockState profile(BlockState ore, Profile profile, boolean waterlogged) {
-        if (ore.getBlock() instanceof WeatheredVentStoneBlock)
-            return ore.setValue(WeatheredVentStoneBlock.PROFILE, profile)
-                    .setValue(WeatheredVentStoneBlock.WATERLOGGED, profile.partial() && waterlogged);
-        return profile == Profile.SLAB ? Blocks.COBBLED_DEEPSLATE_SLAB.defaultBlockState()
-                .setValue(BlockStateProperties.WATERLOGGED, waterlogged) : ore;
+        return VentFeature.profile(ore, profile, waterlogged);
     }
 
     private static boolean wet(WorldGenLevel level, BlockPos pos, boolean underwater) {
         return underwater && level.hasChunkAt(pos) && level.getFluidState(pos).is(FluidTags.WATER);
     }
 
-    private static void set(WorldGenLevel level, BoundingBox bounds, BlockPos pos, BlockState state, BlockState ore) {
+    private static void set(WorldGenLevel level, BoundingBox bounds, BlockPos pos, BlockState state, BlockState ore, boolean grounded) {
         if (!bounds.isInside(pos) || level.isOutsideBuildHeight(pos) || !level.hasChunkAt(pos)
                 || level.getBlockEntity(pos) != null) return;
         var previous = level.getBlockState(pos);
-        if (previous.getBlock() instanceof VentBlock || previous.getBlock() instanceof ResourceVentBlock) return;
+        if (previous.getBlock() instanceof VentBlock) return;
         boolean terrain = VentFeature.terrain(previous) || previous.is(BlockTags.TERRACOTTA)
                 || previous.is(Blocks.SANDSTONE) || previous.is(Blocks.RED_SANDSTONE)
                 || previous.is(Blocks.SNOW_BLOCK) || previous.is(Blocks.ICE)
                 || previous.is(Blocks.PACKED_ICE) || previous.is(Blocks.BLUE_ICE);
-        if (terrain || previous.is(ore.getBlock()) || previous.is(Blocks.COBBLED_DEEPSLATE_SLAB)
-                || previous.canBeReplaced() || previous.isAir()) level.setBlock(pos, state, 2);
+        if (terrain || VentFeature.sameStone(previous, ore) || previous.is(Blocks.COBBLED_DEEPSLATE_SLAB)
+                || previous.canBeReplaced() || previous.isAir() || grounded && previous.is(BlockTags.LEAVES))
+            level.setBlock(pos, state, 2);
     }
 
     private CompactVentDeposit() {}

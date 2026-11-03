@@ -1,6 +1,5 @@
 package com.ourcreation.moltenventsplus.client;
 
-import com.ourcreation.moltenventsplus.compat.VentResource;
 import com.ourcreation.moltenventsplus.registry.VentRegistry;
 import com.ourcreation.moltenventsplus.vent.*;
 import net.minecraft.core.BlockPos;
@@ -16,30 +15,31 @@ import java.util.Map;
 import java.util.HashSet;
 import java.util.Set;
 
-/** Ambient effects on exposed stones, including native Create/Molten Vents blocks. */
+/** Ambient effects only on active vent cores, including native Molten Vents blocks. */
 public final class VentParticles {
-    private static Map<Block, VentTier> stones;
+    private static Map<Block, VentTier> activeCores;
     private static Set<Block> moltenCores;
 
     private static void initialize() {
-        var stoneTypes = new HashMap<Block, VentTier>();
+        var coreTypes = new HashMap<Block, VentTier>();
         var cores = new HashSet<Block>();
         for (var stone : OreStone.values()) {
-            for (var tier : VentTier.values()) stoneTypes.put(stone.output(tier), tier);
+            for (var tier : VentTier.values())
+                BuiltInRegistries.BLOCK.getOptional(VentRegistry.ventId(tier, stone, true))
+                        .ifPresent(block -> coreTypes.put(block, tier));
             for (boolean active : new boolean[]{false, true})
                 BuiltInRegistries.BLOCK.getOptional(VentRegistry.ventId(VentTier.MOLTEN, stone, active))
                         .ifPresent(cores::add);
         }
-        stones = Map.copyOf(stoneTypes);
+        activeCores = Map.copyOf(coreTypes);
         moltenCores = Set.copyOf(cores);
     }
 
     /** Returns true only when replacing the selected native block's ambient tick. */
     public static boolean animate(Block block, BlockState state, Level level, BlockPos pos, RandomSource random) {
-        if (stones == null) initialize();
-        if (moltenCores.contains(block)) return true;
-        var tier = stones.get(block);
-        if (tier == null) return false;
+        if (activeCores == null) initialize();
+        var tier = activeCores.get(block);
+        if (tier == null) return moltenCores.contains(block);
         if (random.nextInt(6) != 0) return true;
         var shape = state.getShape(level, pos);
         if (shape.isEmpty()) return true;

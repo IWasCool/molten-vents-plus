@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "top": "create_water_vents:block/pure_ochrum",
+    "bottom": "create_water_vents:block/pure_ochrum",
+    "side": "create_water_vents:block/pure_ochrum"
+  }
+}

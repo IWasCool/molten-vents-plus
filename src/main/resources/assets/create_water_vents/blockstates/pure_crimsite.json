@@ -1,27 +1,16 @@
 {
   "variants": {
-    "profile=natural": [
-      {
-        "model": "create:block/crimsite_natural_0"
-      },
-      {
-        "model": "create:block/crimsite_natural_1"
-      },
-      {
-        "model": "create:block/crimsite_natural_2"
-      },
-      {
-        "model": "create:block/crimsite_natural_3"
-      }
-    ],
+    "profile=natural": {
+      "model": "create_water_vents:block/pure_crimsite"
+    },
     "profile=cut": {
-      "model": "create:block/cut_crimsite"
+      "model": "create_water_vents:block/pure_crimsite"
     },
     "profile=slab": {
-      "model": "create:block/cut_crimsite_slab"
+      "model": "create_water_vents:block/pure_crimsite_slab"
     },
     "profile=post": {
-      "model": "create:block/cut_crimsite_wall_post"
+      "model": "create_water_vents:block/pure_crimsite_post"
     }
   }
 }

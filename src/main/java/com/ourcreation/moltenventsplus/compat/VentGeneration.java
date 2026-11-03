@@ -1,6 +1,5 @@
 package com.ourcreation.moltenventsplus.compat;
 
-import com.ourcreation.moltenventsplus.registry.ResourceVentRegistry;
 import com.ourcreation.moltenventsplus.registry.VentRegistry;
 import com.ourcreation.moltenventsplus.vent.OreStone;
 import com.ourcreation.moltenventsplus.vent.VentFluids;

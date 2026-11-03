@@ -36,8 +36,6 @@
     "create_water_vents:dormant_water_scoria",
     "create_water_vents:active_water_scoria",
     "create_water_vents:dormant_superheated_scoria",
-    "create_water_vents:active_superheated_scoria",
-    "create_water_vents:dormant_oil",
-    "create_water_vents:active_oil"
+    "create_water_vents:active_superheated_scoria"
   ]
 }

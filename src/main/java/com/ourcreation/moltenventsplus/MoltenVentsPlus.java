@@ -15,8 +15,10 @@ public final class MoltenVentsPlus {
 
     public MoltenVentsPlus(IEventBus bus, ModContainer container) {
         bus.addListener(MoltenVentsPlus::removedContent);
+        bus.addListener(com.ourcreation.moltenventsplus.scanner.ScannerNetwork::register);
         com.ourcreation.moltenventsplus.registry.SuperheatedFluidRegistry.register(bus);
         VentRegistry.register(bus);
+        com.ourcreation.moltenventsplus.registry.ScannerRegistry.register(bus);
         com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.register(bus);
         com.ourcreation.moltenventsplus.vent.VentSettings.register();
         container.registerConfig(ModConfig.Type.COMMON, VentConfig.SPEC);

@@ -10,12 +10,9 @@ import com.ourcreation.moltenventsplus.registry.VentRegistry;
 import com.ourcreation.moltenventsplus.vent.OreStone;
 import com.ourcreation.moltenventsplus.vent.VentTier;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.QuartPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.StringRepresentable;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.LegacyRandomSource;
 import net.minecraft.world.level.levelgen.WorldgenRandom;
 import net.minecraft.world.level.levelgen.structure.Structure;
@@ -62,47 +59,28 @@ public final class VentStructure extends Structure {
                 (tier.id + ":" + stone.id).hashCode() & Integer.MAX_VALUE);
         int x = context.chunkPos().getMinBlockX() + random.nextInt(16);
         int z = context.chunkPos().getMinBlockZ() + random.nextInt(16);
-        var heightmap = tier == VentTier.MOLTEN && !aquatic
-                ? Heightmap.Types.WORLD_SURFACE_WG : Heightmap.Types.OCEAN_FLOOR_WG;
-        int y = context.chunkGenerator().getFirstFreeHeight(x, z, heightmap, context.heightAccessor(), context.randomState()) - 1;
-        if (y < context.heightAccessor().getMinBuildHeight() + 8) return Optional.empty();
-        var column = context.chunkGenerator().getBaseColumn(x, z, context.heightAccessor(), context.randomState());
-        var ground = column.getBlock(y);
-        boolean submerged = !column.getBlock(y + 1).getFluidState().isEmpty();
-
-        int radius;
+        int radius = tier == VentTier.WATER ? 2 : MoltenVentDeposit.SUPERHEATED_RADIUS;
+        var site = VentSite.find(context, x, z, radius, tier, aquatic, true);
+        if (site.isEmpty()) return Optional.empty();
+        var origin = site.get().origin();
+        x = origin.getX();
+        z = origin.getZ();
+        int y = origin.getY();
         int depth;
         if (tier == VentTier.MOLTEN) {
-            if (!ground.isSolid() || aquatic && !column.getBlock(y + 3).is(Blocks.WATER)
-                    || !aquatic && ground.is(Blocks.WATER)) return Optional.empty();
             var configured = context.registryAccess().registryOrThrow(Registries.CONFIGURED_FEATURE).get(moltenFeature(stone, aquatic));
             if (configured == null || !(configured.config() instanceof MoltenVentConfiguration config)) return Optional.empty();
             depth = config.getDepth().sample(random);
             if (aquatic) depth = Math.min(80, depth);
-            radius = 5;
         } else {
-            if (!VentFeature.terrain(ground) || tier == VentTier.SUPERHEATED && submerged) return Optional.empty();
-            radius = tier == VentTier.WATER ? 2 : MoltenVentDeposit.SUPERHEATED_RADIUS;
             depth = tier == VentTier.WATER ? 4 + random.nextInt(3) : 12 + random.nextInt(5);
         }
-
-        var origin = new BlockPos(x, y, z);
         var pieces = new ArrayList<VentPiece>();
         for (var offset : VentPlacement.clusterOffsets(context.seed(), context.chunkPos(), tier.id, radius)) {
             int px = x + offset.getX(), pz = z + offset.getZ();
-            int py = context.chunkGenerator().getFirstFreeHeight(px, pz, heightmap,
-                    context.heightAccessor(), context.randomState()) - 1;
-            if (Math.abs(py - y) > 2 || py < context.heightAccessor().getMinBuildHeight() + 8) continue;
-            var base = context.chunkGenerator().getBaseColumn(px, pz, context.heightAccessor(), context.randomState());
-            boolean wet = !base.getBlock(py + 1).getFluidState().isEmpty();
-            if (tier == VentTier.MOLTEN) {
-                if (!base.getBlock(py).isSolid() || aquatic && !base.getBlock(py + 3).is(Blocks.WATER)
-                        || !aquatic && wet) continue;
-            } else if (!VentFeature.terrain(base.getBlock(py)) || tier == VentTier.SUPERHEATED && wet) continue;
-            var biome = context.biomeSource().getNoiseBiome(QuartPos.fromBlock(px), QuartPos.fromBlock(py),
-                    QuartPos.fromBlock(pz), context.randomState().sampler());
-            if (!context.validBiome().test(biome)) continue;
-            pieces.add(new VentPiece(new BlockPos(px, py, pz), tier, stone, aquatic, wet, radius, depth,
+            var companion = offset.equals(BlockPos.ZERO) ? site : VentSite.find(context, px, pz, radius, tier, aquatic, false);
+            if (companion.isEmpty() || Math.abs(companion.get().origin().getY() - y) > 2) continue;
+            pieces.add(new VentPiece(companion.get().origin(), tier, stone, aquatic, companion.get().submerged(), radius, depth,
                     context.heightAccessor().getMinBuildHeight(), random.nextLong()));
         }
         if (pieces.isEmpty()) return Optional.empty();

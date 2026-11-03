@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [" B ", "GCG", "RKR"],
+  "key": {
+    "B": {"tag": "c:ingots/brass"},
+    "G": {"item": "minecraft:glass_pane"},
+    "C": {"item": "minecraft:compass"},
+    "R": {"item": "minecraft:redstone"},
+    "K": {"item": "create:copper_casing"}
+  },
+  "result": {"id": "create_water_vents:vent_surveyor", "count": 1}
+}

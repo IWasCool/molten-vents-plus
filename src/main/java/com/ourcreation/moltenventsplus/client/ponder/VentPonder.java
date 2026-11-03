@@ -17,15 +17,6 @@ public final class VentPonder implements PonderPlugin {
     @SubscribeEvent public static void setup(FMLClientSetupEvent event){PonderIndex.addPlugin(new VentPonder());}
     @Override public String getModId(){return MoltenVentsPlus.MODID;}
     @Override public void registerScenes(PonderSceneRegistrationHelper<ResourceLocation> helper){
-        for(var resource:com.ourcreation.moltenventsplus.compat.VentResource.values()){
-            if(resource==com.ourcreation.moltenventsplus.compat.VentResource.OIL){
-                // Ponder indexes before fluid tags are bound. Resolve the native oil when the scene plays.
-                helper.forComponents(com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.id(resource,VentTier.WATER,false),
-                                com.ourcreation.moltenventsplus.registry.ResourceVentRegistry.id(resource,VentTier.WATER,true))
-                        .addStoryBoard("vent/oil_automation",OilVentScene::build);
-                continue;
-            }
-        }
         for(var tier:VentTier.values())for(var stone:OreStone.values()){
             helper.forComponents(VentRegistry.ventId(tier,stone,false),VentRegistry.ventId(tier,stone,true),stone.outputId(tier))
                     .addStoryBoard("vent/"+tier.id+"_activation",(scene,util)->VentScenes.activation(scene,util,tier,stone.id))

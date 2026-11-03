@@ -1,27 +1,16 @@
 {
   "variants": {
-    "profile=natural": [
-      {
-        "model": "create:block/ochrum_natural_0"
-      },
-      {
-        "model": "create:block/ochrum_natural_1"
-      },
-      {
-        "model": "create:block/ochrum_natural_2"
-      },
-      {
-        "model": "create:block/ochrum_natural_3"
-      }
-    ],
+    "profile=natural": {
+      "model": "create_water_vents:block/pure_ochrum"
+    },
     "profile=cut": {
-      "model": "create:block/cut_ochrum"
+      "model": "create_water_vents:block/pure_ochrum"
     },
     "profile=slab": {
-      "model": "create:block/cut_ochrum_slab"
+      "model": "create_water_vents:block/pure_ochrum_slab"
     },
     "profile=post": {
-      "model": "create:block/cut_ochrum_wall_post"
+      "model": "create_water_vents:block/pure_ochrum_post"
     }
   }
 }

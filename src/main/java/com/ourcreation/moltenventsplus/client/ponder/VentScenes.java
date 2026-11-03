@@ -4,6 +4,9 @@ import com.ourcreation.moltenventsplus.vent.*;
 import com.ourcreation.moltenventsplus.registry.VentRegistry;
 
 import com.simibubi.create.foundation.ponder.CreateSceneBuilder;
+import com.simibubi.create.content.kinetics.press.MechanicalPressBlockEntity;
+import com.simibubi.create.content.kinetics.press.PressingBehaviour;
+import com.simibubi.create.content.processing.basin.BasinBlockEntity;
 
 import net.createmod.catnip.math.Pointing;
 import net.createmod.ponder.api.PonderPalette;
@@ -20,6 +23,8 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.material.Fluids;
+import net.neoforged.neoforge.fluids.FluidStack;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.Property;
@@ -47,6 +52,8 @@ public final class VentScenes {
         scene.showBasePlate();
         scene.world().showSection(util.select().layersFrom(1), Direction.UP);
         scene.idle(20);
+        scene.overlay().showControls(util.vector().topOf(core), Pointing.DOWN, 70)
+                .withItem(new ItemStack(vent(tier, stone, false).getBlock()));
         caption(scene, util, core, 90, "Find the exposed core in the vent's center.");
         scene.idle(100);
         scene.overlay().showOutline(PonderPalette.GREEN, "core", util.select().position(core), 90);
@@ -103,7 +110,11 @@ public final class VentScenes {
                 .rightClick()
                 .withItem(new ItemStack(VentFluids.primary(tier).map(fluid -> fluid.getBucket()).orElse(Items.BUCKET)));
         scene.world().setBlock(output, fluid(tier), false);
-        caption(scene, util, output, 100, "Place a lava source beside the active core.");
+        caption(scene, util, output, 100, switch (tier) {
+            case WATER -> "Place a water source beside the active core.";
+            case MOLTEN -> "Place a lava source beside the active core.";
+            case SUPERHEATED -> "Place a superheated lava source beside the active core.";
+        });
         scene.idle(45);
         convert(scene, util, output, orestone, tier);
         scene.idle(65);
@@ -111,7 +122,11 @@ public final class VentScenes {
                 .showControls(util.vector().topOf(output), Pointing.DOWN, 50)
                 .leftClick()
                 .withItem(new ItemStack(Items.IRON_PICKAXE));
-        caption(scene, util, output, 90, "Mine the stone, then add another lava source.");
+        caption(scene, util, output, 90, switch (tier) {
+            case WATER -> "Mine the stone, then add another water source.";
+            case MOLTEN -> "Mine the stone, then add another lava source.";
+            case SUPERHEATED -> "Mine the pure stone, then add another superheated lava source.";
+        });
         breakStone(scene, output, 5);
         var drop =
                 scene.world()
@@ -130,7 +145,11 @@ public final class VentScenes {
                 util,
                 output,
                 100,
-                "Crush the vent's stone for resources. Check JEI for drops.");
+                switch (tier) {
+                    case WATER -> "Mill impure stone for a small chance of resources.";
+                    case MOLTEN -> "Crush the vent's stone for resources. Check JEI for drops.";
+                    case SUPERHEATED -> "Crush pure stone for extra crushed ores and nuggets, not more stone.";
+                });
         scene.idle(110);
         scene.markAsFinished();
     }
@@ -144,26 +163,21 @@ public final class VentScenes {
         BlockPos drill = output.east();
         BlockPos pump = util.grid().at(4, 2, 7);
         BlockPos wheel = util.grid().at(9, 1, 8);
-        BlockPos[] cauldrons = {util.grid().at(1, 1, 7), util.grid().at(1, 1, 9)};
+        BlockPos[] sources = switch (tier) {
+            case WATER -> new BlockPos[]{util.grid().at(1, 2, 7), util.grid().at(2, 2, 8)};
+            case MOLTEN -> new BlockPos[]{util.grid().at(1, 1, 7), util.grid().at(1, 1, 9)};
+            case SUPERHEATED -> new BlockPos[]{util.grid().at(1, 1, 9), util.grid().at(1, 1, 9)};
+        };
         BlockState orestone = output(tier, stone);
         scene.world()
                 .modifyBlocks(util.select().everywhere(), state -> material(state, tier, stone), false);
-        if (tier == VentTier.SUPERHEATED) {
-            scene.world().modifyBlocks(util.select().fromTo(0, 2, 6, 2, 4, 10),
-                    state -> BuiltInRegistries.BLOCK.getKey(state.getBlock()).getPath().contains("pipe")
-                            ? state : Blocks.AIR.defaultBlockState(), false);
-            for (var tank : cauldrons) {
-                for (int height = 1; height <= 3; height++)
-                    scene.world().setBlock(tank.above(height), Blocks.AIR.defaultBlockState(), false);
-                scene.world().setBlock(tank, block("create", "fluid_tank"), false);
-                fillTank(scene, tank, tier, 4000);
-            }
-        }
         scene.world().setBlock(core, vent(tier, stone, true), false);
         scene.world().setKineticSpeed(util.select().everywhere(), 0);
         scene.showBasePlate();
         scene.world().showSection(util.select().fromTo(3, 1, 3, 4, 3, 3), Direction.UP);
         scene.idle(20);
+        scene.overlay().showControls(util.vector().topOf(core), Pointing.DOWN, 70)
+                .withItem(new ItemStack(vent(tier, stone, true).getBlock()));
         caption(scene, util, core, 90, "Leave one space beside the active core.");
         scene.overlay()
                 .showOutline(
@@ -175,36 +189,66 @@ public final class VentScenes {
 
         Selection generators =
                 util.select()
-                        .fromTo(0, 1, 6, 2, 4, 10)
-                        .substract(util.select().fromTo(2, 1, 7, 2, 2, 9));
+                        .fromTo(0, 1, 6, tier == VentTier.WATER ? 3 : 2, 4, 10)
+                        .substract(tier == VentTier.WATER ? util.select().position(3, 2, 8)
+                                : util.select().fromTo(2, 1, 7, 2, 2, 9));
         scene.world().showSection(generators, Direction.UP);
         caption(
                 scene,
                 util,
-                cauldrons[0].above(),
+                tier == VentTier.SUPERHEATED ? util.grid().at(1, 3, 7) : sources[0].above(),
                 120,
-                "Use any lava supply. This example uses dripstone cauldrons.");
-        if (tier != VentTier.SUPERHEATED)
-            for (var cauldron : cauldrons) drip(scene, util, cauldron, tier, 70);
+                switch (tier) {
+                    case WATER -> "A 2x2 infinite water pool supplies this pump.";
+                    case MOLTEN -> "Use any lava supply. This example uses dripstone cauldrons.";
+                    case SUPERHEATED -> "Power a Mechanical Press over a Basin to make superheated lava.";
+                });
+        if (tier == VentTier.MOLTEN)
+            for (var cauldron : sources) drip(scene, util, cauldron, 70);
+        if (tier == VentTier.WATER)
+            scene.overlay().showControls(util.vector().topOf(sources[0]), Pointing.DOWN, 70)
+                    .rightClick().withItem(new ItemStack(Items.WATER_BUCKET));
         scene.idle(60);
-        if (tier != VentTier.SUPERHEATED)
-            for (var cauldron : cauldrons)
-                scene.world().setBlock(cauldron, cauldron(tier), false);
+        if (tier == VentTier.MOLTEN)
+            for (var cauldron : sources)
+                scene.world().setBlock(cauldron, Blocks.LAVA_CAULDRON.defaultBlockState(), false);
         scene.idle(70);
+        if (tier == VentTier.SUPERHEATED) {
+            var basin = util.grid().at(1, 1, 7);
+            prepareCompacting(scene, basin);
+            caption(scene, util, basin, 150,
+                    "1000 mB lava + a Blaze Cake + obsidian dust makes 500 mB superheated lava. Press twice per bucket.");
+            scene.overlay().showControls(util.vector().topOf(basin), Pointing.DOWN, 45)
+                    .withItem(new ItemStack(Items.LAVA_BUCKET));
+            scene.idle(45);
+            scene.overlay().showControls(util.vector().topOf(basin), Pointing.DOWN, 45)
+                    .withItem(new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("create:blaze_cake"))));
+            scene.idle(45);
+            scene.overlay().showControls(util.vector().topOf(basin), Pointing.DOWN, 45)
+                    .withItem(obsidianDust());
+            scene.idle(65);
+        }
 
         Selection plumbing =
                 util.select().fromTo(2, 1, 7, 4, 2, 9).add(util.select().fromTo(4, 2, 4, 4, 3, 6));
+        if (tier == VentTier.WATER) plumbing = plumbing.substract(generators);
         scene.world().showSection(plumbing, Direction.UP);
-        caption(scene, util, pump, 110, "Pump lava into the space beside the core.");
+        caption(scene, util, pump, 110, switch (tier) {
+            case WATER -> "Pump water from the infinite pool into the space beside the core.";
+            case MOLTEN -> "Pump lava into the space beside the core.";
+            case SUPERHEATED -> "Pump superheated lava into the space beside the core.";
+        });
         scene.overlay()
                 .showBigLine(
                         PonderPalette.RED,
-                        util.vector().centerOf(cauldrons[0]),
+                        util.vector().centerOf(sources[0]),
                         util.vector().centerOf(pump),
                         100);
         scene.idle(120);
 
         scene.world().showSection(util.select().fromTo(5, 1, 3, 10, 3, 10), Direction.UP);
+        if (tier == VentTier.SUPERHEATED)
+            scene.world().showSection(util.select().fromTo(3, 3, 9, 4, 3, 9), Direction.UP);
         scene.world().setKineticSpeed(util.select().everywhere(), -8);
         scene.world()
                 .setKineticSpeed(
@@ -215,11 +259,15 @@ public final class VentScenes {
                                 .add(util.select().fromTo(5, 1, 8, 6, 1, 8)),
                         8);
         scene.world().propagatePipeChange(pump);
+        if (tier == VentTier.SUPERHEATED)
+            scene.world().setKineticSpeed(util.select().position(1, 3, 7)
+                    .add(util.select().fromTo(1, 3, 8, 7, 3, 9))
+                    .add(util.select().fromTo(7, 1, 9, 7, 2, 9)), 64);
         scene.effects().rotationDirectionIndicator(wheel);
         caption(scene, util, drill, 110, "Power the drill to harvest the generated stone.");
         scene.idle(120);
-        farmCycle(scene, util, output, cauldrons[0], orestone, tier);
-        farmCycle(scene, util, output, cauldrons[1], orestone, tier);
+        farmCycle(scene, util, output, sources[0], orestone, tier);
+        farmCycle(scene, util, output, sources[1], orestone, tier);
         scene.idle(10);
         caption(
                 scene,
@@ -227,8 +275,8 @@ public final class VentScenes {
                 output.below(),
                 110,
                 "Collect the stone below the drill, then process it.");
-        farmCycle(scene, util, output, cauldrons[0], orestone, tier);
-        farmCycle(scene, util, output, cauldrons[1], orestone, tier);
+        farmCycle(scene, util, output, sources[0], orestone, tier);
+        farmCycle(scene, util, output, sources[1], orestone, tier);
         scene.idle(15);
         scene.markAsFinished();
     }
@@ -237,17 +285,21 @@ public final class VentScenes {
             CreateSceneBuilder scene,
             SceneBuildingUtil util,
             BlockPos output,
-            BlockPos cauldron,
+            BlockPos source,
             BlockState stone, VentTier tier) {
         if (tier == VentTier.SUPERHEATED) {
-            fillTank(scene, cauldron, tier, 4000);
+            compactSuperheated(scene, util, source, 500);
+            compactSuperheated(scene, util, source, 1000);
             scene.idle(10);
-            fillTank(scene, cauldron, tier, 3000);
+            fillTank(scene, source, tier, 0);
+        } else if (tier == VentTier.MOLTEN) {
+            drip(scene, util, source, 10);
+            scene.world().setBlock(source, Blocks.LAVA_CAULDRON.defaultBlockState(), false);
+            scene.idle(10);
+            scene.world().setBlock(source, Blocks.CAULDRON.defaultBlockState(), false);
         } else {
-            drip(scene, util, cauldron, tier, 10);
-            scene.world().setBlock(cauldron, cauldron(tier), false);
+            scene.world().setBlock(source, Blocks.WATER.defaultBlockState(), false);
             scene.idle(10);
-            scene.world().setBlock(cauldron, Blocks.CAULDRON.defaultBlockState(), false);
         }
         scene.world().setBlock(output, fluid(tier), false);
         scene.idle(15);
@@ -265,13 +317,13 @@ public final class VentScenes {
     }
 
     private static void drip(
-            CreateSceneBuilder scene, SceneBuildingUtil util, BlockPos cauldron, VentTier tier, int ticks) {
+            CreateSceneBuilder scene, SceneBuildingUtil util, BlockPos cauldron, int ticks) {
         scene.effects()
                 .emitParticles(
                         util.vector().centerOf(cauldron.above()).add(0, -0.35, 0),
                         scene.effects()
                                 .simpleParticleEmitter(
-                                        tier == VentTier.WATER ? ParticleTypes.FALLING_WATER : ParticleTypes.FALLING_LAVA, new Vec3(0, -0.04, 0)),
+                                        ParticleTypes.FALLING_LAVA, new Vec3(0, -0.04, 0)),
                         0.15F,
                         ticks);
     }
@@ -368,6 +420,10 @@ public final class VentScenes {
 
     private static BlockState material(BlockState state, VentTier tier, String stone) {
         var id = BuiltInRegistries.BLOCK.getKey(state.getBlock());
+        if (state.getBlock() instanceof VentBlock core) return vent(tier, stone, core.active);
+        if (id.getNamespace().equals("molten_vents")
+                && (id.getPath().startsWith("active_molten_") || id.getPath().startsWith("dormant_molten_")))
+            return vent(tier, stone, id.getPath().startsWith("active_"));
         if (state.is(Blocks.LAVA)) return fluid(tier);
         if (state.is(Blocks.LAVA_CAULDRON)) return cauldron(tier);
         if (state.getBlock() instanceof WeatheredVentStoneBlock) {
@@ -378,8 +434,6 @@ public final class VentScenes {
         }
         if (!id.getNamespace().equals("create") || !id.getPath().contains("crimsite")) return state;
         if (id.getPath().equals("crimsite")) return output(tier, stone);
-        if (java.util.Arrays.stream(com.ourcreation.moltenventsplus.compat.VentResource.values()).anyMatch(value -> value.id.equals(stone)))
-            return Blocks.DEEPSLATE.defaultBlockState();
         BlockState replacement = block("create", id.getPath().replace("crimsite", stone));
         for (Property<?> property : state.getProperties())
             if (replacement.hasProperty(property))
@@ -395,9 +449,7 @@ public final class VentScenes {
     private static BlockState output(VentTier tier, String stone) {
         var original = java.util.Arrays.stream(OreStone.values()).filter(value -> value.id.equals(stone)).findFirst();
         if (original.isPresent()) return original.get().output(tier).defaultBlockState();
-        return java.util.Arrays.stream(com.ourcreation.moltenventsplus.compat.VentResource.values())
-                .filter(value -> value.id.equals(stone)).findFirst().flatMap(value -> value.output(tier))
-                .orElse(Blocks.AIR).defaultBlockState();
+        return Blocks.AIR.defaultBlockState();
     }
 
     private static void fillTank(CreateSceneBuilder scene, BlockPos pos, VentTier tier, int amount) {
@@ -411,11 +463,41 @@ public final class VentScenes {
                 }));
     }
 
+    private static ItemStack obsidianDust() {
+        return BuiltInRegistries.ITEM.getTag(net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.ITEM,
+                        ResourceLocation.parse("c:dusts/obsidian")))
+                .flatMap(tag -> tag.stream().findFirst()).map(holder -> new ItemStack(holder.value()))
+                .orElseGet(() -> new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("create:powdered_obsidian"))));
+    }
+
+    private static void prepareCompacting(CreateSceneBuilder scene, BlockPos basin) {
+        scene.world().modifyBlockEntity(basin, BasinBlockEntity.class, entity -> {
+            entity.inputTank.getPrimaryHandler().setFluid(new FluidStack(Fluids.LAVA, 1000));
+            entity.getInputInventory().setStackInSlot(0, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("create:blaze_cake"))));
+            entity.getInputInventory().setStackInSlot(1, obsidianDust());
+        });
+    }
+
+    private static void compactSuperheated(CreateSceneBuilder scene, SceneBuildingUtil util, BlockPos tank, int stored) {
+        var basin = util.grid().at(1, 1, 7);
+        prepareCompacting(scene, basin);
+        scene.world().modifyBlockEntity(basin.above(2), MechanicalPressBlockEntity.class,
+                press -> press.getPressingBehaviour().start(PressingBehaviour.Mode.BASIN));
+        scene.idle(60);
+        scene.world().modifyBlockEntity(basin, BasinBlockEntity.class, entity -> {
+            entity.inputTank.getPrimaryHandler().setFluid(FluidStack.EMPTY);
+            entity.getInputInventory().setStackInSlot(0, ItemStack.EMPTY);
+            entity.getInputInventory().setStackInSlot(1, ItemStack.EMPTY);
+            VentFluids.primary(VentTier.SUPERHEATED).ifPresent(fluid ->
+                    entity.getTanks().getSecond().getPrimaryHandler().setFluid(new FluidStack(fluid, 500)));
+        });
+        scene.idle(10);
+        fillTank(scene, tank, VentTier.SUPERHEATED, stored);
+        scene.world().modifyBlockEntity(basin, BasinBlockEntity.class,
+                entity -> entity.getTanks().getSecond().getPrimaryHandler().setFluid(FluidStack.EMPTY));
+    }
+
     private static BlockState vent(VentTier tier, String stone, boolean active) {
-        var optional = java.util.Arrays.stream(com.ourcreation.moltenventsplus.compat.VentResource.values())
-                .filter(value -> value.id.equals(stone)).findFirst();
-        if (optional.isPresent()) return com.ourcreation.moltenventsplus.registry.ResourceVentRegistry
-                .block(optional.get(), tier, active).defaultBlockState();
         return block(tier == VentTier.MOLTEN ? "molten_vents" : "create_water_vents",
                 (active ? "active_" : "dormant_") + tier.id + "_" + stone);
     }

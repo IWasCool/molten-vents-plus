@@ -106,7 +106,7 @@ public final class VentSettings {
     }
 
     private static boolean isProtected(net.minecraft.world.level.block.Block block) {
-        return block instanceof VentBlock || block instanceof com.ourcreation.moltenventsplus.compat.ResourceVentBlock
+        return block instanceof VentBlock
                 || BLOCKS.contains(BuiltInRegistries.BLOCK.getKey(block));
     }
 }
