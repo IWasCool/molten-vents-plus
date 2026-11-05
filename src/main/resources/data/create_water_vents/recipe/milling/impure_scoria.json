@@ -11,6 +11,11 @@
       "id": "minecraft:quartz",
       "count": 1,
       "chance": 0.12
+    },
+    {
+      "id": "minecraft:quartz",
+      "count": 1,
+      "chance": 0.08
     }
   ]
 }

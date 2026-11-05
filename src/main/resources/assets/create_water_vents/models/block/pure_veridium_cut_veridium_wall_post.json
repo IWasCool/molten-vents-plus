@@ -1,0 +1,1 @@
+{"parent":"create:block/cut_veridium_wall_post","render_type":"minecraft:solid","elements":[{"from":[4,0,4],"to":[12,16,12],"faces":{"down":{"texture":"#wall","cullface":"down"},"up":{"texture":"#wall","cullface":"up"},"north":{"texture":"#wall"},"south":{"texture":"#wall"},"west":{"texture":"#wall"},"east":{"texture":"#wall"}},"__comment":"Center post"}]}

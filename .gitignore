@@ -19,4 +19,13 @@ crash-reports/
 .env
 .env.*
 src/test/
+src/gametest/
+src/verification/
+fixtures/
+diagnostics/
+validation/
+*.class
+*.jfr
+*.pyc
+__pycache__/
 !gradle/wrapper/gradle-wrapper.jar

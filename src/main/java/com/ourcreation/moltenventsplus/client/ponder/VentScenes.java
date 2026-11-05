@@ -1,7 +1,6 @@
 package com.ourcreation.moltenventsplus.client.ponder;
 
 import com.ourcreation.moltenventsplus.vent.*;
-import com.ourcreation.moltenventsplus.registry.VentRegistry;
 
 import com.simibubi.create.foundation.ponder.CreateSceneBuilder;
 import com.simibubi.create.content.kinetics.press.MechanicalPressBlockEntity;
@@ -151,6 +150,13 @@ public final class VentScenes {
                     case SUPERHEATED -> "Crush pure stone for extra crushed ores and nuggets, not more stone.";
                 });
         scene.idle(110);
+        if (tier == VentTier.WATER) {
+            caption(scene, util, core, 110,
+                    "Water vents have a finite reserve. Once spent, the core becomes impure stone.");
+            scene.idle(50);
+            scene.world().setBlock(core, orestone, false);
+            scene.idle(70);
+        }
         scene.markAsFinished();
     }
 
@@ -278,6 +284,13 @@ public final class VentScenes {
         farmCycle(scene, util, output, sources[0], orestone, tier);
         farmCycle(scene, util, output, sources[1], orestone, tier);
         scene.idle(15);
+        if (tier == VentTier.WATER) {
+            caption(scene, util, core, 110,
+                    "Water vents have a finite reserve. Once spent, the core becomes impure stone.");
+            scene.idle(50);
+            scene.world().setBlock(core, orestone, false);
+            scene.idle(70);
+        }
         scene.markAsFinished();
     }
 

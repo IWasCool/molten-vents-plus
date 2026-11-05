@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "top": "create_water_vents:block/pure_veridium",
-    "bottom": "create_water_vents:block/pure_veridium",
-    "side": "create_water_vents:block/pure_veridium"
-  }
-}

@@ -1,5 +1,7 @@
 package com.ourcreation.moltenventsplus.client.scanner;
 
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.ourcreation.moltenventsplus.MoltenVentsPlus;
 import com.ourcreation.moltenventsplus.registry.ScannerRegistry;
 import com.ourcreation.moltenventsplus.scanner.ScannerTarget;
 import com.ourcreation.moltenventsplus.vent.VentTier;
@@ -8,23 +10,25 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.locale.Language;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import org.lwjgl.glfw.GLFW;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /** A small mouse-drag material wheel with an uninterrupted background. */
 public final class ScannerScreen extends Screen {
     private static final int RADIUS = 50, INNER = 18, ICON_RADIUS = 34;
     private static final double SECTOR = Math.PI * 2 / 6;
+    private static final ResourceLocation WHEEL = ResourceLocation.fromNamespaceAndPath(
+            MoltenVentsPlus.MODID, "textures/gui/surveyor_wheel.png");
+    private static final ResourceLocation WHEEL_SELECTED = ResourceLocation.fromNamespaceAndPath(
+            MoltenVentsPlus.MODID, "textures/gui/surveyor_wheel_selected.png");
     private final VentTier tier;
     private final List<ScannerTarget> targets;
-    private final List<Run> wheel = new ArrayList<>();
     private final Button[] choices = new Button[6];
     private int cx, cy, hovered = -1;
     private boolean keyboard;
-    private record Run(int y, int left, int right, int sector) {}
 
     public ScannerScreen(VentTier tier) {
         super(Component.translatable("item.create_water_vents." + switch (tier) {
@@ -40,18 +44,6 @@ public final class ScannerScreen extends Screen {
         ScannerClient.stopScan();
         cx = width / 2;
         cy = height / 2;
-        wheel.clear();
-        for (int y = -RADIUS; y <= RADIUS; y++) {
-            int left = -RADIUS, previous = kind(left, y);
-            for (int x = left + 1; x <= RADIUS + 1; x++) {
-                int next = x > RADIUS ? -1 : kind(x, y);
-                if (next != previous) {
-                    if (previous != -1) wheel.add(new Run(y, left, x, previous));
-                    left = x;
-                    previous = next;
-                }
-            }
-        }
         for (int i = 0; i < targets.size(); i++) {
             var target = targets.get(i);
             double angle = -Math.PI / 2 + i * SECTOR;
@@ -69,12 +61,6 @@ public final class ScannerScreen extends Screen {
     private static int sector(double x, double y) {
         double angle = (Math.atan2(y, x) + Math.PI / 2 + SECTOR / 2 + Math.PI * 2) % (Math.PI * 2);
         return Math.min(5, (int) (angle / SECTOR));
-    }
-
-    private static int kind(int x, int y) {
-        int radius = x * x + y * y;
-        if (radius > RADIUS * RADIUS || radius < INNER * INNER) return -1;
-        return sector(x, y);
     }
 
     private void point(double x, double y) {
@@ -136,10 +122,14 @@ public final class ScannerScreen extends Screen {
 
     @Override public void renderBackground(GuiGraphics g, int mouseX, int mouseY, float partial) {
         if (!keyboard) point(mouseX, mouseY);
-        for (var run : wheel) {
-            int color = run.sector == hovered ? 0xF2385554 : 0xED252E32;
-            g.fill(cx + run.left, cy + run.y, cx + run.right, cy + run.y + 1, color);
-        }
+        int size = RADIUS * 2 + 1;
+        g.flush();
+        RenderSystem.enableBlend();
+        RenderSystem.defaultBlendFunc();
+        g.setColor(1, 1, 1, 1);
+        g.blit(hovered < 0 ? WHEEL : WHEEL_SELECTED, cx - RADIUS, cy - RADIUS,
+                0, hovered < 0 ? 0 : hovered * size, size, size, size, hovered < 0 ? size : size * 6);
+        RenderSystem.disableBlend();
         for (int i = 0; i < targets.size(); i++) {
             var target = targets.get(i);
             double angle = -Math.PI / 2 + i * SECTOR;

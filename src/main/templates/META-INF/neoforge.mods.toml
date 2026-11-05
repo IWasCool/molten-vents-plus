@@ -9,7 +9,7 @@ displayName="${mod_name}"
 displayURL="https://github.com/IWasCool/molten-vents-plus"
 authors="Our Creation"
 credits="Molten Vents by Apothicon02 (MIT); superheated lava assets and recipe by iglee42 / Create Quality of Life (MIT); Create by the Create team"
-description='''Renewable water, molten and superheated vents for Create, with JEI/EMI support and Ponder tutorials.'''
+description='''Water, molten and superheated resource vents for Create, with configurable reserves, Vent Surveyors, JEI/EMI support and Ponder tutorials.'''
 [[mixins]]
 config="molten_vents_plus.mixins.json"
 [[dependencies.${mod_id}]]
@@ -37,6 +37,12 @@ versionRange="[2.1.1,)"
 ordering="AFTER"
 side="BOTH"
 [[dependencies.${mod_id}]]
+modId="create_new_world_core"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.${mod_id}]]
 modId="createqol"
 type="optional"
 versionRange="[1.6,)"
@@ -54,3 +60,9 @@ type="optional"
 versionRange="[1.1,)"
 ordering="AFTER"
 side="CLIENT"
+[[dependencies.${mod_id}]]
+modId="jade"
+type="optional"
+versionRange="[15,)"
+ordering="AFTER"
+side="BOTH"

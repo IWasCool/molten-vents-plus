@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "top": "create_water_vents:block/pure_crimsite",
-    "bottom": "create_water_vents:block/pure_crimsite",
-    "side": "create_water_vents:block/pure_crimsite"
-  }
-}

@@ -1,5 +1,6 @@
 package com.ourcreation.moltenventsplus.client.scanner;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import com.ourcreation.moltenventsplus.MoltenVentsPlus;
 import com.ourcreation.moltenventsplus.scanner.ScannerClientHooks;
 import com.ourcreation.moltenventsplus.scanner.ScannerNetwork;
@@ -40,6 +41,10 @@ import java.util.Set;
 /** Temporary local signals, using bounded server searches when the server supports them. */
 @EventBusSubscriber(modid = MoltenVentsPlus.MODID, value = Dist.CLIENT)
 public final class ScannerClient {
+    private static final ResourceLocation DIRECTION_STRIP = graphic("surveyor_direction_strip");
+    private static final ResourceLocation POINTER = graphic("surveyor_pointer");
+    private static final ResourceLocation PIN = graphic("surveyor_pin");
+    private static final ResourceLocation PULSE = graphic("surveyor_pulse");
     private static ScannerTarget selected = ScannerTarget.WATER_ASURINE;
     private static ScannerTarget activeTarget = ScannerTarget.WATER_ASURINE;
     private static VentTier availableTier = VentTier.WATER;
@@ -208,12 +213,6 @@ public final class ScannerClient {
 
     static boolean canScan() { return pending < 0 && cooldown <= 0; }
 
-    static Component scanButtonLabel() {
-        if (pending >= 0) return Component.translatable("scanner.create_water_vents.searching");
-        if (cooldown > 0) return Component.translatable("scanner.create_water_vents.cooldown_label", (cooldown + 19) / 20);
-        return Component.translatable("scanner.create_water_vents.scan");
-    }
-
     @SubscribeEvent
     public static void project(RenderLevelStageEvent event) {
         if (event.getStage() != RenderLevelStageEvent.Stage.AFTER_LEVEL) return;
@@ -235,7 +234,7 @@ public final class ScannerClient {
         if (mc.player == null || mc.level == null || mc.options.hideGui || mc.screen != null) return;
         if (pending < 0 && signals.isEmpty()) return;
         int mid = g.guiWidth() / 2;
-        g.fill(mid - 69, 3, mid + 70, 4, 0x5980E8CF);
+        graphic(g, DIRECTION_STRIP, mid - 69, 3, 139, 1, 0, 1, 1);
         if (signals.isEmpty()) return;
         float partial = delta.getGameTimeDeltaPartialTick(false);
         Ping focused = null;
@@ -243,16 +242,16 @@ public final class ScannerClient {
         for (var ping : signals.values()) {
             float alpha = ping.opacity(partial);
             if (alpha < .02F) continue;
-            int color = color(alpha, 0x80E8CF);
             int pointer = mid + Math.round(Mth.clamp(bearing(ping) / 90, -1, 1) * 65);
-            diamond(g, pointer, 3, 3, color);
+            graphic(g, POINTER, pointer - 3, 0, 7, 7, 0, 7, alpha);
             if (!ping.projected) continue;
             int x = Mth.clamp(Math.round((ping.projectedX + 1) * .5F * g.guiWidth()), 15, g.guiWidth() - 15);
             int y = Mth.clamp(Math.round((1 - ping.projectedY) * .5F * g.guiHeight()), 20, Math.max(20, g.guiHeight() - 65));
             float wave = ((ping.age + partial) % 32) / 32;
-            diamond(g, x, y, 6 + Math.round(wave * 14), color(alpha * (1 - wave) * .65F, 0x80E8CF));
-            diamond(g, x, y, 6, color);
-            g.fill(x - 1, y - 1, x + 2, y + 2, color(alpha, 0xD7FFF0));
+            int pulseFrame = Math.round(wave * 14);
+            graphic(g, PULSE, x - 20, y - 20, 41, 41, pulseFrame * 41, 615,
+                    alpha * (1 - wave) * .65F);
+            graphic(g, PIN, x - 6, y - 6, 13, 13, 0, 13, alpha);
             float focus = ping.projectedX * ping.projectedX + ping.projectedY * ping.projectedY;
             if (focus < focusDistance) {
                 focusDistance = focus;
@@ -281,13 +280,20 @@ public final class ScannerClient {
 
     private static int color(float alpha, int rgb) { return Mth.clamp(Math.round(alpha * 255), 0, 255) << 24 | rgb; }
 
-    private static void diamond(GuiGraphics g, int x, int y, int radius, int color) {
-        for (int i = 0; i < radius; i++) {
-            g.fill(x - i, y - radius + i, x - i + 1, y - radius + i + 1, color);
-            g.fill(x + i, y - radius + i, x + i + 1, y - radius + i + 1, color);
-            g.fill(x - i, y + radius - i, x - i + 1, y + radius - i + 1, color);
-            g.fill(x + i, y + radius - i, x + i + 1, y + radius - i + 1, color);
-        }
+    private static ResourceLocation graphic(String name) {
+        return ResourceLocation.fromNamespaceAndPath(MoltenVentsPlus.MODID, "textures/gui/" + name + ".png");
+    }
+
+    /** Position and fading are dynamic; all signal artwork and colors belong to resource packs. */
+    private static void graphic(GuiGraphics g, ResourceLocation texture, int x, int y, int width, int height,
+                                int frameY, int textureHeight, float opacity) {
+        g.flush();
+        RenderSystem.enableBlend();
+        RenderSystem.defaultBlendFunc();
+        g.setColor(1, 1, 1, Mth.clamp(Math.round(opacity * 255), 0, 255) / 255F);
+        g.blit(texture, x, y, 0, frameY, width, height, width, textureHeight);
+        g.setColor(1, 1, 1, 1);
+        RenderSystem.disableBlend();
     }
 
     @EventBusSubscriber(modid = MoltenVentsPlus.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

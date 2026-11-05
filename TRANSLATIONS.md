@@ -2,14 +2,17 @@
 
 Molten Vents Plus includes a language file for every one of Minecraft 1.21.1's
 143 language options, including regional variants, right-to-left languages and
-fictional languages. Each option has all 143 mod strings and all 12 original
+fictional languages. Each option has all 137 mod strings and all 12 original
 Molten Vents block names. This covers block and item names, Surveyor controls
 and messages, Ponder tutorials, recipe categories, structure names and movement
 command responses.
 
 Language-file coverage does not mean every string has a fluent translation.
-Translations are initial contributions and may need corrections. Some newer
-strings in otherwise translated languages still use English. These 23 options
+Translations are initial contributions and may need corrections. The release
+review localizes the water-reserve and Jade messages in 43 language options,
+corrects Surveyor tool names in 27 options, and aligns vent material names with
+Create's own translations in those options. Obsolete scanner messages have been
+removed. Some newer strings in other languages still use English. These 23 options
 currently use English throughout the mod's language file:
 
 | Language | File code |
@@ -50,8 +53,7 @@ Edit the UTF-8 JSON file for the selected language in both directories:
 - [Original Molten Vents names](src/main/resources/assets/molten_vents/lang/)
 
 Use `en_us.json` in each directory as the key reference. Translate values, keep
-keys unchanged and preserve formatting arguments such as `%s` and `%ss` (a
-`%s` argument followed by the seconds unit). Arguments may be reordered with
+keys unchanged and preserve formatting arguments such as `%s`. Arguments may be reordered with
 indexed placeholders such as `%2$s` and `%1$s`. Keep brand names and material
 names consistent with Minecraft and Create in the target language. Active and
 dormant versions of a vent share the same display name.

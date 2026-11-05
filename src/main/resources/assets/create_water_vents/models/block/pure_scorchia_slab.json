@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "top": "create_water_vents:block/pure_scorchia",
-    "bottom": "create_water_vents:block/pure_scorchia",
-    "side": "create_water_vents:block/pure_scorchia"
-  }
-}

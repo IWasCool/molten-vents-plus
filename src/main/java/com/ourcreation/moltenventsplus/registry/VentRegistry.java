@@ -41,9 +41,9 @@ public final class VentRegistry {
             register("pure_" + stone.id, () -> new WeatheredVentStoneBlock(stoneProperties()));
             for (var tier : new VentTier[] {VentTier.WATER, VentTier.SUPERHEATED}) {
                 register("dormant_" + tier.id + "_" + stone.id, () -> new VentBlock(tier, stone, false,
-                        stoneProperties().strength(-1, 6).pushReaction(PushReaction.BLOCK)));
+                        stoneProperties().strength(-1, 3600000).pushReaction(PushReaction.BLOCK)));
                 register("active_" + tier.id + "_" + stone.id, () -> new ActiveVentBlock(tier, stone,
-                        stoneProperties().strength(-1, 1200).pushReaction(PushReaction.BLOCK)
+                        stoneProperties().strength(-1, 3600000).pushReaction(PushReaction.BLOCK)
                                 .lightLevel(state -> tier == VentTier.WATER ? 5 : 15)));
             }
         }

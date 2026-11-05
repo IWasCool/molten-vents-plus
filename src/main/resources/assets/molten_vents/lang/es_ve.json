@@ -1,14 +1,14 @@
 {
-  "block.molten_vents.active_molten_asurine": "Azurina Respiradero de lava",
-  "block.molten_vents.dormant_molten_asurine": "Azurina Respiradero de lava",
-  "block.molten_vents.active_molten_veridium": "Veridio Respiradero de lava",
-  "block.molten_vents.dormant_molten_veridium": "Veridio Respiradero de lava",
-  "block.molten_vents.active_molten_crimsite": "Carmesita Respiradero de lava",
-  "block.molten_vents.dormant_molten_crimsite": "Carmesita Respiradero de lava",
-  "block.molten_vents.active_molten_ochrum": "Ocre Respiradero de lava",
-  "block.molten_vents.dormant_molten_ochrum": "Ocre Respiradero de lava",
-  "block.molten_vents.active_molten_scorchia": "Escoria oscura Respiradero de lava",
-  "block.molten_vents.dormant_molten_scorchia": "Escoria oscura Respiradero de lava",
-  "block.molten_vents.active_molten_scoria": "Escoria Respiradero de lava",
-  "block.molten_vents.dormant_molten_scoria": "Escoria Respiradero de lava"
+  "block.molten_vents.active_molten_asurine": "Respiradero de magma (Asurine)",
+  "block.molten_vents.dormant_molten_asurine": "Respiradero de magma (Asurine)",
+  "block.molten_vents.active_molten_veridium": "Respiradero de magma (Veridium)",
+  "block.molten_vents.dormant_molten_veridium": "Respiradero de magma (Veridium)",
+  "block.molten_vents.active_molten_crimsite": "Respiradero de magma (Crimsite)",
+  "block.molten_vents.dormant_molten_crimsite": "Respiradero de magma (Crimsite)",
+  "block.molten_vents.active_molten_ochrum": "Respiradero de magma (Ochrum)",
+  "block.molten_vents.dormant_molten_ochrum": "Respiradero de magma (Ochrum)",
+  "block.molten_vents.active_molten_scorchia": "Respiradero de magma (Scorchia)",
+  "block.molten_vents.dormant_molten_scorchia": "Respiradero de magma (Scorchia)",
+  "block.molten_vents.active_molten_scoria": "Respiradero de magma (Scoria)",
+  "block.molten_vents.dormant_molten_scoria": "Respiradero de magma (Scoria)"
 }

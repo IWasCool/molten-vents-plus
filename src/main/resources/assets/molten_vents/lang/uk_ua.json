@@ -1,14 +1,14 @@
 {
-  "block.molten_vents.active_molten_asurine": "Азурин Розплавлений отвір",
-  "block.molten_vents.dormant_molten_asurine": "Азурин Розплавлений отвір",
-  "block.molten_vents.active_molten_veridium": "Веридій Розплавлений отвір",
-  "block.molten_vents.dormant_molten_veridium": "Веридій Розплавлений отвір",
-  "block.molten_vents.active_molten_crimsite": "Кримзит Розплавлений отвір",
-  "block.molten_vents.dormant_molten_crimsite": "Кримзит Розплавлений отвір",
-  "block.molten_vents.active_molten_ochrum": "Охрум Розплавлений отвір",
-  "block.molten_vents.dormant_molten_ochrum": "Охрум Розплавлений отвір",
-  "block.molten_vents.active_molten_scorchia": "Скочія Розплавлений отвір",
-  "block.molten_vents.dormant_molten_scorchia": "Скочія Розплавлений отвір",
-  "block.molten_vents.active_molten_scoria": "Скорія Розплавлений отвір",
-  "block.molten_vents.dormant_molten_scoria": "Скорія Розплавлений отвір"
+  "block.molten_vents.active_molten_asurine": "Магматичне джерело (Азурин)",
+  "block.molten_vents.dormant_molten_asurine": "Магматичне джерело (Азурин)",
+  "block.molten_vents.active_molten_veridium": "Магматичне джерело (Веридій)",
+  "block.molten_vents.dormant_molten_veridium": "Магматичне джерело (Веридій)",
+  "block.molten_vents.active_molten_crimsite": "Магматичне джерело (Кримзит)",
+  "block.molten_vents.dormant_molten_crimsite": "Магматичне джерело (Кримзит)",
+  "block.molten_vents.active_molten_ochrum": "Магматичне джерело (Охрум)",
+  "block.molten_vents.dormant_molten_ochrum": "Магматичне джерело (Охрум)",
+  "block.molten_vents.active_molten_scorchia": "Магматичне джерело (Скочія)",
+  "block.molten_vents.dormant_molten_scorchia": "Магматичне джерело (Скочія)",
+  "block.molten_vents.active_molten_scoria": "Магматичне джерело (Скорія)",
+  "block.molten_vents.dormant_molten_scoria": "Магматичне джерело (Скорія)"
 }

@@ -1,14 +1,14 @@
 {
-  "block.molten_vents.active_molten_asurine": "Azurijn Gesmolten ventilatieopening",
-  "block.molten_vents.dormant_molten_asurine": "Azurijn Gesmolten ventilatieopening",
-  "block.molten_vents.active_molten_veridium": "Veridium Gesmolten ventilatieopening",
-  "block.molten_vents.dormant_molten_veridium": "Veridium Gesmolten ventilatieopening",
-  "block.molten_vents.active_molten_crimsite": "Crimsiet Gesmolten ventilatieopening",
-  "block.molten_vents.dormant_molten_crimsite": "Crimsiet Gesmolten ventilatieopening",
-  "block.molten_vents.active_molten_ochrum": "Ochrum Gesmolten ventilatieopening",
-  "block.molten_vents.dormant_molten_ochrum": "Ochrum Gesmolten ventilatieopening",
-  "block.molten_vents.active_molten_scorchia": "Scorchia Gesmolten ventilatieopening",
-  "block.molten_vents.dormant_molten_scorchia": "Scorchia Gesmolten ventilatieopening",
-  "block.molten_vents.active_molten_scoria": "Scoria Gesmolten ventilatieopening",
-  "block.molten_vents.dormant_molten_scoria": "Scoria Gesmolten ventilatieopening"
+  "block.molten_vents.active_molten_asurine": "Magmabron (Azurijn)",
+  "block.molten_vents.dormant_molten_asurine": "Magmabron (Azurijn)",
+  "block.molten_vents.active_molten_veridium": "Magmabron (Veridium)",
+  "block.molten_vents.dormant_molten_veridium": "Magmabron (Veridium)",
+  "block.molten_vents.active_molten_crimsite": "Magmabron (Crimsiet)",
+  "block.molten_vents.dormant_molten_crimsite": "Magmabron (Crimsiet)",
+  "block.molten_vents.active_molten_ochrum": "Magmabron (Ochrum)",
+  "block.molten_vents.dormant_molten_ochrum": "Magmabron (Ochrum)",
+  "block.molten_vents.active_molten_scorchia": "Magmabron (Scorchia)",
+  "block.molten_vents.dormant_molten_scorchia": "Magmabron (Scorchia)",
+  "block.molten_vents.active_molten_scoria": "Magmabron (Scoria)",
+  "block.molten_vents.dormant_molten_scoria": "Magmabron (Scoria)"
 }

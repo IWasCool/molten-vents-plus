@@ -1,11 +1,6 @@
 {
   "parent": "create_water_vents:item/vent_surveyor_handheld",
-  "credit": "Graphite electronics palette: near-black case, black rubber, cool gunmetal and restrained teal controls; existing native geometry and pixel density",
-  "textures": {
-    "control_rubber": "minecraft:block/black_concrete",
-    "radar_background": "minecraft:block/black_concrete",
-    "radar_ink": "minecraft:block/white_concrete"
-  },
+  "credit": "Owned PNG materials and screen overlay; graphite radio hardware and item poses preserved.",
   "elements": [
     {
       "name": "Slim charcoal radio body",
@@ -27,10 +22,7 @@
             6.5,
             10.0
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "east": {
           "uv": [
@@ -39,10 +31,7 @@
             2.75,
             10.0
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "south": {
           "uv": [
@@ -51,10 +40,7 @@
             6.5,
             10.0
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "west": {
           "uv": [
@@ -63,10 +49,7 @@
             2.75,
             10.0
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "up": {
           "uv": [
@@ -75,10 +58,7 @@
             6.5,
             2.75
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "down": {
           "uv": [
@@ -87,10 +67,7 @@
             6.5,
             2.75
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         }
       }
     },
@@ -114,10 +91,7 @@
             5.653846,
             11.0
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "east": {
           "uv": [
@@ -126,10 +100,7 @@
             2.736,
             11.0
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "south": {
           "uv": [
@@ -138,10 +109,7 @@
             5.653846,
             11.0
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "west": {
           "uv": [
@@ -150,10 +118,7 @@
             2.736,
             11.0
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "up": {
           "uv": [
@@ -162,10 +127,7 @@
             5.653846,
             2.736
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "down": {
           "uv": [
@@ -174,10 +136,7 @@
             5.653846,
             2.736
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         }
       }
     },
@@ -201,10 +160,7 @@
             1.598321,
             1.7071068
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "east": {
           "uv": [
@@ -213,10 +169,7 @@
             2.726666,
             1.7071068
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "south": {
           "uv": [
@@ -225,10 +178,7 @@
             1.598321,
             1.7071068
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "west": {
           "uv": [
@@ -237,10 +187,7 @@
             2.726666,
             1.7071068
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "up": {
           "uv": [
@@ -249,10 +196,7 @@
             1.598321,
             2.726666
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "down": {
           "uv": [
@@ -261,10 +205,7 @@
             1.598321,
             2.726666
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         }
       },
       "rotation": {
@@ -298,10 +239,7 @@
             1.598321,
             1.7071068
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "east": {
           "uv": [
@@ -310,10 +248,7 @@
             2.726666,
             1.7071068
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "south": {
           "uv": [
@@ -322,10 +257,7 @@
             1.598321,
             1.7071068
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "west": {
           "uv": [
@@ -334,10 +266,7 @@
             2.726666,
             1.7071068
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "up": {
           "uv": [
@@ -346,10 +275,7 @@
             1.598321,
             2.726666
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "down": {
           "uv": [
@@ -358,10 +284,7 @@
             1.598321,
             2.726666
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         }
       },
       "rotation": {
@@ -395,7 +318,7 @@
             5.01923,
             3.6
           ],
-          "texture": "#radar_background"
+          "texture": "#control_rubber"
         },
         "south": {
           "uv": [
@@ -404,7 +327,7 @@
             5.01923,
             3.6
           ],
-          "texture": "#radar_background"
+          "texture": "#control_rubber"
         },
         "east": {
           "uv": [
@@ -413,7 +336,7 @@
             1.08,
             3.6
           ],
-          "texture": "#radar_background"
+          "texture": "#control_rubber"
         },
         "west": {
           "uv": [
@@ -422,7 +345,7 @@
             1.08,
             3.6
           ],
-          "texture": "#radar_background"
+          "texture": "#control_rubber"
         },
         "up": {
           "uv": [
@@ -431,7 +354,7 @@
             5.01923,
             1.08
           ],
-          "texture": "#radar_background"
+          "texture": "#control_rubber"
         },
         "down": {
           "uv": [
@@ -440,7 +363,7 @@
             5.01923,
             1.08
           ],
-          "texture": "#radar_background"
+          "texture": "#control_rubber"
         }
       },
       "shade": false
@@ -460,75 +383,57 @@
       "faces": {
         "north": {
           "uv": [
-            8,
+            0,
             0,
             16,
-            6
+            12
           ],
-          "texture": "#surveyor",
-          "neoforge_data": {
-            "color": "ff97a0cc"
-          }
+          "texture": "#speaker"
         },
         "east": {
           "uv": [
-            4,
-            10,
-            5,
-            11
+            0,
+            14,
+            2,
+            16
           ],
-          "texture": "#surveyor",
-          "neoforge_data": {
-            "color": "ff97a0cc"
-          }
+          "texture": "#speaker"
         },
         "south": {
           "uv": [
-            4,
-            10,
-            5,
-            11
+            0,
+            14,
+            2,
+            16
           ],
-          "texture": "#surveyor",
-          "neoforge_data": {
-            "color": "ff97a0cc"
-          }
+          "texture": "#speaker"
         },
         "west": {
           "uv": [
-            4,
-            10,
-            5,
-            11
+            0,
+            14,
+            2,
+            16
           ],
-          "texture": "#surveyor",
-          "neoforge_data": {
-            "color": "ff97a0cc"
-          }
+          "texture": "#speaker"
         },
         "up": {
           "uv": [
-            4,
-            10,
-            5,
-            11
+            0,
+            14,
+            2,
+            16
           ],
-          "texture": "#surveyor",
-          "neoforge_data": {
-            "color": "ff97a0cc"
-          }
+          "texture": "#speaker"
         },
         "down": {
           "uv": [
-            4,
-            10,
-            5,
-            11
+            0,
+            14,
+            2,
+            16
           ],
-          "texture": "#surveyor",
-          "neoforge_data": {
-            "color": "ff97a0cc"
-          }
+          "texture": "#speaker"
         }
       }
     },
@@ -621,10 +526,7 @@
             1.846154,
             2
           ],
-          "texture": "#control_metal",
-          "neoforge_data": {
-            "color": "ff7e7e7e"
-          }
+          "texture": "#control_metal"
         },
         "south": {
           "uv": [
@@ -633,10 +535,7 @@
             1.846154,
             2
           ],
-          "texture": "#control_metal",
-          "neoforge_data": {
-            "color": "ff7e7e7e"
-          }
+          "texture": "#control_metal"
         },
         "east": {
           "uv": [
@@ -645,10 +544,7 @@
             1.466666,
             2
           ],
-          "texture": "#control_metal",
-          "neoforge_data": {
-            "color": "ff7e7e7e"
-          }
+          "texture": "#control_metal"
         },
         "west": {
           "uv": [
@@ -657,10 +553,7 @@
             1.466666,
             2
           ],
-          "texture": "#control_metal",
-          "neoforge_data": {
-            "color": "ff7e7e7e"
-          }
+          "texture": "#control_metal"
         },
         "up": {
           "uv": [
@@ -669,10 +562,7 @@
             1.846154,
             1.466666
           ],
-          "texture": "#control_metal",
-          "neoforge_data": {
-            "color": "ff7e7e7e"
-          }
+          "texture": "#control_metal"
         },
         "down": {
           "uv": [
@@ -681,10 +571,7 @@
             1.846154,
             1.466666
           ],
-          "texture": "#control_metal",
-          "neoforge_data": {
-            "color": "ff7e7e7e"
-          }
+          "texture": "#control_metal"
         }
       }
     },
@@ -708,10 +595,7 @@
             1.41,
             2.6
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "south": {
           "uv": [
@@ -720,10 +604,7 @@
             1.41,
             2.6
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "east": {
           "uv": [
@@ -732,10 +613,7 @@
             2.1,
             2.6
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "west": {
           "uv": [
@@ -744,10 +622,7 @@
             2.1,
             2.6
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "up": {
           "uv": [
@@ -756,10 +631,7 @@
             1.41,
             2.1
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "down": {
           "uv": [
@@ -768,10 +640,7 @@
             1.41,
             2.1
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         }
       }
     },
@@ -795,10 +664,7 @@
             1.11,
             2.1
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "south": {
           "uv": [
@@ -807,10 +673,7 @@
             1.11,
             2.1
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "east": {
           "uv": [
@@ -819,10 +682,7 @@
             1.7,
             2.1
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "west": {
           "uv": [
@@ -831,10 +691,7 @@
             1.7,
             2.1
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "up": {
           "uv": [
@@ -843,10 +700,7 @@
             1.11,
             1.7
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "down": {
           "uv": [
@@ -855,10 +709,7 @@
             1.11,
             1.7
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         }
       }
     },
@@ -882,10 +733,7 @@
             2.16,
             1.23
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "south": {
           "uv": [
@@ -894,10 +742,7 @@
             2.16,
             1.23
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "east": {
           "uv": [
@@ -906,10 +751,7 @@
             1.8,
             1.23
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "west": {
           "uv": [
@@ -918,10 +760,7 @@
             1.8,
             1.23
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "up": {
           "uv": [
@@ -930,10 +769,7 @@
             2.16,
             1.8
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "down": {
           "uv": [
@@ -942,10 +778,7 @@
             2.16,
             1.8
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         }
       }
     },
@@ -969,10 +802,7 @@
             2.21,
             1.37
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "south": {
           "uv": [
@@ -981,10 +811,7 @@
             2.21,
             1.37
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "east": {
           "uv": [
@@ -993,10 +820,7 @@
             1.9,
             1.37
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "west": {
           "uv": [
@@ -1005,10 +829,7 @@
             1.9,
             1.37
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "up": {
           "uv": [
@@ -1017,10 +838,7 @@
             2.21,
             1.9
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "down": {
           "uv": [
@@ -1029,10 +847,7 @@
             2.21,
             1.9
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         }
       }
     },
@@ -1056,10 +871,7 @@
             2.2,
             1.63
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "south": {
           "uv": [
@@ -1068,10 +880,7 @@
             2.2,
             1.63
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "east": {
           "uv": [
@@ -1080,10 +889,7 @@
             2.06,
             1.63
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "west": {
           "uv": [
@@ -1092,10 +898,7 @@
             2.06,
             1.63
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "up": {
           "uv": [
@@ -1104,10 +907,7 @@
             2.2,
             2.06
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         },
         "down": {
           "uv": [
@@ -1116,10 +916,7 @@
             2.2,
             2.06
           ],
-          "texture": "#case_plain",
-          "neoforge_data": {
-            "color": "ff2e333b"
-          }
+          "texture": "#case_plain"
         }
       }
     },
@@ -1212,10 +1009,7 @@
             1.83,
             1.48
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "south": {
           "uv": [
@@ -1224,10 +1018,7 @@
             1.83,
             1.48
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "east": {
           "uv": [
@@ -1236,10 +1027,7 @@
             1.105,
             1.48
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "west": {
           "uv": [
@@ -1248,10 +1036,7 @@
             1.105,
             1.48
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "up": {
           "uv": [
@@ -1260,10 +1045,7 @@
             1.83,
             1.105
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "down": {
           "uv": [
@@ -1272,10 +1054,7 @@
             1.83,
             1.105
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         }
       }
     },
@@ -1299,10 +1078,7 @@
             1.63,
             1.32
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "south": {
           "uv": [
@@ -1311,10 +1087,7 @@
             1.63,
             1.32
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "east": {
           "uv": [
@@ -1323,10 +1096,7 @@
             1.038,
             1.32
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "west": {
           "uv": [
@@ -1335,10 +1105,7 @@
             1.038,
             1.32
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "up": {
           "uv": [
@@ -1347,10 +1114,7 @@
             1.63,
             1.038
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "down": {
           "uv": [
@@ -1359,10 +1123,7 @@
             1.63,
             1.038
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         }
       }
     },
@@ -1386,10 +1147,7 @@
             1.83,
             1.48
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "south": {
           "uv": [
@@ -1398,10 +1156,7 @@
             1.83,
             1.48
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "east": {
           "uv": [
@@ -1410,10 +1165,7 @@
             1.105,
             1.48
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "west": {
           "uv": [
@@ -1422,10 +1174,7 @@
             1.105,
             1.48
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "up": {
           "uv": [
@@ -1434,10 +1183,7 @@
             1.83,
             1.105
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         },
         "down": {
           "uv": [
@@ -1446,10 +1192,7 @@
             1.83,
             1.105
           ],
-          "texture": "#control_trim",
-          "neoforge_data": {
-            "color": "ff56636e"
-          }
+          "texture": "#control_trim"
         }
       }
     },
@@ -1473,10 +1216,7 @@
             1.63,
             1.32
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "south": {
           "uv": [
@@ -1485,10 +1225,7 @@
             1.63,
             1.32
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "east": {
           "uv": [
@@ -1497,10 +1234,7 @@
             1.038,
             1.32
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "west": {
           "uv": [
@@ -1509,10 +1243,7 @@
             1.038,
             1.32
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "up": {
           "uv": [
@@ -1521,10 +1252,7 @@
             1.63,
             1.038
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         },
         "down": {
           "uv": [
@@ -1533,357 +1261,33 @@
             1.63,
             1.038
           ],
-          "texture": "#control_accent",
-          "neoforge_data": {
-            "color": "ff3d8c87"
-          }
+          "texture": "#control_accent"
         }
       }
     },
     {
-      "name": "Radar range ring N",
+      "name": "Editable radar screen overlay",
       "from": [
-        7.52,
-        10.13,
+        5.990385,
+        8.0,
         7.054
       ],
       "to": [
-        8.48,
-        10.27,
+        10.009615,
+        10.6,
         7.054
       ],
       "shade": false,
       "faces": {
         "north": {
           "uv": [
-            1,
-            1,
-            1.96,
-            1.14
+            0,
+            0,
+            16,
+            16
           ],
-          "texture": "#radar_ink",
+          "texture": "#screen",
           "neoforge_data": {
-            "color": "ff4e8e88",
-            "block_light": 12,
-            "sky_light": 12,
-            "ambient_occlusion": false
-          }
-        }
-      }
-    },
-    {
-      "name": "Radar range ring S",
-      "from": [
-        7.52,
-        8.33,
-        7.054
-      ],
-      "to": [
-        8.48,
-        8.47,
-        7.054
-      ],
-      "shade": false,
-      "faces": {
-        "north": {
-          "uv": [
-            1,
-            1,
-            1.96,
-            1.14
-          ],
-          "texture": "#radar_ink",
-          "neoforge_data": {
-            "color": "ff4e8e88",
-            "block_light": 12,
-            "sky_light": 12,
-            "ambient_occlusion": false
-          }
-        }
-      }
-    },
-    {
-      "name": "Radar range ring W",
-      "from": [
-        7.03,
-        8.82,
-        7.054
-      ],
-      "to": [
-        7.17,
-        9.78,
-        7.054
-      ],
-      "shade": false,
-      "faces": {
-        "north": {
-          "uv": [
-            1,
-            1,
-            1.14,
-            1.96
-          ],
-          "texture": "#radar_ink",
-          "neoforge_data": {
-            "color": "ff4e8e88",
-            "block_light": 12,
-            "sky_light": 12,
-            "ambient_occlusion": false
-          }
-        }
-      }
-    },
-    {
-      "name": "Radar range ring E",
-      "from": [
-        8.83,
-        8.82,
-        7.054
-      ],
-      "to": [
-        8.97,
-        9.78,
-        7.054
-      ],
-      "shade": false,
-      "faces": {
-        "north": {
-          "uv": [
-            1,
-            1,
-            1.14,
-            1.96
-          ],
-          "texture": "#radar_ink",
-          "neoforge_data": {
-            "color": "ff4e8e88",
-            "block_light": 12,
-            "sky_light": 12,
-            "ambient_occlusion": false
-          }
-        }
-      }
-    },
-    {
-      "name": "Radar range ring NW",
-      "from": [
-        7.18,
-        9.780000000000001,
-        7.054
-      ],
-      "to": [
-        7.36,
-        9.98,
-        7.054
-      ],
-      "shade": false,
-      "faces": {
-        "north": {
-          "uv": [
-            1,
-            1,
-            1.18,
-            1.2
-          ],
-          "texture": "#radar_ink",
-          "neoforge_data": {
-            "color": "ff4e8e88",
-            "block_light": 12,
-            "sky_light": 12,
-            "ambient_occlusion": false
-          }
-        }
-      }
-    },
-    {
-      "name": "Radar range ring NE",
-      "from": [
-        8.64,
-        9.780000000000001,
-        7.054
-      ],
-      "to": [
-        8.82,
-        9.98,
-        7.054
-      ],
-      "shade": false,
-      "faces": {
-        "north": {
-          "uv": [
-            1,
-            1,
-            1.18,
-            1.2
-          ],
-          "texture": "#radar_ink",
-          "neoforge_data": {
-            "color": "ff4e8e88",
-            "block_light": 12,
-            "sky_light": 12,
-            "ambient_occlusion": false
-          }
-        }
-      }
-    },
-    {
-      "name": "Radar range ring SW",
-      "from": [
-        7.18,
-        8.620000000000001,
-        7.054
-      ],
-      "to": [
-        7.36,
-        8.82,
-        7.054
-      ],
-      "shade": false,
-      "faces": {
-        "north": {
-          "uv": [
-            1,
-            1,
-            1.18,
-            1.2
-          ],
-          "texture": "#radar_ink",
-          "neoforge_data": {
-            "color": "ff4e8e88",
-            "block_light": 12,
-            "sky_light": 12,
-            "ambient_occlusion": false
-          }
-        }
-      }
-    },
-    {
-      "name": "Radar range ring SE",
-      "from": [
-        8.64,
-        8.620000000000001,
-        7.054
-      ],
-      "to": [
-        8.82,
-        8.82,
-        7.054
-      ],
-      "shade": false,
-      "faces": {
-        "north": {
-          "uv": [
-            1,
-            1,
-            1.18,
-            1.2
-          ],
-          "texture": "#radar_ink",
-          "neoforge_data": {
-            "color": "ff4e8e88",
-            "block_light": 12,
-            "sky_light": 12,
-            "ambient_occlusion": false
-          }
-        }
-      }
-    },
-    {
-      "name": "Radar center return",
-      "from": [
-        7.91,
-        9.21,
-        7.054
-      ],
-      "to": [
-        8.09,
-        9.39,
-        7.054
-      ],
-      "shade": false,
-      "faces": {
-        "north": {
-          "uv": [
-            1,
-            1,
-            1.18,
-            1.18
-          ],
-          "texture": "#radar_ink",
-          "neoforge_data": {
-            "color": "ffa3d7ce",
-            "block_light": 12,
-            "sky_light": 12,
-            "ambient_occlusion": false
-          }
-        }
-      }
-    },
-    {
-      "name": "Radar sweep",
-      "from": [
-        8,
-        9.24,
-        7.054
-      ],
-      "to": [
-        8.67,
-        9.36,
-        7.054
-      ],
-      "shade": false,
-      "faces": {
-        "north": {
-          "uv": [
-            1,
-            1,
-            1.67,
-            1.12
-          ],
-          "texture": "#radar_ink",
-          "neoforge_data": {
-            "color": "ff77bfb3",
-            "block_light": 12,
-            "sky_light": 12,
-            "ambient_occlusion": false
-          }
-        }
-      },
-      "rotation": {
-        "origin": [
-          8,
-          9.3,
-          7.054
-        ],
-        "axis": "z",
-        "angle": 45,
-        "rescale": false
-      }
-    },
-    {
-      "name": "Located vent echo",
-      "from": [
-        7.52,
-        9.64,
-        7.054
-      ],
-      "to": [
-        7.76,
-        9.88,
-        7.054
-      ],
-      "shade": false,
-      "faces": {
-        "north": {
-          "uv": [
-            1,
-            1,
-            1.24,
-            1.24
-          ],
-          "texture": "#radar_ink",
-          "neoforge_data": {
-            "color": "ffa3d7ce",
             "block_light": 12,
             "sky_light": 12,
             "ambient_occlusion": false

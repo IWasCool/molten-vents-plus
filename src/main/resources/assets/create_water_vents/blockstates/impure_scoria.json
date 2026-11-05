@@ -1,16 +1,1 @@
-{
-  "variants": {
-    "profile=natural": {
-      "model": "create:block/scoria"
-    },
-    "profile=cut": {
-      "model": "create:block/cut_scoria"
-    },
-    "profile=slab": {
-      "model": "create:block/cut_scoria_slab"
-    },
-    "profile=post": {
-      "model": "create:block/cut_scoria_wall_post"
-    }
-  }
-}
+{"variants":{"profile=natural":{"model":"create_water_vents:block/impure_scoria"},"profile=cut":{"model":"create_water_vents:block/impure_scoria_cut_scoria"},"profile=slab":{"model":"create_water_vents:block/impure_scoria_cut_scoria_slab"},"profile=post":{"model":"create_water_vents:block/impure_scoria_cut_scoria_wall_post"}}}

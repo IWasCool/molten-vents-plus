@@ -1,6 +1,1 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "create:block/palettes/stone_types/scorchia"
-  }
-}
+{"parent":"create_water_vents:block/pure_scorchia","loader":"neoforge:composite","children":{"base":{"parent":"create_water_vents:block/pure_scorchia"},"sparkles":{"parent":"create_water_vents:block/overlays/pure_sparkles_full_v0"}},"item_render_order":["base","sparkles"]}

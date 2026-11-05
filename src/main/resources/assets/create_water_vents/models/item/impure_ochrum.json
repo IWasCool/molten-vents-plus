@@ -1,6 +1,1 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "create:block/palettes/stone_types/natural/ochrum_1"
-  }
-}
+{"parent":"create_water_vents:block/impure_ochrum"}

@@ -1,6 +1,7 @@
 package com.ourcreation.moltenventsplus.vent;
 
 import com.mojang.brigadier.Command;
+import com.ourcreation.moltenventsplus.VentConfig;
 import com.simibubi.create.api.contraption.BlockMovementChecks;
 import com.simibubi.create.api.contraption.BlockMovementChecks.CheckResult;
 
@@ -56,7 +57,8 @@ public final class VentSettings {
     }
 
     public static boolean movementEnabled(Level level) {
-        return level.getGameRules().getBoolean(MOLTEN_VENTS_MOVABLE);
+        return VentConfig.ALLOW_VENT_MOVEMENT.get()
+                || level.getGameRules().getBoolean(MOLTEN_VENTS_MOVABLE);
     }
 
     @SubscribeEvent

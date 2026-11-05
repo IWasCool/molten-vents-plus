@@ -23,6 +23,7 @@ dependencies {
     compileOnly 'net.createmod.ponder:ponder-neoforge:1.0.82+mc1.21.1'
     compileOnly 'mezz.jei:jei-1.21.1-common-api:19.27.0.340'
     compileOnly 'dev.emi:emi-neoforge:1.1.24+1.21.1:api'
+    compileOnly('curse.maven:jade-324717:8591319') { transitive = false }
 }
 neoForge {
     version = neo_version
