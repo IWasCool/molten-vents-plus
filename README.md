@@ -54,10 +54,10 @@ Crushing pure Asurine, Veridium, Crimsite or Ochrum guarantees 12 matching nativ
 crushed ore and eight nuggets. Six additional crushed-ore units and four
 additional nuggets each roll independently at 50%, for totals of 12–18 crushed
 ore and 8–12 nuggets. Coal and quartz crushing retain their existing yields.
-Milling impure Asurine, Veridium, Crimsite or Ochrum rolls independently for one
-matching nugget at 16% and another at 12%. Impure Scoria rolls for one quartz
-at 12% and another at 8%, and remains millstone-only. Both rolls can succeed,
-giving up to two items. Impure Scorchia's coal recipe is unchanged.
+Milling impure Asurine, Veridium, Crimsite or Ochrum has a flat 24% chance of one
+matching nugget. Impure Scoria has a flat 16% chance of one quartz and remains
+millstone-only. Impure Scorchia has a flat 16% chance of one coal. Each input
+rolls once and produces at most one item.
 
 Water, Molten and Superheated Vent Surveyors scan their own tier within 1,000,
 2,000 and 3,000 blocks, stopping after 10, six and three discoveries respectively.

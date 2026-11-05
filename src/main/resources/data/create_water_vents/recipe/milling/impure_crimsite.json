@@ -10,12 +10,7 @@
     {
       "id": "minecraft:iron_nugget",
       "count": 1,
-      "chance": 0.16
-    },
-    {
-      "id": "minecraft:iron_nugget",
-      "count": 1,
-      "chance": 0.12
+      "chance": 0.24
     }
   ]
 }
