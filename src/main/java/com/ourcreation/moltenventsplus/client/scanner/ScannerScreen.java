@@ -2,7 +2,6 @@ package com.ourcreation.moltenventsplus.client.scanner;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.ourcreation.moltenventsplus.MoltenVentsPlus;
-import com.ourcreation.moltenventsplus.registry.ScannerRegistry;
 import com.ourcreation.moltenventsplus.scanner.ScannerTarget;
 import com.ourcreation.moltenventsplus.vent.VentTier;
 import net.minecraft.client.gui.GuiGraphics;
@@ -11,7 +10,6 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.locale.Language;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
@@ -137,12 +135,6 @@ public final class ScannerScreen extends Screen {
             int y = cy + (int) Math.round(Math.sin(angle) * ICON_RADIUS) - 8;
             g.renderItem(target.icon(), x, y);
         }
-        var item = switch (tier) {
-            case WATER -> ScannerRegistry.VENT_SURVEYOR.get();
-            case MOLTEN -> ScannerRegistry.MOLTEN_VENT_SURVEYOR.get();
-            case SUPERHEATED -> ScannerRegistry.SUPERHEATED_VENT_SURVEYOR.get();
-        };
-        g.renderItem(new ItemStack(item), cx - 8, cy - 8);
         line(g, title, cy - RADIUS - 18, 0xFFDCDFD9);
     }
 
