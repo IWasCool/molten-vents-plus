@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Molten Vent Surveyor",
   "item.create_water_vents.superheated_vent_surveyor": "Oververhitte ventilatiemeter",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Waterventilering (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Vind de blootgestelde kern in ‘t midde vaan de ventilatie.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Ruimte roond de kern. Houd de kern intact.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Activeer de kern mit un explosie.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Plaats ‘n waterbron naeve de actieve kern.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Mijn de stein en voeg daonao nog ‘n waterbron toe.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Molen onzuvere sjtein veur ‘n klein kans op middele.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

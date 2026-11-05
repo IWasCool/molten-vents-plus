@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Archeograf di sflandôrs fonduts",
   "item.create_water_vents.superheated_vent_surveyor": "Archeograf di sflandôrs superriscaldâts",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Sflandôr di aghe (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Cjatâ il nucli esponût tal centri dal sflandôr.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Spazi libar ator dal nucli. Mantignî intat il nucli.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Atîf il nucli cuntune esplosion.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Metti une font di aghe dongje dal nucli atîf.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Sgjavâ la piere, daspò zontâ une altre font di aghe.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Mulin di piere impure par une piçule pussibilitât di risorsis.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

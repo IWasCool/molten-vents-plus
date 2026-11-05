@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Molten Vent Surveyor",
   "item.create_water_vents.superheated_vent_surveyor": "Superheated Vent Surveyor",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Dočasný zdroj: vyčerpá se po vytvoření omezeného množství nečisté horniny.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Vodní vývěry mají omezenou zásobu. Po vyčerpání se jádro změní v nečistou horninu.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Vodní vývěry mají omezenou zásobu. Po vyčerpání se jádro změní v nečistou horninu.",
   "create_water_vents.vent.uses_remaining": "Zbývající použití: %s",
   "create_water_vents.vent.infinite": "Neomezeně",
   "create_water_vents.vent.uses_pending": "Zbývající použití: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Použití vývěrů"
+  "config.jade.plugin_create_water_vents.vent_uses": "Použití vývěrů",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Vodní průduch (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Najděte obnažené jádro ve středu větracího otvoru.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Volný prostor kolem jádra. Udržujte jádro neporušené.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Aktivujte jádro výbuchem.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Vedle aktivního jádra umístěte zdroj vody.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Vytěžte kámen a poté přidejte další zdroj vody.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Rozemelte nečistý kámen pro malou šanci získat suroviny.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Vodní vývěry mají omezenou zásobu. Po vyčerpání se jádro změní v nečistou horninu."
 }

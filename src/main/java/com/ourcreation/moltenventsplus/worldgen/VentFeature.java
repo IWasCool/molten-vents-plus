@@ -31,7 +31,7 @@ public final class VentFeature extends Feature<VentConfiguration> {
         if (tier == VentTier.SUPERHEATED && !level.getFluidState(origin.above()).isEmpty()) return false;
         OreStone stone = OreStone.values()[random.nextInt(OreStone.values().length)];
         int radius = tier == VentTier.WATER ? 2 : MoltenVentDeposit.SUPERHEATED_RADIUS;
-        int depth = tier == VentTier.WATER ? 4+random.nextInt(3) : 12+random.nextInt(5);
+        int depth = tier == VentTier.WATER ? WaterVentDeposit.MIN_DEPTH + random.nextInt(7) : 12+random.nextInt(5);
         boolean underwater = !level.getFluidState(origin.above()).isEmpty();
         placeDeposit(level, random, origin, tier, stone, radius, depth, underwater, BoundingBox.infinite());
         return true;
@@ -47,7 +47,7 @@ public final class VentFeature extends Feature<VentConfiguration> {
     static void placeDeposit(WorldGenLevel level, RandomSource random, BlockPos origin, VentTier tier,
                              BlockState ore, BlockState core, int radius, int depth, boolean underwater, BoundingBox bounds) {
         placeDeposit(level, random, origin, tier, ore, core, radius, depth, underwater, bounds,
-                GroundedVentDeposit.SHAPE_VERSION);
+                tier == VentTier.WATER ? WaterVentDeposit.SHAPE_VERSION : GroundedVentDeposit.SHAPE_VERSION);
     }
 
     static void placeDeposit(WorldGenLevel level, RandomSource random, BlockPos origin, VentTier tier,
@@ -56,6 +56,10 @@ public final class VentFeature extends Feature<VentConfiguration> {
         // Formation rock is ordinary Create stone; purity belongs to the vent's output.
         if (core.getBlock() instanceof VentBlock vent)
             ore = vent.stone.output(VentTier.MOLTEN).defaultBlockState();
+        if (tier == VentTier.WATER && shapeVersion >= WaterVentDeposit.SHAPE_VERSION) {
+            WaterVentDeposit.place(level, random, origin, ore, core, depth, underwater, bounds);
+            return;
+        }
         if (tier == VentTier.WATER && shapeVersion >= GroundedVentDeposit.SHAPE_VERSION) {
             GroundedVentDeposit.place(level, random, origin, ore, core, radius, depth, underwater, bounds);
             return;

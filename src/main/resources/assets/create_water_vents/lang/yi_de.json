@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "מאָולטאַן ווענט סורווייאָר",
   "item.create_water_vents.superheated_vent_surveyor": "סופּערהעאַטעד ווענט סורווייאָר",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "וואסער ווענט (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "געפֿינען די יקספּאָוזד האַרץ אין די ויסגאַנג ס צענטער.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "קלאָר פּלאַץ אַרום די האַרץ. האַלטן די האַרץ בעשאָלעם.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "אַקטאַווייט די האַרץ מיט אַ יקספּלאָוזשאַן.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "שטעלן אַ וואַסער מקור בייַ די אַקטיוו האַרץ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "מיינס דעם שטיין, און לייג צו אן אנדער וואַסער מקור.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "מאָל אומריינע שטיין פֿאַר אַ קליינע געלעגנהייט צו באַקומען רעסורסן.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

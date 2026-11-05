@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "מודד פתח מותך",
   "item.create_water_vents.superheated_vent_surveyor": "מודד אוורור מחומם",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "מקור זמני: מתרוקן לאחר ייצור כמות מוגבלת של סלע לא טהור.",
   "create_water_vents.ponder.water_vent_activation.text_7": "למקורות המים יש מלאי מוגבל. כשהוא נגמר, הליבה הופכת לסלע לא טהור.",
   "create_water_vents.ponder.water_vent_automation.text_6": "למקורות המים יש מלאי מוגבל. כשהוא נגמר, הליבה הופכת לסלע לא טהור.",
   "create_water_vents.vent.uses_remaining": "שימושים שנותרו: %s",
   "create_water_vents.vent.infinite": "ללא הגבלה",
   "create_water_vents.vent.uses_pending": "שימושים שנותרו: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "שימושים במקורות"
+  "config.jade.plugin_create_water_vents.vent_uses": "שימושים במקורות",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "פתח מים (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "מצא את הליבה החשופה במרכז פתח האוורור.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "פנה מקום סביב הליבה. שמור על הליבה שלמה.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "הפעל את הליבה עם פיצוץ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "הנח מקור מים ליד הליבה הפעילה.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "כרה את האבן, ולאחר מכן הוסף מקור מים נוסף.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "טחנו אבן לא טהורה לסיכוי קטן לקבלת משאבים.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "למקורות המים יש מלאי מוגבל. כשהוא נגמר, הליבה הופכת לסלע לא טהור."
 }

@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Эрийбит вентиляционнай геодезист",
   "item.create_water_vents.superheated_vent_surveyor": "Аһара ититиллибит вентиляционнай геодезист",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Уу тахсар сирэ (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Вентиляция киинигэр баар арыллыбыт сүрүнү булуҥ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Сүрүн тула ыраас сир. Сүрүн бүтүннүү тутуҥ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Ядрону дэлби тэбиинэн үлэлэтиҥ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Активнай ядро аттыгар уу источнигын туруор.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Тааһы хостоон баран, атын уу источнигын эбэн биэр.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Кыра шанстаах ресурсаларга ыраас буолбатах тааһы мэлий.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

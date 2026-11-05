@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Ərimiş havalandırma aparatı",
   "item.create_water_vents.superheated_vent_surveyor": "Həddindən artıq qızdırılan ventilyasiya aparatı",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Su ventilyasiyası (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Havalandırmanın mərkəzində açıq nüvəni tapın.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Nüvə ətrafında boş yer təmizləyin. Əsası toxunulmaz saxlayın.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Nüvəni partlayışla aktivləşdirin.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Aktiv nüvənin yanında su mənbəyi qoyun.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Daşı minalayın, sonra başqa su mənbəyi əlavə edin.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Resurs əldə etmək üçün çirkli daşı dəyirmanda üyüdün.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

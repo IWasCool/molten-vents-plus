@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Magma Kaynağı Dedektörü",
   "item.create_water_vents.superheated_vent_surveyor": "Aşırı Isınmış Kaynak Dedektörü",
   "scanner.create_water_vents.limit": "%s baca bulunca durur.",
-  "create_water_vents.water_vent.finite": "Geçici kaynak: sınırlı miktarda saf olmayan taş ürettikten sonra tükenir.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Su kaynaklarının rezervi sınırlıdır. Tükendiğinde çekirdek saf olmayan taşa dönüşür.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Su kaynaklarının rezervi sınırlıdır. Tükendiğinde çekirdek saf olmayan taşa dönüşür.",
   "create_water_vents.vent.uses_remaining": "Kalan kullanım: %s",
   "create_water_vents.vent.infinite": "Sınırsız",
   "create_water_vents.vent.uses_pending": "Kalan kullanım: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Kaynak kullanımları"
+  "config.jade.plugin_create_water_vents.vent_uses": "Kaynak kullanımları",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Su Havalandırması (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Havalandırmanın merkezinde açıkta kalan çekirdeği bulun.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Çekirdeğin etrafındaki alanı temizleyin. Çekirdeği sağlam tutun.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Çekirdeği bir patlamayla etkinleştirin.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Aktif çekirdeğin yanına bir su kaynağı yerleştirin.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Taşı çıkarın, ardından başka bir su kaynağı ekleyin.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Kaynak elde etmek için düşük bir şansla saf olmayan taşı öğütün.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Su kaynaklarının rezervi sınırlıdır. Tükendiğinde çekirdek saf olmayan taşa dönüşür."
 }

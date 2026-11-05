@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Détecteur d'évents de magma",
   "item.create_water_vents.superheated_vent_surveyor": "Détecteur d'évents surchauffés",
   "scanner.create_water_vents.limit": "Arrêt après %s cheminées.",
-  "create_water_vents.water_vent.finite": "Source temporaire : s'épuise après avoir produit une quantité limitée de roche impure.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Les évents d'eau ont une réserve limitée. Une fois épuisé, le cœur devient de la roche impure.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Les évents d'eau ont une réserve limitée. Une fois épuisé, le cœur devient de la roche impure.",
   "create_water_vents.vent.uses_remaining": "Utilisations restantes : %s",
   "create_water_vents.vent.infinite": "Illimité",
   "create_water_vents.vent.uses_pending": "Utilisations restantes : ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Utilisations des évents"
+  "config.jade.plugin_create_water_vents.vent_uses": "Utilisations des évents",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Évent d’eau (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Repère le cœur exposé au centre de la cheminée.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Dégage de l'espace autour du cœur. Garde-le intact.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Active le cœur avec une explosion.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Placez une source d’eau près du noyau actif.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Mine la roche, puis remets une source d’eau.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Broyez la pierre impure pour une faible chance d’obtenir des ressources.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Les évents d'eau ont une réserve limitée. Une fois épuisé, le cœur devient de la roche impure."
 }

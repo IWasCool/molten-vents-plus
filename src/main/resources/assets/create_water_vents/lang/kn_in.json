@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "ಮೊಲ್ಟೆನ್ ವೆಂಟ್ ಸರ್ವೇಯರ್",
   "item.create_water_vents.superheated_vent_surveyor": "ಸೂಪರ್ ಹೀಟೆಡ್ ವೆಂಟ್ ಸರ್ವೇಯರ್",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "ವಾಟರ್ ವೆಂಟ್ (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "ತೆರಪಿನ ಕೇಂದ್ರದಲ್ಲಿ ತೆರೆದಿರುವ ಕೋರ್ ಅನ್ನು ಹುಡುಕಿ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "ಕೋರ್ ಸುತ್ತಲೂ ಜಾಗವನ್ನು ತೆರವುಗೊಳಿಸಿ. ಕೋರ್ ಅನ್ನು ಹಾಗೇ ಇರಿಸಿ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "ಸ್ಫೋಟದೊಂದಿಗೆ ಕೋರ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "ಸಕ್ರಿಯ ಕೋರ್ ಪಕ್ಕದಲ್ಲಿ ನೀರಿನ ಮೂಲವನ್ನು ಇರಿಸಿ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "ಕಲ್ಲನ್ನು ಮೈನ್ ಮಾಡಿ, ನಂತರ ಇನ್ನೊಂದು ನೀರಿನ ಮೂಲವನ್ನು ಸೇರಿಸಿ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "ಸಂಪನ್ಮೂಲಗಳನ್ನು ಪಡೆಯುವ ಸಣ್ಣ ಅವಕಾಶಕ್ಕಾಗಿ ಅಶುದ್ಧ ಕಲ್ಲನ್ನು ಗಿರಣಿಯಲ್ಲಿ ಪುಡಿಮಾಡಿ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

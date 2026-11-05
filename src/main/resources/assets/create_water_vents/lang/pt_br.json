@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Detector de fontes de magma",
   "item.create_water_vents.superheated_vent_surveyor": "Detector de fontes superaquecidas",
   "scanner.create_water_vents.limit": "Para após encontrar %s fontes.",
-  "create_water_vents.water_vent.finite": "Fonte temporária: esgota-se após produzir uma quantidade limitada de rocha impura.",
   "create_water_vents.ponder.water_vent_activation.text_7": "As fontes de água têm uma reserva limitada. Quando ela acaba, o núcleo vira rocha impura.",
   "create_water_vents.ponder.water_vent_automation.text_6": "As fontes de água têm uma reserva limitada. Quando ela acaba, o núcleo vira rocha impura.",
   "create_water_vents.vent.uses_remaining": "Usos restantes: %s",
   "create_water_vents.vent.infinite": "Ilimitados",
   "create_water_vents.vent.uses_pending": "Usos restantes: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Usos das fontes"
+  "config.jade.plugin_create_water_vents.vent_uses": "Usos das fontes",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Água Vazadouro (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Encontre o núcleo exposto no centro da fonte de magma.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Libere espaço ao redor do núcleo. Mantenha-o intacto.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Ative o núcleo com uma explosão.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Coloque uma fonte de água ao lado do núcleo ativo.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Minere a rocha e coloque outra fonte de água.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Moa a pedra impura para uma pequena chance de obter recursos.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "As fontes de água têm uma reserva limitada. Quando ela acaba, o núcleo vira rocha impura."
 }

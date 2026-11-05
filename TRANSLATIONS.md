@@ -2,7 +2,7 @@
 
 Molten Vents Plus includes a language file for every one of Minecraft 1.21.1's
 143 language options, including regional variants, right-to-left languages and
-fictional languages. Each option has all 137 mod strings and all 12 original
+fictional languages. Each option has all 144 mod strings and all 12 original
 Molten Vents block names. This covers block and item names, Surveyor controls
 and messages, Ponder tutorials, recipe categories, structure names and movement
 command responses.

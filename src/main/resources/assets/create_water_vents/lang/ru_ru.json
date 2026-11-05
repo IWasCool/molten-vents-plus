@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Детектор магматических источников",
   "item.create_water_vents.superheated_vent_surveyor": "Детектор перегретых источников",
   "scanner.create_water_vents.limit": "Остановка после %s жерл.",
-  "create_water_vents.water_vent.finite": "Временный источник: истощается после производства ограниченного количества нечистой породы.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Водяные источники имеют ограниченный запас. Когда он иссякнет, ядро превратится в нечистую породу.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Водяные источники имеют ограниченный запас. Когда он иссякнет, ядро превратится в нечистую породу.",
   "create_water_vents.vent.uses_remaining": "Осталось использований: %s",
   "create_water_vents.vent.infinite": "Неограниченно",
   "create_water_vents.vent.uses_pending": "Осталось использований: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Запас источников"
+  "config.jade.plugin_create_water_vents.vent_uses": "Запас источников",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Водяной Источник (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Найдите открытое ядро в центре источника.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Освободите место вокруг ядра. Не разрушайте его.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Активируйте ядро взрывом.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Поместите источник воды рядом с активным ядром.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Добудьте камень и поставьте новый источник воды.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Перемалывайте нечистый камень для небольшого шанса получить ресурсы.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Водяные источники имеют ограниченный запас. Когда он иссякнет, ядро превратится в нечистую породу."
 }

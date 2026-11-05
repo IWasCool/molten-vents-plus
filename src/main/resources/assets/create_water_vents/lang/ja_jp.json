@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "溶岩噴出口探知機",
   "item.create_water_vents.superheated_vent_surveyor": "過熱噴出口探知機",
   "scanner.create_water_vents.limit": "噴出口を%s個発見すると停止します。",
-  "create_water_vents.water_vent.finite": "一時的な噴出口：一定量の不純な岩石を生成すると枯渇します。",
   "create_water_vents.ponder.water_vent_activation.text_7": "水噴出口の埋蔵量には限りがあります。使い切ると、コアは不純な岩石に変わります。",
   "create_water_vents.ponder.water_vent_automation.text_6": "水噴出口の埋蔵量には限りがあります。使い切ると、コアは不純な岩石に変わります。",
   "create_water_vents.vent.uses_remaining": "残り使用回数：%s",
   "create_water_vents.vent.infinite": "無制限",
   "create_water_vents.vent.uses_pending": "残り使用回数：...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "噴出口の使用回数"
+  "config.jade.plugin_create_water_vents.vent_uses": "噴出口の使用回数",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "水 噴出口 (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "噴出孔の中央にある、露出したコアを見つけましょう。",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "コアの周りを空けましょう。コアは壊さないでください。",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "爆発でコアを活性化します。",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "稼働中のコアの隣に水源を置きます。",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "石を採掘し、水源を補充しましょう。",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "不純な石を石臼で挽くと、低確率で資源が得られます。",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "水噴出口の埋蔵量には限りがあります。使い切ると、コアは不純な岩石に変わります。"
 }

@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Mea Ana'i Puka Hoohehee",
   "item.create_water_vents.superheated_vent_surveyor": "Mea Ana'i Puana Pumehana",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Puka wai (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "E ʻimi i ke kumu i hōʻike ʻia ma ke kikowaena o ka makani.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Hoʻomaʻemaʻe ke ākea a puni ke kumu. E mālama pono i ke kumu.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Ho'ā i ke kumu me kahi pahū.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "E kau i kahi punawai ma ka ʻaoʻao o ke kumu hana.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Naʻu i ka pōhaku, a laila hoʻohui i kekahi kumu wai.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "E wili i ka pōhaku haumia no kahi manawa liʻiliʻi o nā kumuwaiwai.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

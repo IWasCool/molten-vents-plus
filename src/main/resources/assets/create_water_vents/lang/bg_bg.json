@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Изследовател на разтопени отдушници",
   "item.create_water_vents.superheated_vent_surveyor": "Изследовател на прегрят отдушник",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Временен източник: изчерпва се след произвеждането на ограничено количество нечиста скала.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Водните извори имат ограничен запас. След изчерпването му ядрото се превръща в нечиста скала.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Водните извори имат ограничен запас. След изчерпването му ядрото се превръща в нечиста скала.",
   "create_water_vents.vent.uses_remaining": "Оставащи използвания: %s",
   "create_water_vents.vent.infinite": "Неограничено",
   "create_water_vents.vent.uses_pending": "Оставащи използвания: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Използвания на изворите"
+  "config.jade.plugin_create_water_vents.vent_uses": "Използвания на изворите",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Отдушник за вода (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Намерете откритото ядро в центъра на вентилационния отвор.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Свободно пространство около ядрото. Запазете сърцевината непокътната.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Активирайте ядрото с експлозия.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Поставете източник на вода до активното ядро.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Изкопайте камъка, след това добавете друг източник на вода.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Смелете нечист камък за малък шанс да получите ресурси.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Водните извори имат ограничен запас. След изчерпването му ядрото се превръща в нечиста скала."
 }

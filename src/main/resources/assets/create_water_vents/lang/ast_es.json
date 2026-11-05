@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Molten Vent Surveyor",
   "item.create_water_vents.superheated_vent_surveyor": "Superheated Vent Surveyor",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Ventilación d'agua (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Atope el núcleu espuestu nel centru del respiraderu .",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Estene l'espaciu alredor del núcleu . Caltenga el núcleu intactu .",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Activa el núcleu con una esplosión.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Coloque una fonte d'agua al llau del núcleu activu .",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Estrayiga la piedra y depués amieste otra fonte d'agua.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Muele piedra impura pa tener una pequeña probabilidá de recursos.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

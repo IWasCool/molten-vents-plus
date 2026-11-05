@@ -36,8 +36,14 @@ public final class VentScenes {
     private VentScenes() {}
 
     public static void activation(SceneBuilder builder, SceneBuildingUtil util, VentTier tier, String stone) {
+        activation(builder, util, tier, stone, false);
+    }
+
+    public static void activation(SceneBuilder builder, SceneBuildingUtil util, VentTier tier, String stone,
+                                  boolean alternateWater) {
         var scene = new CreateSceneBuilder(builder);
-        scene.title(tier.id + "_vent_activation", "Using a " + tier.id + " vent");
+        scene.title(tier.id + "_vent_activation" + (alternateWater ? "_variant" : ""),
+                "Using a " + tier.id + " vent" + (alternateWater ? " (2)" : ""));
         int center = tier == VentTier.SUPERHEATED ? 6 : 5;
         frame(scene, tier == VentTier.SUPERHEATED ? 13 : 11, 5.5F, -55, 145, 0.62F);
         BlockPos core = util.grid().at(center, 1, center);
@@ -446,7 +452,7 @@ public final class VentScenes {
             return replacement;
         }
         if (!id.getNamespace().equals("create") || !id.getPath().contains("crimsite")) return state;
-        if (id.getPath().equals("crimsite")) return output(tier, stone);
+        if (id.getPath().equals("crimsite")) return block("create", stone);
         BlockState replacement = block("create", id.getPath().replace("crimsite", stone));
         for (Property<?> property : state.getProperties())
             if (replacement.hasProperty(property))

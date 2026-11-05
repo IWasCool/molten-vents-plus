@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Балқытылған желдеткіш маркшейдер",
   "item.create_water_vents.superheated_vent_surveyor": "Өте қызған желдеткіш маркшейдер",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Су желдеткіші (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Желдеткіштің ортасындағы ашық өзекті табыңыз.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Өзек айналасындағы кеңістікті босатыңыз. Өзекті бүтін қалдырыңыз.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Жарылыспен ядроны іске қосыңыз.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Су көзін белсенді ядроның жанына қойыңыз.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Тасты қазып алыңыз, содан кейін басқа су көзін қосыңыз.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Ресурстар алудың аз мүмкіндігі үшін қоспалы тасты диірменде ұнтақтаңыз.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

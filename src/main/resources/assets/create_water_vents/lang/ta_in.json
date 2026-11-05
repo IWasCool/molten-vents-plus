@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "மோல்டன் வென்ட் சர்வேயர்",
   "item.create_water_vents.superheated_vent_surveyor": "சூப்பர் ஹீட்டட் வென்ட் சர்வேயர்",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "வாட்டர் வென்ட் (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "காற்றோட்டத்தின் மையத்தில் வெளிப்படும் மையத்தைக் கண்டறியவும்.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "மையத்தைச் சுற்றி தெளிவான இடம். மையத்தை அப்படியே வைத்திருங்கள்.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "வெடிப்புடன் மையத்தை இயக்கவும்.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "செயலில் உள்ள மையத்திற்கு அருகில் ஒரு நீர் ஆதாரத்தை வைக்கவும்.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "கல்லை என்னுடையது, பிறகு மற்றொரு நீர் ஆதாரத்தைச் சேர்க்கவும்.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "வளங்கள் கிடைக்கும் சிறிய வாய்ப்பிற்காகத் தூய்மையற்ற கல்லை ஆலைக்கல்லில் அரைக்கவும்.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "용암 분출구 탐지기",
   "item.create_water_vents.superheated_vent_surveyor": "과열 분출구 탐지기",
   "scanner.create_water_vents.limit": "분출구 %s개를 찾으면 중지합니다.",
-  "create_water_vents.water_vent.finite": "임시 분출구: 일정량의 불순한 암석을 생성하면 고갈됩니다.",
   "create_water_vents.ponder.water_vent_activation.text_7": "물 분출구의 매장량은 한정되어 있습니다. 고갈되면 코어가 불순한 암석으로 변합니다.",
   "create_water_vents.ponder.water_vent_automation.text_6": "물 분출구의 매장량은 한정되어 있습니다. 고갈되면 코어가 불순한 암석으로 변합니다.",
   "create_water_vents.vent.uses_remaining": "남은 사용 횟수: %s",
   "create_water_vents.vent.infinite": "무제한",
   "create_water_vents.vent.uses_pending": "남은 사용 횟수: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "분출구 사용 횟수"
+  "config.jade.plugin_create_water_vents.vent_uses": "분출구 사용 횟수",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "물 분출구 (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "분출구 중앙에 드러난 핵을 찾으세요.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "핵 주변의 공간을 비우세요. 핵은 그대로 두세요.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "폭발로 핵을 활성화하세요.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "활성 코어 옆에 물 근원을 놓으세요.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "돌을 채굴하고 물 근원을 다시 놓으세요.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "불순한 돌을 맷돌에 갈면 낮은 확률로 자원을 얻습니다.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "물 분출구의 매장량은 한정되어 있습니다. 고갈되면 코어가 불순한 암석으로 변합니다."
 }

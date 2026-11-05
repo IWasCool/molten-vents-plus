@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Surveyor Ventilasi Cair",
   "item.create_water_vents.superheated_vent_surveyor": "Surveyor Ventilasi Superpanas",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Sumber sementara: habis setelah menghasilkan batu tidak murni dalam jumlah terbatas.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Sumber air memiliki cadangan terbatas. Setelah habis, intinya berubah menjadi batu tidak murni.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Sumber air memiliki cadangan terbatas. Setelah habis, intinya berubah menjadi batu tidak murni.",
   "create_water_vents.vent.uses_remaining": "Sisa penggunaan: %s",
   "create_water_vents.vent.infinite": "Tak terbatas",
   "create_water_vents.vent.uses_pending": "Sisa penggunaan: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Penggunaan sumber"
+  "config.jade.plugin_create_water_vents.vent_uses": "Penggunaan sumber",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Ventilasi Air (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Temukan inti yang terbuka di tengah ventilasi.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Kosongkan ruang di sekitar inti. Jaga agar intinya tetap utuh.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Aktifkan inti dengan ledakan.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Tempatkan sumber air di samping inti aktif.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Tambang batunya, lalu tambahkan sumber air lainnya.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Giling batu tidak murni untuk peluang kecil mendapatkan sumber daya.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Sumber air memiliki cadangan terbatas. Setelah habis, intinya berubah menjadi batu tidak murni."
 }

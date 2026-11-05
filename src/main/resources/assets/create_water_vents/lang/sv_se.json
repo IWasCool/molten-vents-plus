@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Molten Vent Surveyor",
   "item.create_water_vents.superheated_vent_surveyor": "Överhettad ventilmätare",
   "scanner.create_water_vents.limit": "Stannar efter %s källor.",
-  "create_water_vents.water_vent.finite": "Tillfällig källa: tar slut efter att ha producerat en begränsad mängd oren sten.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Vattenkällor har ett begränsat förråd. När det är slut blir kärnan oren sten.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Vattenkällor har ett begränsat förråd. När det är slut blir kärnan oren sten.",
   "create_water_vents.vent.uses_remaining": "Återstående användningar: %s",
   "create_water_vents.vent.infinite": "Obegränsat",
   "create_water_vents.vent.uses_pending": "Återstående användningar: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Källornas användningar"
+  "config.jade.plugin_create_water_vents.vent_uses": "Källornas användningar",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Vattenventil (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Hitta den exponerade kärnan i ventilens mitt.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Frigör utrymme runt kärnan. Håll kärnan intakt.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Aktivera kärnan med en explosion.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Placera en vattenkälla bredvid den aktiva kärnan.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Bryt stenen och lägg sedan till ytterligare en vattenkälla.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Mal oren sten för en liten chans att få resurser.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Vattenkällor har ett begränsat förråd. När det är slut blir kärnan oren sten."
 }

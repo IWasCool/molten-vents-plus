@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "熔岩噴口探測儀",
   "item.create_water_vents.superheated_vent_surveyor": "過熱噴口探測儀",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "臨時噴口：生成一定數量的不純礦石後便會枯竭。",
   "create_water_vents.ponder.water_vent_activation.text_7": "湧水口的儲量有限。耗盡後，核心會變成不純礦石。",
   "create_water_vents.ponder.water_vent_automation.text_6": "湧水口的儲量有限。耗盡後，核心會變成不純礦石。",
   "create_water_vents.vent.uses_remaining": "剩餘使用次數：%s",
   "create_water_vents.vent.infinite": "無限",
   "create_water_vents.vent.uses_pending": "剩餘使用次數：...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "噴口使用次數"
+  "config.jade.plugin_create_water_vents.vent_uses": "噴口使用次數",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "水口 (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "找到通風口中心暴露的核心。",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "核心周圍的空白空間。保持核心完整。",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "透過爆炸激活核心。",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "在活性核心旁放置水源。",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "開採石頭，然後再增加另一個水源。",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "將不純礦石磨碎，有小機率獲得資源。",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "湧水口的儲量有限。耗盡後，核心會變成不純礦石。"
 }

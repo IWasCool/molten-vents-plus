@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Magmaschlotdetektor",
   "item.create_water_vents.superheated_vent_surveyor": "Detektor für überhitzte Schlote",
   "scanner.create_water_vents.limit": "Findet höchstens %s Schlote.",
-  "create_water_vents.water_vent.finite": "Begrenzter Vorrat: Dieser Schlot erschöpft sich nach einer begrenzten Menge unreinen Gesteins.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Wasserschlote haben einen begrenzten Vorrat. Danach wird der Kern zu unreinem Gestein.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Wasserschlote haben einen begrenzten Vorrat. Danach wird der Kern zu unreinem Gestein.",
   "create_water_vents.vent.uses_remaining": "Verbleibende Nutzungen: %s",
   "create_water_vents.vent.infinite": "Unbegrenzt",
   "create_water_vents.vent.uses_pending": "Verbleibende Nutzungen: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Verbleibende Nutzungen"
+  "config.jade.plugin_create_water_vents.vent_uses": "Verbleibende Nutzungen",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Wasserentlüftung (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Finden Sie den freigelegten Kern in der Mitte der Entlüftung.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Freiraum um den Kern herum. Halten Sie den Kern intakt.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Aktiviere den Kern durch eine Explosion.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Platzieren Sie eine Wasserquelle neben dem aktiven Kern.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Baue den Stein ab und füge dann eine weitere Wasserquelle hinzu.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Mahle unreinen Stein für eine kleine Chance auf Ressourcen.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Wasserschlote haben einen begrenzten Vorrat. Danach wird der Kern zu unreinem Gestein."
 }

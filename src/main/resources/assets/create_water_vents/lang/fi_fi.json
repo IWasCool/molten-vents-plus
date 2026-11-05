@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Molten Vent Surveyor",
   "item.create_water_vents.superheated_vent_surveyor": "Tulistettu tuuletusmittari",
   "scanner.create_water_vents.limit": "Pysähtyy %s lähteen jälkeen.",
-  "create_water_vents.water_vent.finite": "Väliaikainen lähde: ehtyy tuotettuaan rajallisen määrän epäpuhdasta kiveä.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Vesilähteiden varannot ovat rajalliset. Varannon ehtyessä ydin muuttuu epäpuhtaaksi kiveksi.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Vesilähteiden varannot ovat rajalliset. Varannon ehtyessä ydin muuttuu epäpuhtaaksi kiveksi.",
   "create_water_vents.vent.uses_remaining": "Käyttökertoja jäljellä: %s",
   "create_water_vents.vent.infinite": "Rajattomasti",
   "create_water_vents.vent.uses_pending": "Käyttökertoja jäljellä: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Lähteiden käyttökerrat"
+  "config.jade.plugin_create_water_vents.vent_uses": "Lähteiden käyttökerrat",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Vesipurkausaukko (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Etsi esillä oleva ydin tuuletusaukon keskeltä.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Vapaa tila ytimen ympärillä. Pidä ydin koskemattomana.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Aktivoi ydin räjähdyksellä.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Aseta vesilähde aktiivisen sydämen viereen.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Louhi kivi ja lisää sitten toinen vesilähde.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Jauha epäpuhdasta kiveä saadaksesi pienen mahdollisuuden resursseihin.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Vesilähteiden varannot ovat rajalliset. Varannon ehtyessä ydin muuttuu epäpuhtaaksi kiveksi."
 }

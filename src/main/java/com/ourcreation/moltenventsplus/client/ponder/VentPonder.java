@@ -18,9 +18,11 @@ public final class VentPonder implements PonderPlugin {
     @Override public String getModId(){return MoltenVentsPlus.MODID;}
     @Override public void registerScenes(PonderSceneRegistrationHelper<ResourceLocation> helper){
         for(var tier:VentTier.values())for(var stone:OreStone.values()){
-            helper.forComponents(VentRegistry.ventId(tier,stone,false),VentRegistry.ventId(tier,stone,true),stone.outputId(tier))
-                    .addStoryBoard("vent/"+tier.id+"_activation",(scene,util)->VentScenes.activation(scene,util,tier,stone.id))
-                    .addStoryBoard("vent/"+tier.id+"_automation",(scene,util)->VentScenes.automation(scene,util,tier,stone.id));
+            var scenes = helper.forComponents(VentRegistry.ventId(tier,stone,false),VentRegistry.ventId(tier,stone,true),stone.outputId(tier));
+            scenes.addStoryBoard("vent/"+tier.id+"_activation",(scene,util)->VentScenes.activation(scene,util,tier,stone.id));
+            if (tier == VentTier.WATER)
+                scenes.addStoryBoard("vent/water_activation_variant",(scene,util)->VentScenes.activation(scene,util,tier,stone.id,true));
+            scenes.addStoryBoard("vent/"+tier.id+"_automation",(scene,util)->VentScenes.automation(scene,util,tier,stone.id));
         }
     }
 }

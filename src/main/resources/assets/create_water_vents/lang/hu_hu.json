@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Molten Vent Surveyor",
   "item.create_water_vents.superheated_vent_surveyor": "Túlhevített szellőzőmérő",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Ideiglenes forrás: korlátozott mennyiségű szennyezett kő előállítása után kimerül.",
   "create_water_vents.ponder.water_vent_activation.text_7": "A vízforrások készlete véges. Kimerüléskor a mag szennyezett kővé válik.",
   "create_water_vents.ponder.water_vent_automation.text_6": "A vízforrások készlete véges. Kimerüléskor a mag szennyezett kővé válik.",
   "create_water_vents.vent.uses_remaining": "Hátralévő használatok: %s",
   "create_water_vents.vent.infinite": "Korlátlan",
   "create_water_vents.vent.uses_pending": "Hátralévő használatok: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Források használatai"
+  "config.jade.plugin_create_water_vents.vent_uses": "Források használatai",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Vízforrás (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Keresse meg a szabadon lévő magot a szellőzőnyílás közepén.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Szabad tér a mag körül. Tartsa érintetlenül a magot.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Aktiválja a magot egy robbanással.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Helyezzen vízforrást az aktív mag mellé.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Bányászd ki a követ, majd adj hozzá egy másik vízforrást.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Őrölj tisztátalan követ, hogy kis eséllyel nyersanyagokat kapj.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "A vízforrások készlete véges. Kimerüléskor a mag szennyezett kővé válik."
 }

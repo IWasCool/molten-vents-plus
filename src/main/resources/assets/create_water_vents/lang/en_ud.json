@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Molten Vent Surveyor",
   "item.create_water_vents.superheated_vent_surveyor": "Superheated Vent Surveyor",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "ʇuǝΛ ɹǝʇɐM (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "˙ɹǝʇuǝɔ s'ʇuǝʌ ǝɥʇ uᴉ ǝɹoɔ pǝsodxǝ ǝɥʇ puᴉℲ",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "˙ʇɔɐʇuᴉ ǝɹoɔ ǝɥʇ dǝǝ⋊ ˙ǝɹoɔ ǝɥʇ punoɹɐ ǝɔɐds ɹɐǝlƆ",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "˙uoᴉsoldxǝ uɐ ɥʇᴉʍ ǝɹoɔ ǝɥʇ ǝʇɐʌᴉʇɔ∀",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "˙ǝɹoɔ ǝʌᴉʇɔɐ ǝɥʇ ǝpᴉsǝq ǝɔɹnos ɹǝʇɐʍ ɐ ǝɔɐlԀ",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "˙ǝɔɹnos ɹǝʇɐʍ ɹǝɥʇouɐ ppɐ uǝɥʇ ’ǝuoʇs ǝɥʇ ǝuᴉW",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Mill impure stone for a small chance of resources.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Detector de respiraderos de magma",
   "item.create_water_vents.superheated_vent_surveyor": "Detector de respiraderos sobrecalentados",
   "scanner.create_water_vents.limit": "Se detiene tras encontrar %s respiraderos.",
-  "create_water_vents.water_vent.finite": "Fuente temporal: se agota tras producir una cantidad limitada de roca impura.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Los respiraderos de agua tienen una reserva limitada. Al agotarse, el núcleo se convierte en roca impura.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Los respiraderos de agua tienen una reserva limitada. Al agotarse, el núcleo se convierte en roca impura.",
   "create_water_vents.vent.uses_remaining": "Usos restantes: %s",
   "create_water_vents.vent.infinite": "Ilimitados",
   "create_water_vents.vent.uses_pending": "Usos restantes: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Usos de los respiraderos"
+  "config.jade.plugin_create_water_vents.vent_uses": "Usos de los respiraderos",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Agua Respiradero (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Busca el núcleo expuesto en el centro de la chimenea.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Despeja espacio alrededor del núcleo. Consérvalo intacto.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Activa el núcleo con una explosión.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Coloca una fuente de agua junto al núcleo activo.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Extrae la roca y coloca otra fuente de agua.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Muele piedra impura para una pequeña probabilidad de obtener recursos.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Los respiraderos de agua tienen una reserva limitada. Al agotarse, el núcleo se convierte en roca impura."
 }

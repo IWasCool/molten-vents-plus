@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Magmabrondetector",
   "item.create_water_vents.superheated_vent_surveyor": "Oververhittebrondetector",
   "scanner.create_water_vents.limit": "Stopt na %s bronnen.",
-  "create_water_vents.water_vent.finite": "Tijdelijke bron: raakt uitgeput na het produceren van een beperkte hoeveelheid onzuiver gesteente.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Waterbronnen hebben een beperkte voorraad. Zodra die op is, verandert de kern in onzuiver gesteente.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Waterbronnen hebben een beperkte voorraad. Zodra die op is, verandert de kern in onzuiver gesteente.",
   "create_water_vents.vent.uses_remaining": "Resterende gebruiken: %s",
   "create_water_vents.vent.infinite": "Onbeperkt",
   "create_water_vents.vent.uses_pending": "Resterende gebruiken: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Gebruik van bronnen"
+  "config.jade.plugin_create_water_vents.vent_uses": "Gebruik van bronnen",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Waterventilatie (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Zoek de blootliggende kern in het midden van de ventilatieopening.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Vrije ruimte rond de kern. Houd de kern intact.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Activeer de kern met een explosie.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Plaats een waterbron naast de actieve kern.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Mijn de steen en voeg dan nog een waterbron toe.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Maal onzuivere steen voor een kleine kans op grondstoffen.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Waterbronnen hebben een beperkte voorraad. Zodra die op is, verandert de kern in onzuiver gesteente."
 }

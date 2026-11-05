@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Molten Vent Surveyor",
   "item.create_water_vents.superheated_vent_surveyor": "Overopphetet ventilmåler",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Midlertidig kilde: tømmes etter å ha produsert en begrenset mengde uren stein.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Vannkilder har et begrenset lager. Når det er tomt, blir kjernen til uren stein.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Vannkilder har et begrenset lager. Når det er tomt, blir kjernen til uren stein.",
   "create_water_vents.vent.uses_remaining": "Gjenværende bruk: %s",
   "create_water_vents.vent.infinite": "Ubegrenset",
   "create_water_vents.vent.uses_pending": "Gjenværende bruk: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Bruk av kilder"
+  "config.jade.plugin_create_water_vents.vent_uses": "Bruk av kilder",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Vannkilde (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Finn den eksponerte kjernen i midten av ventilen.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Frigjør plass rundt kjernen. Hold kjernen intakt.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Aktiver kjernen med en eksplosjon.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Plasser en vannkilde ved siden av den aktive kjernen.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Bryt steinen, og legg deretter til en annen vannkilde.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Mal uren stein for en liten sjanse til å få ressurser.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Vannkilder har et begrenset lager. Når det er tomt, blir kjernen til uren stein."
 }

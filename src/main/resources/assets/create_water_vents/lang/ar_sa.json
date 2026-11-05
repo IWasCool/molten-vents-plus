@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "مساح فتحة التهوية المنصهرة",
   "item.create_water_vents.superheated_vent_surveyor": "مساح فتحة التهوية شديدة السخونة",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "منبع مؤقت: ينفد بعد إنتاج كمية محدودة من الصخور غير النقية.",
   "create_water_vents.ponder.water_vent_activation.text_7": "مخزون منابع المياه محدود. عند نفاده، تتحول النواة إلى صخور غير نقية.",
   "create_water_vents.ponder.water_vent_automation.text_6": "مخزون منابع المياه محدود. عند نفاده، تتحول النواة إلى صخور غير نقية.",
   "create_water_vents.vent.uses_remaining": "الاستخدامات المتبقية: %s",
   "create_water_vents.vent.infinite": "غير محدودة",
   "create_water_vents.vent.uses_pending": "الاستخدامات المتبقية: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "استخدامات المنابع"
+  "config.jade.plugin_create_water_vents.vent_uses": "استخدامات المنابع",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "فتحة تهوية المياه (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "ابحث عن القلب المكشوف في مركز فتحة التهوية.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "قم بإخلاء المساحة حول القلب. الحفاظ على جوهر سليمة.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "تنشيط القلب بالانفجار.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "ضع مصدر مياه بجوار القلب النشط.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "استخرج الحجر ثم أضف مصدرًا آخر للمياه.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "اطحن الحجر غير النقي للحصول على فرصة صغيرة للموارد.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "مخزون منابع المياه محدود. عند نفاده، تتحول النواة إلى صخور غير نقية."
 }

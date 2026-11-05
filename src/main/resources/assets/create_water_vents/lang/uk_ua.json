@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Детектор магматичних джерел",
   "item.create_water_vents.superheated_vent_surveyor": "Детектор перегрітих джерел",
   "scanner.create_water_vents.limit": "Зупинка після %s жерл.",
-  "create_water_vents.water_vent.finite": "Тимчасове джерело: виснажується після утворення обмеженої кількості нечистої породи.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Водяні джерела мають обмежений запас. Після виснаження ядро стає нечистою породою.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Водяні джерела мають обмежений запас. Після виснаження ядро стає нечистою породою.",
   "create_water_vents.vent.uses_remaining": "Залишилося використань: %s",
   "create_water_vents.vent.infinite": "Необмежено",
   "create_water_vents.vent.uses_pending": "Залишилося використань: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Запас джерел"
+  "config.jade.plugin_create_water_vents.vent_uses": "Запас джерел",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Вентиляційний отвір (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Знайдіть оголене ядро в центрі вентиляційного отвору.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Звільніть простір навколо ядра. Зберігайте серцевину цілою.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Активуйте ядро ​​вибухом.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Розмістіть джерело води поруч із активним ядром.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Видобувайте камінь, потім додайте інше джерело води.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Перемелюйте нечистий камінь для невеликого шансу отримати ресурси.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Водяні джерела мають обмежений запас. Після виснаження ядро стає нечистою породою."
 }

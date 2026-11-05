@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Molten Vent Surveyor",
   "item.create_water_vents.superheated_vent_surveyor": "Superheated Vent Surveyor",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Water Vent (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Find the exposed core in the vent's center.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Clear space around the core. Keep the core intact.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Activate the core with an explosion.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Place a water source beside the active core.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Mine the stone, then add another water source.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Mill impure stone for a small chance of resources.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

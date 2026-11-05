@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "นักสำรวจช่องระบายอากาศหลอมเหลว",
   "item.create_water_vents.superheated_vent_surveyor": "เครื่องสำรวจช่องระบายอากาศแบบร้อนยวดยิ่ง",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "แหล่งชั่วคราว: จะหมดลงหลังจากผลิตหินไม่บริสุทธิ์ได้ในปริมาณจำกัด",
   "create_water_vents.ponder.water_vent_activation.text_7": "แหล่งน้ำมีปริมาณสำรองจำกัด เมื่อหมดแล้ว แกนกลางจะกลายเป็นหินไม่บริสุทธิ์",
   "create_water_vents.ponder.water_vent_automation.text_6": "แหล่งน้ำมีปริมาณสำรองจำกัด เมื่อหมดแล้ว แกนกลางจะกลายเป็นหินไม่บริสุทธิ์",
   "create_water_vents.vent.uses_remaining": "จำนวนครั้งที่ใช้ได้เหลือ: %s",
   "create_water_vents.vent.infinite": "ไม่จำกัด",
   "create_water_vents.vent.uses_pending": "จำนวนครั้งที่ใช้ได้เหลือ: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "จำนวนการใช้แหล่งทรัพยากร"
+  "config.jade.plugin_create_water_vents.vent_uses": "จำนวนการใช้แหล่งทรัพยากร",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "ช่องระบายน้ำ (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "ค้นหาแกนที่เปิดโล่งตรงกลางช่องระบายอากาศ",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "พื้นที่ว่างรอบแกนกลาง รักษาแกนให้สมบูรณ์",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "เปิดใช้งานแกนกลางด้วยการระเบิด",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "วางแหล่งน้ำไว้ข้างแกนกลางที่ทำงานอยู่",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "ขุดหิน จากนั้นเติมแหล่งน้ำอื่น",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "บดหินไม่บริสุทธิ์เพื่อมีโอกาสเล็กน้อยในการได้รับทรัพยากร",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "แหล่งน้ำมีปริมาณสำรองจำกัด เมื่อหมดแล้ว แกนกลางจะกลายเป็นหินไม่บริสุทธิ์"
 }

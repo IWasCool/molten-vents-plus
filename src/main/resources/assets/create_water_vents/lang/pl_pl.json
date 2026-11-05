@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Wykrywacz magmowych kominów",
   "item.create_water_vents.superheated_vent_surveyor": "Wykrywacz przegrzanych kominów",
   "scanner.create_water_vents.limit": "Zatrzymuje się po znalezieniu %s kominów.",
-  "create_water_vents.water_vent.finite": "Tymczasowe źródło: wyczerpuje się po wytworzeniu ograniczonej ilości zanieczyszczonej skały.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Wodne kominy mają ograniczony zapas. Po jego wyczerpaniu rdzeń zmienia się w zanieczyszczoną skałę.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Wodne kominy mają ograniczony zapas. Po jego wyczerpaniu rdzeń zmienia się w zanieczyszczoną skałę.",
   "create_water_vents.vent.uses_remaining": "Pozostałe użycia: %s",
   "create_water_vents.vent.infinite": "Bez ograniczeń",
   "create_water_vents.vent.uses_pending": "Pozostałe użycia: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Użycia kominów"
+  "config.jade.plugin_create_water_vents.vent_uses": "Użycia kominów",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Wodny Komin (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Znajdź odsłonięty rdzeń pośrodku komina.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Zrób miejsce wokół rdzenia. Nie niszcz go.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Aktywuj rdzeń za pomocą eksplozji.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Umieść źródło wody obok aktywnego rdzenia.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Wydobądź skałę i umieść kolejne źródło wody.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Zmiel zanieczyszczony kamień, aby mieć małą szansę na surowce.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Wodne kominy mają ograniczony zapas. Po jego wyczerpaniu rdzeń zmienia się w zanieczyszczoną skałę."
 }

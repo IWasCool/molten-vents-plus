@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Rilevatore di sfiati di magma",
   "item.create_water_vents.superheated_vent_surveyor": "Rilevatore di sfiati surriscaldati",
   "scanner.create_water_vents.limit": "Si ferma dopo %s sorgenti.",
-  "create_water_vents.water_vent.finite": "Sorgente temporanea: si esaurisce dopo aver prodotto una quantità limitata di roccia impura.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Gli sfiati d'acqua hanno una riserva limitata. Una volta esaurita, il nucleo diventa roccia impura.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Gli sfiati d'acqua hanno una riserva limitata. Una volta esaurita, il nucleo diventa roccia impura.",
   "create_water_vents.vent.uses_remaining": "Utilizzi rimanenti: %s",
   "create_water_vents.vent.infinite": "Illimitati",
   "create_water_vents.vent.uses_pending": "Utilizzi rimanenti: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Utilizzi degli sfiati"
+  "config.jade.plugin_create_water_vents.vent_uses": "Utilizzi degli sfiati",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Acqua Sfiato (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Trova il nucleo esposto al centro dello sfiato.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Libera spazio intorno al nucleo. Lascialo intatto.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Attiva il nucleo con un'esplosione.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Metti una sorgente d’acqua accanto al nucleo attivo.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Estrai la roccia, poi aggiungi un'altra sorgente d’acqua.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Macina la pietra impura per una piccola probabilità di ottenere risorse.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Gli sfiati d'acqua hanno una riserva limitata. Una volta esaurita, il nucleo diventa roccia impura."
 }

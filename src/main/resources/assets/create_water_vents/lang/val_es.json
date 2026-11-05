@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Aparellador de ventilació fosa",
   "item.create_water_vents.superheated_vent_surveyor": "Surveyor de ventilació sobreescalfada",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Font temporal: s’esgota després de produir una quantitat limitada de roca impura.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Les fonts d’aigua tenen una reserva limitada. Quan s’esgota, el nucli es converteix en roca impura.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Les fonts d’aigua tenen una reserva limitada. Quan s’esgota, el nucli es converteix en roca impura.",
   "create_water_vents.vent.uses_remaining": "Usos restants: %s",
   "create_water_vents.vent.infinite": "Il·limitats",
   "create_water_vents.vent.uses_pending": "Usos restants: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Usos de les fonts"
+  "config.jade.plugin_create_water_vents.vent_uses": "Usos de les fonts",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Venda d'aigua (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Trobeu el nucli exposat al centre de la ventilació.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Espai lliure al voltant del nucli. Mantenir el nucli intacte.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Activa el nucli amb una explosió.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Col·loqueu una font d'aigua al costat del nucli actiu.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Extraieu la pedra i afegiu-hi una altra font d'aigua.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Molina pedra impura per a una petita possibilitat de recursos.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Les fonts d’aigua tenen una reserva limitada. Quan s’esgota, el nucli es converteix en roca impura."
 }

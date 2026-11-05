@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "emissarium",
   "item.create_water_vents.superheated_vent_surveyor": "Superheated Vent Surveyor",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Spiraculum aquae (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Nucleum apertum in medio spiraculo inveni.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Spatium circa nucleum libera. Nucleum integrum conserva.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Nucleum explosione excita.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Fontem aquae iuxta nucleum agentem pone.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Lapidem effode, deinde alium fontem aquae adde.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Lapidem impurum mole ad parvam facultatem opes obtinendi.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

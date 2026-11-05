@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Người khảo sát lỗ thông hơi nóng chảy",
   "item.create_water_vents.superheated_vent_surveyor": "Máy khảo sát lỗ thông hơi quá nhiệt",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Nguồn tạm thời: cạn kiệt sau khi tạo ra một lượng đá không tinh khiết nhất định.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Các nguồn nước có trữ lượng hữu hạn. Khi cạn kiệt, lõi biến thành đá không tinh khiết.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Các nguồn nước có trữ lượng hữu hạn. Khi cạn kiệt, lõi biến thành đá không tinh khiết.",
   "create_water_vents.vent.uses_remaining": "Số lần sử dụng còn lại: %s",
   "create_water_vents.vent.infinite": "Vô hạn",
   "create_water_vents.vent.uses_pending": "Số lần sử dụng còn lại: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Số lần sử dụng nguồn"
+  "config.jade.plugin_create_water_vents.vent_uses": "Số lần sử dụng nguồn",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Lỗ thoát nước (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Tìm lõi lộ ra ở trung tâm lỗ thông hơi.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Khoảng trống xung quanh lõi. Giữ nguyên lõi.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Kích hoạt lõi bằng một vụ nổ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Đặt nguồn nước bên cạnh lõi hoạt động.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Khai thác đá, sau đó thêm nguồn nước khác.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Nghiền đá không tinh khiết để có cơ hội nhỏ nhận được tài nguyên.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Các nguồn nước có trữ lượng hữu hạn. Khi cạn kiệt, lõi biến thành đá không tinh khiết."
 }

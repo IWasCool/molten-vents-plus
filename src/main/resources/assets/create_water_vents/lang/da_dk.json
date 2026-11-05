@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Molten Vent Surveyor",
   "item.create_water_vents.superheated_vent_surveyor": "Overophedet ventilationsmåler",
   "scanner.create_water_vents.limit": "Stopper efter %s kilder.",
-  "create_water_vents.water_vent.finite": "Midlertidig kilde: udtømmes efter at have produceret en begrænset mængde uren sten.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Vandkilder har et begrænset lager. Når det er brugt op, bliver kernen til uren sten.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Vandkilder har et begrænset lager. Når det er brugt op, bliver kernen til uren sten.",
   "create_water_vents.vent.uses_remaining": "Resterende anvendelser: %s",
   "create_water_vents.vent.infinite": "Ubegrænset",
   "create_water_vents.vent.uses_pending": "Resterende anvendelser: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Kilders anvendelser"
+  "config.jade.plugin_create_water_vents.vent_uses": "Kilders anvendelser",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Vandkilde (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Find den blottede kerne i åbningens centrum.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Fri plads omkring kernen. Hold kernen intakt.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Aktiver kernen med en eksplosion.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Anbring en vandkilde ved siden af den aktive kerne.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Bryd stenen, og tilsæt derefter en anden vandkilde.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Mal uren sten for en lille chance for ressourcer.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Vandkilder har et begrænset lager. Når det er brugt op, bliver kernen til uren sten."
 }

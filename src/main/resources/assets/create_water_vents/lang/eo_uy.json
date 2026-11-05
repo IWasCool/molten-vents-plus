@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Fandita Vent Surveyor",
   "item.create_water_vents.superheated_vent_surveyor": "Superheated Vent Surveyor",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Temporary vent: runs out after producing a limited amount of impure stone.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Water vents have a finite reserve. Once spent, the core becomes impure stone.",
   "create_water_vents.vent.uses_remaining": "Uses remaining: %s",
   "create_water_vents.vent.infinite": "Infinite",
   "create_water_vents.vent.uses_pending": "Uses remaining: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses"
+  "config.jade.plugin_create_water_vents.vent_uses": "Vent uses",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Akva Vent (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Trovu la senŝirman kernon en la centro de la ellastruo.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Klara spaco ĉirkaŭ la kerno. Konservu la kernon sendifekta.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Aktivigu la kernon per eksplodo.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Metu akvofonton apud la aktiva kerno.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Minu la ŝtonon, poste aldonu alian akvofonton.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Muelu malpuran ŝtonon por malgranda ŝanco ricevi rimedojn.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Water vents have a finite reserve. Once spent, the core becomes impure stone."
 }

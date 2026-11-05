@@ -11,7 +11,12 @@ stones and cut/slab/wall variants. Activate an exposed dormant core with an
 explosion, including TNT or creepers underwater, then supply the appropriate
 fluid. Includes Ponder tutorials and JEI/EMI support.
 
-Water vents are temporary starter deposits. Each active core can produce
+Water vents have two small, asymmetric formations with matching native ore
+stone, slabs and wall posts. Their tapered central roots extend 12–18
+blocks below the core. New formations use the revised shapes; existing vents
+and saved older structure pieces retain their original layouts.
+
+Each active water core can produce
 4,096 impure stone blocks by default, then permanently becomes mineable impure
 stone. Idle time does not use reserves. Remaining output is saved across world
 reloads and core relocation. Existing active vents from older builds get their

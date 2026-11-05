@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Τοπογράφος αεραγωγών λειωμένου",
   "item.create_water_vents.superheated_vent_surveyor": "Υπερθερμασμένος Τοπογράφος Εξαερισμού",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Προσωρινή πηγή: εξαντλείται αφού παράγει περιορισμένη ποσότητα ακάθαρτου πετρώματος.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Οι πηγές νερού έχουν περιορισμένο απόθεμα. Όταν εξαντληθεί, ο πυρήνας γίνεται ακάθαρτο πέτρωμα.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Οι πηγές νερού έχουν περιορισμένο απόθεμα. Όταν εξαντληθεί, ο πυρήνας γίνεται ακάθαρτο πέτρωμα.",
   "create_water_vents.vent.uses_remaining": "Χρήσεις που απομένουν: %s",
   "create_water_vents.vent.infinite": "Απεριόριστες",
   "create_water_vents.vent.uses_pending": "Χρήσεις που απομένουν: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Χρήσεις πηγών"
+  "config.jade.plugin_create_water_vents.vent_uses": "Χρήσεις πηγών",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Εξαγωγή νερού (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Βρείτε τον εκτεθειμένο πυρήνα στο κέντρο του εξαερισμού.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Ελεύθερος χώρος γύρω από τον πυρήνα. Διατηρήστε τον πυρήνα ανέπαφο.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Ενεργοποιήστε τον πυρήνα με μια έκρηξη.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Τοποθετήστε μια πηγή νερού δίπλα στον ενεργό πυρήνα.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Εξορύξτε την πέτρα και μετά προσθέστε μια άλλη πηγή νερού.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Άλεσε ακάθαρτη πέτρα για μια μικρή πιθανότητα απόκτησης πόρων.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Οι πηγές νερού έχουν περιορισμένο απόθεμα. Όταν εξαντληθεί, ο πυρήνας γίνεται ακάθαρτο πέτρωμα."
 }

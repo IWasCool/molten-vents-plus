@@ -73,7 +73,7 @@ public final class VentStructure extends Structure {
             depth = config.getDepth().sample(random);
             if (aquatic) depth = Math.min(80, depth);
         } else {
-            depth = tier == VentTier.WATER ? 4 + random.nextInt(3) : 12 + random.nextInt(5);
+            depth = tier == VentTier.WATER ? WaterVentDeposit.MIN_DEPTH + random.nextInt(7) : 12 + random.nextInt(5);
         }
         var pieces = new ArrayList<VentPiece>();
         for (var offset : VentPlacement.clusterOffsets(context.seed(), context.chunkPos(), tier.id, radius)) {

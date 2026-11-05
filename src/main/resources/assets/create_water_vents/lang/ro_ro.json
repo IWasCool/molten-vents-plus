@@ -128,12 +128,19 @@
   "item.create_water_vents.molten_vent_surveyor": "Vent Surveyor topit",
   "item.create_water_vents.superheated_vent_surveyor": "Supraîncălzit Vent Surveyor",
   "scanner.create_water_vents.limit": "Stops after %s vents.",
-  "create_water_vents.water_vent.finite": "Sursă temporară: se epuizează după producerea unei cantități limitate de rocă impură.",
   "create_water_vents.ponder.water_vent_activation.text_7": "Izvoarele de apă au o rezervă limitată. Când se epuizează, nucleul devine rocă impură.",
   "create_water_vents.ponder.water_vent_automation.text_6": "Izvoarele de apă au o rezervă limitată. Când se epuizează, nucleul devine rocă impură.",
   "create_water_vents.vent.uses_remaining": "Utilizări rămase: %s",
   "create_water_vents.vent.infinite": "Nelimitate",
   "create_water_vents.vent.uses_pending": "Utilizări rămase: ...",
   "config.jade.plugin_create_water_vents": "Molten Vents Plus",
-  "config.jade.plugin_create_water_vents.vent_uses": "Utilizările izvoarelor"
+  "config.jade.plugin_create_water_vents.vent_uses": "Utilizările izvoarelor",
+  "create_water_vents.ponder.water_vent_activation_variant.header": "Aerisire de apă (2)",
+  "create_water_vents.ponder.water_vent_activation_variant.text_1": "Găsiți miezul expus în centrul ventilației.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_2": "Spațiu liber în jurul miezului. Păstrați miezul intact.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_3": "Activați miezul cu o explozie.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_4": "Plasați o sursă de apă lângă miezul activ.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_5": "Extrageți piatra, apoi adăugați o altă sursă de apă.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_6": "Macinați piatra impură pentru o șansă mică de a obține resurse.",
+  "create_water_vents.ponder.water_vent_activation_variant.text_7": "Izvoarele de apă au o rezervă limitată. Când se epuizează, nucleul devine rocă impură."
 }
