@@ -3,7 +3,7 @@
 Resource vents for **Minecraft 1.21.1 / NeoForge**, built around Create.
 
 **Public source:** [IWasCool/molten-vents-plus](https://github.com/IWasCool/molten-vents-plus).
-Mod version: **0.0.1**.
+Mod version: **1.0.0**.
 
 Water vents produce impure stone, molten vents produce regular ore stone, and
 superheated vents produce pure stone. New formations use Create's native material
@@ -84,7 +84,7 @@ verify language coverage, keys and formatting arguments automatically.
 
 **Build:** JDK 21, then `./gradlew build` or `gradlew.bat build` on Windows.
 Run `./gradlew validateTranslations` to check language resources separately.
-Upload `build/libs/molten_vents_plus-0.0.1.jar` as the mod; the separate
+Upload `build/libs/molten_vents_plus-1.0.0.jar` as the mod; the separate
 `-sources.jar` is for source distribution. Tests, development worlds, caches and
 local verification reports are excluded from the source repository and JARs.
 
