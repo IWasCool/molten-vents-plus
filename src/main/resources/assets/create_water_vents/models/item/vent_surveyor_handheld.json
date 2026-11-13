@@ -11,7 +11,8 @@
     "control_accent": "create_water_vents:item/surveyor/buttons",
     "control_rubber": "create_water_vents:item/surveyor/rubber",
     "speaker": "create_water_vents:item/surveyor/speaker",
-    "screen": "create_water_vents:item/surveyor/screen"
+    "screen": "create_water_vents:item/surveyor/screen",
+    "screen_backing": "create_water_vents:item/surveyor/screen_backing"
   },
   "display": {
     "gui": {

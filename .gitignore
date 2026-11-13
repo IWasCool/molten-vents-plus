@@ -54,3 +54,7 @@ __pycache__/
 /logs/
 /run/
 /run-*/
+
+# Detailed editing guides remain local alongside other development documentation.
+/RESOURCE_PACKS.md
+/TRANSLATIONS.md

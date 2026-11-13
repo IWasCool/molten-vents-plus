@@ -25,6 +25,7 @@ import java.util.Optional;
 
 /** Optional client map pins. Only this scanner's transient objects are ever removed. */
 public final class ScannerMapBridge {
+    static final int PIN_COLOR = 0x00AAAA;
     private static final Logger LOGGER = LoggerFactory.getLogger(ScannerMapBridge.class);
     private static final ResourceLocation ORIGIN = ResourceLocation.fromNamespaceAndPath("create_water_vents", "vent_surveyor");
     private static final List<Bridge> bridges = new ArrayList<>();
@@ -51,6 +52,15 @@ public final class ScannerMapBridge {
         var signal = new Signal(targetDimension, target.immutable(), name.getString(), Math.min(1200, lifetimeTicks));
         signals.add(signal);
         for (var bridge : bridges) bridge.create(signal);
+    }
+
+    /** Only a successfully created map pin replaces the scanner's own location overlay. */
+    public static boolean hasPin(ResourceKey<Level> dimension, BlockPos position) {
+        if (Minecraft.getInstance().level != ownerLevel) return false;
+        for (var signal : signals)
+            if (signal.dimension.equals(dimension) && signal.position.equals(position))
+                return !signal.pins.isEmpty();
+        return false;
     }
 
     /** Call exactly once per client tick; each streamed result keeps its own lifetime. */
@@ -158,7 +168,7 @@ public final class ScannerMapBridge {
         private Field worldMapSupport;
         private Method refreshWorldMap;
         private Constructor<?> constructor;
-        private Object gold, gray, darkGray, global;
+        private Object blue, darkBlue, black, global;
         private final Map<Object, Map<String, Object>> groups = new IdentityHashMap<>();
 
         XaeroBridge() { super("Xaero's Minimap"); }
@@ -175,9 +185,9 @@ public final class ScannerMapBridge {
             var waypoint = Class.forName("xaero.common.minimap.waypoints.Waypoint");
             var color = Class.forName("xaero.hud.minimap.waypoint.WaypointColor");
             var visibility = Class.forName("xaero.common.minimap.waypoints.WaypointVisibilityType");
-            gold = color.getField("GOLD").get(null);
-            gray = color.getField("GRAY").get(null);
-            darkGray = color.getField("DARK_GRAY").get(null);
+            blue = color.getField("DARK_AQUA").get(null);
+            darkBlue = color.getField("DARK_BLUE").get(null);
+            black = color.getField("BLACK").get(null);
             global = visibility.getField("GLOBAL").get(null);
             waypointsManager = session.getMethod("getWaypointsManager");
             worldManager = minimapSession.getMethod("getWorldManager");
@@ -223,7 +233,7 @@ public final class ScannerMapBridge {
             var owned = groups.computeIfAbsent(group, ignored -> new LinkedHashMap<>());
             // Stable per-position IDs avoid growing preference entries on repeated scans.
             String id = "scan_" + Long.toUnsignedString(pos.asLong(), 16);
-            var waypoint = constructor.newInstance(pos.getX(), pos.getY(), pos.getZ(), name, "V", gold);
+            var waypoint = constructor.newInstance(pos.getX(), pos.getY(), pos.getZ(), name, "V", blue);
             setTemporary.invoke(waypoint, true);
             setVisibility.invoke(waypoint, global);
             owned.put(id, waypoint);
@@ -237,11 +247,11 @@ public final class ScannerMapBridge {
                 throw error;
             }
             return new Pin() {
-                private Object color = gold;
+                private Object color = blue;
 
                 @Override public void fade(float brightness) throws ReflectiveOperationException {
                     // Xaero exposes a fixed color palette rather than per-pin alpha/RGB.
-                    var next = brightness > 0.66F ? gold : brightness > 0.33F ? gray : darkGray;
+                    var next = brightness > 0.66F ? blue : brightness > 0.33F ? darkBlue : black;
                     if (next != color) {
                         setColor.invoke(waypoint, next);
                         color = next;
@@ -304,11 +314,13 @@ public final class ScannerMapBridge {
             var waypoint = addTransient.invoke(waypointManager, pos, name);
             if (!owns(waypointManager, waypoint)) return null;
             var pin = new Pin() {
-                private int color = 0xFFBD59;
+                private int color = PIN_COLOR;
 
                 @Override public void fade(float brightness) throws ReflectiveOperationException {
                     if (!owns(waypointManager, waypoint)) return;
-                    int next = ((int) (255 * brightness) << 16) | ((int) (189 * brightness) << 8) | (int) (89 * brightness);
+                    int next = ((int) (((PIN_COLOR >> 16) & 255) * brightness) << 16)
+                            | ((int) (((PIN_COLOR >> 8) & 255) * brightness) << 8)
+                            | (int) ((PIN_COLOR & 255) * brightness);
                     if (next != color) {
                         setColor.invoke(waypoint, next);
                         refreshWaypointIcon.invoke(waypoint);
@@ -328,7 +340,7 @@ public final class ScannerMapBridge {
                 }
             };
             try {
-                setColor.invoke(waypoint, 0xFFBD59);
+                setColor.invoke(waypoint, PIN_COLOR);
                 refreshWaypointIcon.invoke(waypoint);
                 refresh.invoke(api);
                 refreshFullMap.invoke(null);

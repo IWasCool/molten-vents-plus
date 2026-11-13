@@ -217,6 +217,10 @@ public final class ScannerClient {
     public static void project(RenderLevelStageEvent event) {
         if (event.getStage() != RenderLevelStageEvent.Stage.AFTER_LEVEL) return;
         for (var ping : signals.values()) {
+            if (ScannerMapBridge.hasPin(scanDimension, ping.position)) {
+                ping.projected = false;
+                continue;
+            }
             var relative = Vec3.atCenterOf(ping.position).add(0, 1, 0).subtract(event.getCamera().getPosition());
             var point = new Vector4f((float) relative.x, (float) relative.y, (float) relative.z, 1);
             event.getModelViewMatrix().transform(point);
@@ -243,6 +247,10 @@ public final class ScannerClient {
             float alpha = ping.opacity(partial);
             if (alpha < .02F) continue;
             int pointer = mid + Math.round(Mth.clamp(bearing(ping) / 90, -1, 1) * 65);
+            if (ScannerMapBridge.hasPin(scanDimension, ping.position)) {
+                mapPin(g, pointer, alpha);
+                continue;
+            }
             graphic(g, POINTER, pointer - 3, 0, 7, 7, 0, 7, alpha);
             if (!ping.projected) continue;
             int x = Mth.clamp(Math.round((ping.projectedX + 1) * .5F * g.guiWidth()), 15, g.guiWidth() - 15);
@@ -279,6 +287,20 @@ public final class ScannerClient {
     }
 
     private static int color(float alpha, int rgb) { return Mth.clamp(Math.round(alpha * 255), 0, 255) << 24 | rgb; }
+
+    /** Compact Xaero-style badge, inset from the top edge and matching our blue map markers. */
+    private static void mapPin(GuiGraphics g, int x, float alpha) {
+        var font = Minecraft.getInstance().font;
+        g.pose().pushPose();
+        try {
+            g.pose().translate(x - 3, 1, 0);
+            g.pose().scale(7F / 9F, 7F / 9F, 1);
+            g.fill(0, 0, 9, 9, color(alpha, ScannerMapBridge.PIN_COLOR));
+            g.drawString(font, "V", 5 - font.width("V") / 2, 1, color(alpha, 0xFFFFFF), false);
+        } finally {
+            g.pose().popPose();
+        }
+    }
 
     private static ResourceLocation graphic(String name) {
         return ResourceLocation.fromNamespaceAndPath(MoltenVentsPlus.MODID, "textures/gui/" + name + ".png");
