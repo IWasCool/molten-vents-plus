@@ -1,12 +1,18 @@
 # Molten Vents Plus
 
-Resource vents for **Minecraft 1.21.1 / NeoForge**, version **1.0.1**.
+Resource vents for **Minecraft 1.21.1 / NeoForge**, version **1.0.2**.
 The saved mod ID remains `create_water_vents`.
 
 Water vents produce impure stone, molten vents produce ordinary ore stone,
 and superheated vents produce pure stone. Includes configurable reserves,
 Vent Surveyors, Ponder tutorials, JEI/EMI support and optional Jade readouts.
 Runtime textures and language files remain in `src/main/resources`.
+
+## Molten Vents Plus | v1.0.2
+
+Update Log:
+- Adjusted Vent Surveyor Recipes
+- Adjusted Sparkle Particles
 
 ## Molten Vents Plus | v1.0.1
 
@@ -18,7 +24,7 @@ Runtime textures and language files remain in `src/main/resources`.
 ## Build
 
 Use **JDK 21**, then run `./gradlew build` or `gradlew.bat build` on Windows.
-The mod is `build/libs/molten_vents_plus-neoforge-1.21.1-1.0.1.jar`.
+The mod is `build/libs/molten_vents_plus-neoforge-1.21.1-1.0.2.jar`.
 Dependencies download automatically through the included Gradle wrapper.
 
 ## Install

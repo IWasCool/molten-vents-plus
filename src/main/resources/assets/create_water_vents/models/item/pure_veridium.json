@@ -1,1 +1,1 @@
-{"parent":"create_water_vents:block/pure_veridium","loader":"neoforge:composite","children":{"base":{"parent":"create_water_vents:block/pure_veridium"},"sparkles":{"parent":"create_water_vents:block/overlays/pure_sparkles_full_v0"}},"item_render_order":["base","sparkles"]}
+{"parent":"create_water_vents:block/pure_veridium","loader":"neoforge:composite","children":{"base":{"parent":"create_water_vents:block/pure_veridium"},"sparkles":{"parent":"create_water_vents:block/overlays/pure_sparkles_full_v1"}},"item_render_order":["base","sparkles"]}

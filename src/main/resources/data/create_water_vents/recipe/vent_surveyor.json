@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
-  "pattern": [" B ", "GCG", "RKR"],
+  "pattern": ["AB", "CD"],
   "key": {
-    "B": {"tag": "c:ingots/brass"},
-    "G": {"item": "minecraft:glass_pane"},
+    "A": {"item": "create:precision_mechanism"},
+    "B": {"item": "create:transmitter"},
     "C": {"item": "minecraft:compass"},
-    "R": {"item": "minecraft:redstone"},
-    "K": {"item": "create:copper_casing"}
+    "D": {"item": "create:iron_sheet"}
   },
   "result": {"id": "create_water_vents:vent_surveyor", "count": 1}
 }

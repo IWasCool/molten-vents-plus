@@ -288,18 +288,11 @@ public final class ScannerClient {
 
     private static int color(float alpha, int rgb) { return Mth.clamp(Math.round(alpha * 255), 0, 255) << 24 | rgb; }
 
-    /** Compact Xaero-style badge, inset from the top edge and matching our blue map markers. */
+    /** Xaero's native waypoint badge: a gold 9px square with this scanner's white initial. */
     private static void mapPin(GuiGraphics g, int x, float alpha) {
         var font = Minecraft.getInstance().font;
-        g.pose().pushPose();
-        try {
-            g.pose().translate(x - 3, 1, 0);
-            g.pose().scale(7F / 9F, 7F / 9F, 1);
-            g.fill(0, 0, 9, 9, color(alpha, ScannerMapBridge.PIN_COLOR));
-            g.drawString(font, "V", 5 - font.width("V") / 2, 1, color(alpha, 0xFFFFFF), false);
-        } finally {
-            g.pose().popPose();
-        }
+        g.fill(x - 4, 0, x + 5, 9, color(alpha, 0xFFAA00));
+        g.drawString(font, "V", x + 1 - font.width("V") / 2, 1, color(alpha, 0xFFFFFF), false);
     }
 
     private static ResourceLocation graphic(String name) {

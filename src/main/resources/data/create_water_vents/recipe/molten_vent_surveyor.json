@@ -1,11 +1,12 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "equipment",
-  "ingredients": [
-    {"item": "minecraft:compass"},
-    {"item": "create:precision_mechanism"},
-    {"item": "create:brass_casing"},
-    {"item": "create:sturdy_sheet"}
-  ],
+  "pattern": ["AB", "CD"],
+  "key": {
+    "A": {"item": "create:precision_mechanism"},
+    "B": {"item": "create:transmitter"},
+    "C": {"item": "minecraft:compass"},
+    "D": {"item": "create:sturdy_sheet"}
+  },
   "result": {"id": "create_water_vents:molten_vent_surveyor", "count": 1}
 }
